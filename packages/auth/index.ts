@@ -6,7 +6,7 @@ import type {
 import { KyselyAdapter } from "@auth/kysely-adapter";
 import { getServerSession, type NextAuthOptions, type User } from "next-auth";
 import EmailProvider from "next-auth/providers/email";
-import GitHubProvider from "next-auth/providers/github";
+import Auth0Provider from "next-auth/providers/auth0";
 
 import { MagicLinkEmail, resend, siteConfig } from "@saasfly/common";
 
@@ -43,10 +43,10 @@ export const authOptions: NextAuthOptions = {
   adapter: KyselyAdapter(db),
 
   providers: [
-    GitHubProvider({
-      clientId: env.GITHUB_CLIENT_ID,
-      clientSecret: env.GITHUB_CLIENT_SECRET,
-      httpOptions: { timeout: 15000 },
+    Auth0Provider({
+      clientId: env.AUTH0_CLIENT_ID,
+      clientSecret: env.AUTH0_CLIENT_SECRET,
+      issuer: env.AUTH0_ISSUER,
     }),
     EmailProvider({
       sendVerificationRequest: async ({ identifier, url }) => {
@@ -61,6 +61,7 @@ export const authOptions: NextAuthOptions = {
           : "Activate your account";
 
         try {
+          console.log("Sending email to:", identifier);
           await resend.emails.send({
             from: env.RESEND_FROM,
             to: identifier,
@@ -77,8 +78,9 @@ export const authOptions: NextAuthOptions = {
               "X-Entity-Ref-ID": new Date().getTime() + "",
             },
           });
+          console.log("Email sent successfully");
         } catch (error) {
-          console.log(error);
+          console.error("Resend Error:", error);
         }
       },
     }),
@@ -126,6 +128,25 @@ export const authOptions: NextAuthOptions = {
     },
   },
   debug: env.IS_DEBUG === "true",
+  logger: {
+    error(code, ...message) {
+      console.error(`[NextAuth][Error][${code}]`, ...message);
+    },
+    warn(code, ...message) {
+      console.warn(`[NextAuth][Warning][${code}]`, ...message);
+    },
+    debug(code, ...message) {
+      console.debug(`[NextAuth][Debug][${code}]`, ...message);
+    },
+  },
+  events: {
+    signIn(message) { 
+      console.log("User signed in:", message);
+    },
+    signOut(message) { 
+      console.log("User signed out:", message);
+    },
+  },
 };
 
 // Use it in server contexts

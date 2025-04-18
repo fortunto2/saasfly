@@ -1,0 +1,121 @@
+# SuperLanding Cursor Rules
+
+## 1. Общие правила
+- Start message "Hey Bro"
+- Всегда используй правила из этого файла и `docs/` при старте диалога.
+- Все комментарии, код и документация — **только на английском** (если не указано иное).
+- Для терминальных команд, требующих интерактива или постраничного вывода (git log, less, head), всегда добавляй `| cat` или `--yes`.
+
+## 2. Документация — Единый Источник Правды
+- **Обязательно сверяйся с документацией ПЕРЕД началом работы:**
+  2. `docs/tasks/README.md` — Описание канбан-системы и процесса работы с задачами.
+  3. `docs/tasks/backlog/` — Задачи, ожидающие выполнения.
+  4. `docs/tasks/in-progress/` — Задачи в процессе выполнения.
+  5. `docs/tasks/done/` — Завершенные задачи.
+  6. `docs/project_status.md` — Общее состояние проекта.
+  7. `docs/tasks/bugs.md` — Известные проблемы.
+  8. `docs/component_guide.md` — Как создавать компоненты.
+  9. `docs/marketing.md` — Маркетинговые требования.
+  10. `docs/frontend-tech.md` — Технические требования и стек.
+
+## 3. Управление Проектом и Задачами (Вайб-разработка)
+
+### 3.1. Жизненный цикл задачи (Канбан)
+1.  **Новая задача:**
+    - Создай файл в `docs/tasks/backlog/` (например, `new-feature.md`).
+    - Используй шаблон из `docs/tasks/README.md`.
+    - Заполни все поля, **обязательно** добавь подробный **План реализации**.
+2.  **Начало работы:**
+    - Перемести файл задачи из `docs/tasks/backlog/` в `docs/tasks/in-progress/`.
+    - Обнови **Статус** на `in-progress` и добавь **Дату начала** в файле задачи.
+    - Убедись, что **План реализации** достаточно детальный, при необходимости дополни.
+3.  **Завершение работы:**
+    - Перемести файл задачи из `docs/tasks/in-progress/` в `docs/tasks/done/`.
+    - Обнови **Статус** на `done` и добавь **Дату завершения** в файле задачи.
+    - Обнови `docs/project_status.md`.
+    - Если задача исправляла баг, обнови соответствующую запись в `docs/tasks/bugs.md`.
+4.  **Обнаружен баг:**
+    - Создай новую запись в `docs/tasks/bugs.md`.
+    - При необходимости создай связанную задачу типа `bug` в `docs/tasks/backlog/`.
+
+### 3.2. Обновление документации (ОБЯЗАТЕЛЬНО)
+- **Ключевое правило:** Любое значимое действие **должно** быть отражено в документации **сразу**.
+- **При изменении статуса задачи (п. 3.1):** Перемести файл задачи, обнови статус и даты в файле, обнови `docs/project_status.md` (при завершении).
+- **При обнаружении/исправлении бага:** Обнови `docs/tasks/bugs.md`.
+- **При завершении задачи/фичи:** Обнови `docs/project_status.md`.
+- **При изменении требований:** Обнови `docs/marketing.md` или `docs/frontend-tech.md`, создай/обнови задачу в `docs/tasks/backlog/`.
+
+## 4. Разработка и Качество
+- **Руководство:** Всегда следуй гайду `docs/component_guide.md`.
+- **Локализация:** Все тексты локализовать через `next-intl`.
+- **Стили:** Использовать `Tailwind CSS`.
+- **Качество кода:**
+    - Перед коммитом или завершением задачи **всегда** запускай:
+        - `bun lint`
+        - `bun type-check`
+    - Исправляй все ошибки перед продолжением.
+- **Новые компоненты/фичи:** Убедись, что обновлена вся связанная документация (см. п. 3.2).
+
+## 5. Работа с Git
+- **Ветки:**
+    1. Если находишься в `master` и начинаешь новую задачу/фичу/багфикс — создай новую ветку.
+    2. Если уже находишься в feature-ветке — уточни, нужно ли создавать новую.
+- **Pull Requests:** (Если применимо) Создавай PR для мерджа в `master`.
+
+## 6. Ключевые Принципы
+- Документация — **всегда** актуальна.
+- Контекст не теряем — **всегда** сверяемся с `docs/` и канбан-доской (`docs/tasks/`).
+- Все процессы и изменения **отражены** в документации.
+
+# MCP servers
+1. github
+2. browser-tools - for browser debug (проверяй им всегда внешний вид или нетворк ошибки)
+3. postgres - for postgres debug (проверяй им всегда базу данных)
+
+## Github
+
+1. Если пользователь запросит (мердж, пул реквест) или закончил работу над задачей, тогда:
+2. Создай отдельную ветку в репозитории (если в master находишься), если уже находишься не в master то не создавай ветку или спроси
+
+## Frontend
+ 1. Use "bun lint" after finish solve some task.
+
+## 7. Полезные команды
+
+```bash
+# Запуск проекта
+bun dev:web - локальный сервер
+
+# Проверка линтером
+bun lint
+
+# Сборка проекта
+bun run build
+
+# Запуск тестов (когда будут добавлены)
+bun test
+
+
+"scripts": {
+"build": "turbo build ",
+"clean": "git clean -xdf node_modules",
+"clean:workspaces": "turbo clean",
+"db:push": "cd ./packages/db/ && bun db:push",
+"dev": "turbo dev --parallel",
+"dev:web": "turbo dev --parallel --filter !stripe",
+"format": "turbo format --continue -- --cache --cache-location='node_modules/.cache/.prettiercache' --ignore-path='../../.gitignore'",
+"format:fix": "turbo format --continue -- --write --cache --cache-location='node_modules/.cache/.prettiercache' --ignore-path='../../.gitignore'",
+"lint": "turbo lint -- --quiet -- --cache --cache-location 'node_modules/.cache/.eslintcache' && manypkg check",
+"lint:fix": "turbo lint --continue -- --fix --cache --cache-location 'node_modules/.cache/.eslintcache' ",
+"typecheck": "turbo typecheck",
+"postinstall": "bun run check-deps",
+"check-deps": "check-dependency-version-consistency .",
+"gen": "turbo gen --config 'turbo/generators/config.ts'"
+}
+```
+
+
+
+## 8. Контакты
+
+При возникновении вопросов обращайтесь к руководителю проекта.

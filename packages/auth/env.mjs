@@ -15,6 +15,10 @@ export const env = createEnv({
     RESEND_FROM: z.string().min(1),
     ADMIN_EMAIL: z.string().optional(),
     IS_DEBUG: z.string().optional(),
+    // Auth0 переменные
+    AUTH0_CLIENT_ID: z.string().min(1),
+    AUTH0_CLIENT_SECRET: z.string().min(1),
+    AUTH0_ISSUER: z.string().min(1),
   },
   client: {
     NEXT_PUBLIC_APP_URL: z.string().min(1),
@@ -31,5 +35,9 @@ export const env = createEnv({
     RESEND_FROM: process.env.RESEND_FROM,
     ADMIN_EMAIL: process.env.ADMIN_EMAIL,
     IS_DEBUG: process.env.IS_DEBUG,
+    // Auth0 переменные
+    AUTH0_CLIENT_ID: process.env.AUTH0_CLIENT_ID,
+    AUTH0_CLIENT_SECRET: process.env.AUTH0_CLIENT_SECRET,
+    AUTH0_ISSUER: process.env.AUTH0_ISSUER,
   },
 });

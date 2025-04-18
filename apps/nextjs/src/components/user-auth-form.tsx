@@ -43,7 +43,7 @@ export function UserAuthForm({
     resolver: zodResolver(userAuthSchema),
   });
   const [isLoading, setIsLoading] = React.useState<boolean>(false);
-  const [isGitHubLoading, setIsGitHubLoading] = React.useState<boolean>(false);
+  const [isAuth0Loading, setIsAuth0Loading] = React.useState<boolean>(false);
   const searchParams = useSearchParams();
 
   async function onSubmit(data: FormData) {
@@ -88,7 +88,7 @@ export function UserAuthForm({
               autoCapitalize="none"
               autoComplete="email"
               autoCorrect="off"
-              disabled={isLoading || isGitHubLoading || disabled}
+              disabled={isLoading || isAuth0Loading || disabled}
               {...register("email")}
             />
             {errors?.email && (
@@ -121,19 +121,21 @@ export function UserAuthForm({
         type="button"
         className={cn(buttonVariants({ variant: "outline" }))}
         onClick={() => {
-          setIsGitHubLoading(true);
-          signIn("github").catch((error) => {
-            console.error("GitHub signIn error:", error);
+          setIsAuth0Loading(true);
+          signIn("auth0", {
+            callbackUrl: searchParams?.get("from") ?? `/${lang}/dashboard`,
+          }).catch((error) => {
+            console.error("Auth0 signIn error:", error);
           });
         }}
-        disabled={isLoading || isGitHubLoading}
+        disabled={isLoading || isAuth0Loading}
       >
-        {isGitHubLoading ? (
+        {isAuth0Loading ? (
           <Icons.Spinner className="mr-2 h-4 w-4 animate-spin" />
         ) : (
-          <Icons.GitHub className="mr-2 h-4 w-4" />
+          <Icons.Key className="mr-2 h-4 w-4" />
         )}{" "}
-        Github
+        Auth0
       </button>
     </div>
   );
