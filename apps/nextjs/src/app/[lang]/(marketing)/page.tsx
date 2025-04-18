@@ -2,10 +2,12 @@ import Link from "next/link";
 import Image from "next/image";
 import { getDictionary } from "~/lib/get-dictionary";
 
-import { CodeCopy } from "~/components/code-copy";
-import { Comments } from "~/components/comments";
-import { FeaturesGrid } from "~/components/features-grid";
 import { RightsideMarketing } from "~/components/rightside-marketing";
+import { HowItWorks } from "~/components/how-it-works";
+import { UseCases } from "~/components/use-cases";
+import { Testimonials } from "~/components/testimonials";
+import { FinalCta } from "~/components/final-cta";
+import { FeatureHighlights } from "~/components/feature-highlights";
 
 import { AnimatedTooltip } from "@saasfly/ui/animated-tooltip";
 import { BackgroundLines } from "@saasfly/ui/background-lines";
@@ -65,6 +67,8 @@ export default async function IndexPage({
   };
 }) {
   const dict = await getDictionary(lang);
+  // Используем any для совместимости до обновления типов
+  const marketing = dict.marketing as any;
 
   return (
     <>
@@ -76,28 +80,35 @@ export default async function IndexPage({
                 <div className="mt-20">
                   <div
                     className="mb-6 max-w-4xl text-left text-4xl font-semibold dark:text-zinc-100 md:text-5xl xl:text-5xl md:leading-[4rem] xl:leading-[4rem]">
-                    {dict.marketing.title || "Ship your apps to the world easier with "}
-                    <ColourfulText text="Saasfly"/>
+                    {marketing.title || "Turn Vibes into Videos – Instantly."}
+                    <ColourfulText text="SuperDuperAI"/>
                   </div>
                 </div>
 
                 <div className="mt-4">
                   <span className="text-neutral-500 dark:text-neutral-400 sm:text-lg">
-                    {dict.marketing.sub_title || "Your complete All-in-One solution for building SaaS services."}
+                    {marketing.sub_title || "AI filmmaking for creators, businesses, musicians, and teams."}
                   </span>
                 </div>
 
                 <div
                   className="mb-4 mt-6 flex w-full flex-col justify-center space-y-4 sm:flex-row sm:justify-start sm:space-x-8 sm:space-y-0 z-10">
-                  <Link href="https://github.com/saasfly/saasfly" target="_blank">
+                  <Link href="/signup">
                     <Button
                       className="bg-blue-600 hover:bg-blue-500 text-white rounded-full text-lg px-6 h-12 font-medium">
-                      {dict.marketing.get_started}
+                      {marketing.get_started}
                       <Icons.ArrowRight className="h-5 w-5"/>
                     </Button>
                   </Link>
 
-                  <CodeCopy/>
+                  <Link href="#demo">
+                    <Button
+                      variant="outline"
+                      className="rounded-full text-lg px-6 h-12 font-medium">
+                      {marketing.explore_product}
+                      <Icons.ArrowRight className="h-5 w-5"/>
+                    </Button>
+                  </Link>
                 </div>
 
                 <div className="flex xl:flex-row flex-col items-center justify-start mt-4 w-full">
@@ -108,14 +119,14 @@ export default async function IndexPage({
                     <div className="w-[340px]">
                       <text className="font-semibold">9 </text>
                       <text
-                        className="text-neutral-500 dark:text-neutral-400">{dict.marketing.contributors.contributors_desc}</text>
+                        className="text-neutral-500 dark:text-neutral-400">{marketing.contributors.contributors_desc}</text>
                     </div>
                     <div className="w-[340px]">
                       <text
-                        className="text-neutral-500 dark:text-neutral-400">{dict.marketing.contributors.developers_first}</text>
+                        className="text-neutral-500 dark:text-neutral-400">{marketing.contributors.developers_first}</text>
                       <ColourfulText text="2000"/>
                       <text
-                        className="text-neutral-500 dark:text-neutral-400">{dict.marketing.contributors.developers_second}</text>
+                        className="text-neutral-500 dark:text-neutral-400">{marketing.contributors.developers_second}</text>
                     </div>
                   </div>
                 </div>
@@ -125,19 +136,46 @@ export default async function IndexPage({
 
           <div className="hidden h-full w-full xl:block bg-background">
             <div className="flex flex-col pt-44">
-              <RightsideMarketing dict={dict.marketing.right_side}/>
+              <RightsideMarketing dict={marketing.right_side}/>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="container mt-8 md:mt-[-180px] xl:mt-[-180px]">
-        <FeaturesGrid dict={dict.marketing.features_grid}/>
+      <section id="how-it-works" className="container pt-24">
+        <HowItWorks dict={marketing.how_it_works} />
       </section>
 
-      <section className="container pt-24">
+      <section id="demo" className="container pt-16">
+        <VideoScroll dict={marketing.video}/>
+      </section>
+
+      <section id="features" className="container mt-24">
+        <FeatureHighlights />
+      </section>
+
+      <section id="use-cases" className="container pt-24">
+        <UseCases dict={marketing.use_cases} />
+      </section>
+
+      <section id="testimonials" className="container pt-24">
+        <div className="flex h-full w-full flex-col items-center">
+          <div>
+            <h1 className="mb-6 text-center text-3xl font-bold dark:text-zinc-100 md:text-5xl">
+              {marketing.people_comment.title}
+            </h1>
+          </div>
+          <div className="mb-6 text-lg text-neutral-500 dark:text-neutral-400 text-center max-w-3xl">
+            {marketing.people_comment.desc}
+          </div>
+
+          <Testimonials dict={marketing.testimonials} />
+        </div>
+      </section>
+
+      <section id="sponsors" className="container pt-16">
         <div className="flex flex-col justify-center items-center pt-10">
-          <div className="text-lg text-neutral-500 dark:text-neutral-400">{dict.marketing.sponsor.title}</div>
+          <div className="text-lg text-neutral-500 dark:text-neutral-400">{marketing.sponsor.title}</div>
           <div className="mt-4 flex items-center gap-4">
             <Link href="https://www.twillot.com/" target="_blank">
               <Image src="https://www.twillot.com/logo-128.png" width="48" height="48" alt="twillot"/>
@@ -145,35 +183,18 @@ export default async function IndexPage({
             <Link href="https://www.setupyourpay.com/" target="_blank">
               <Image src="https://www.setupyourpay.com/logo.png" width="48" height="48" alt="setupyourpay" />
             </Link>
-            <Link href="https://opencollective.com/saasfly" target="_blank">
+            <Link href="https://opencollective.com/superduperai" target="_blank">
               <div className="flex items-center gap-2 px-4 py-2 rounded-xl border-2 border-dashed border-neutral-300 dark:border-neutral-700 hover:bg-accent dark:hover:bg-neutral-800/30">
                 <Icons.Heart className="w-5 h-5 fill-pink-600 text-pink-600 dark:fill-pink-700 dark:text-pink-700" />
-                <span className="text-sm font-medium text-neutral-500 dark:text-neutral-200">{dict.marketing.sponsor.donate || ''}</span>
+                <span className="text-sm font-medium text-neutral-500 dark:text-neutral-200">{marketing.sponsor.donate || ''}</span>
               </div>
             </Link>
           </div>
         </div>
       </section>
 
-      <section className="container pt-8">
-        <VideoScroll dict={dict.marketing.video}/>
-      </section>
-
-      <section className="w-full px-8 pt-10 sm:px-0 sm:pt-24 md:px-0 md:pt-24 xl:px-0 xl:pt-24">
-        <div className="flex h-full w-full flex-col items-center pb-[100px] pt-10">
-          <div>
-            <h1 className="mb-6 text-center text-3xl font-bold dark:text-zinc-100 md:text-5xl">
-              {dict.marketing.people_comment.title}
-            </h1>
-          </div>
-          <div className="mb-6 text-lg text-neutral-500 dark:text-neutral-400">
-            {dict.marketing.people_comment.desc}
-          </div>
-
-          <div className="w-full overflow-x-hidden">
-            <Comments/>
-          </div>
-        </div>
+      <section id="cta" className="container py-24">
+        <FinalCta dict={marketing} />
       </section>
     </>
   );
