@@ -10,13 +10,15 @@ interface UserAvatarProps extends AvatarProps {
 
 export function UserAvatar({ user, ...props }: UserAvatarProps) {
   return (
-    <Avatar {...props}>
+    <Avatar {...props} data-oid="z.t9tnz">
       {user.image ? (
-        <AvatarImage alt="Picture" src={user.image} />
+        <AvatarImage alt="Picture" src={user.image} data-oid="jy:rcjz" />
       ) : (
-        <AvatarFallback>
-          <span className="sr-only">{user.name}</span>
-          <Icons.User className="h-4 w-4" />
+        <AvatarFallback data-oid="xq_.v4r">
+          <span className="sr-only" data-oid="9phbe69">
+            {user.name}
+          </span>
+          <Icons.User className="h-4 w-4" data-oid="32jndh9" />
         </AvatarFallback>
       )}
     </Avatar>

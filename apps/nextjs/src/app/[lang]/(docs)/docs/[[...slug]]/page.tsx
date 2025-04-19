@@ -90,16 +90,27 @@ export default async function DocPage({ params }: DocPageProps) {
   const toc = await getTableOfContents(doc.body.raw);
 
   return (
-    <main className="relative py-6 lg:gap-10 lg:py-10 xl:grid xl:grid-cols-[1fr_300px]">
-      <div className="mx-auto w-full min-w-0">
-        <DocsPageHeader heading={doc.title} text={doc.description} />
-        <Mdx code={doc.body.code} />
-        <hr className="my-4 md:my-6" />
-        <DocsPager doc={doc} />
+    <main
+      className="relative py-6 lg:gap-10 lg:py-10 xl:grid xl:grid-cols-[1fr_300px]"
+      data-oid="rt_c-_5"
+    >
+      <div className="mx-auto w-full min-w-0" data-oid="i8.zwjs">
+        <DocsPageHeader
+          heading={doc.title}
+          text={doc.description}
+          data-oid="e:qmzyk"
+        />
+
+        <Mdx code={doc.body.code} data-oid="4cpy02d" />
+        <hr className="my-4 md:my-6" data-oid="lgzd9we" />
+        <DocsPager doc={doc} data-oid="k1q3-1c" />
       </div>
-      <div className="hidden text-sm xl:block">
-        <div className="sticky top-16 -mt-10 max-h-[calc(var(--vh)-4rem)] overflow-y-auto pt-10">
-          <DashboardTableOfContents toc={toc} />
+      <div className="hidden text-sm xl:block" data-oid="ifrz8_i">
+        <div
+          className="sticky top-16 -mt-10 max-h-[calc(var(--vh)-4rem)] overflow-y-auto pt-10"
+          data-oid="7e1ba-b"
+        >
+          <DashboardTableOfContents toc={toc} data-oid="nwcb6dd" />
         </div>
       </div>
     </main>

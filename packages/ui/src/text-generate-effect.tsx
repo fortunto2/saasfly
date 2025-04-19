@@ -31,12 +31,13 @@ const TextGenerateEffectImpl = ({
 
   const renderWords = () => {
     return (
-      <motion.div ref={scope}>
+      <motion.div ref={scope} data-oid="t039gky">
         {wordsArray.map((word, idx) => {
           return (
             <motion.span
               key={word + idx}
               className="text-black opacity-0 dark:text-white"
+              data-oid="u2v:pzy"
             >
               {word}{" "}
             </motion.span>
@@ -47,9 +48,12 @@ const TextGenerateEffectImpl = ({
   };
 
   return (
-    <div className={cn("", className)}>
-      <div className="mt-0">
-        <div className="max-w-[750px] text-center text-lg font-light text-foreground">
+    <div className={cn("", className)} data-oid="m1hfyt8">
+      <div className="mt-0" data-oid="lms9ih6">
+        <div
+          className="max-w-[750px] text-center text-lg font-light text-foreground"
+          data-oid="9p:kjpg"
+        >
           {renderWords()}
         </div>
       </div>

@@ -128,7 +128,9 @@ const GlowingEffect = memo(
             variant === "white" && "border-white",
             disabled && "!block",
           )}
+          data-oid="bs1c:.a"
         />
+
         <div
           ref={containerRef}
           style={
@@ -167,6 +169,7 @@ const GlowingEffect = memo(
             className,
             disabled && "!hidden",
           )}
+          data-oid="2i:7gkb"
         >
           <div
             className={cn(
@@ -180,6 +183,7 @@ const GlowingEffect = memo(
               "after:[mask-composite:intersect]",
               "after:[mask-image:linear-gradient(#0000,#0000),conic-gradient(from_calc((var(--start)-var(--spread))*1deg),#00000000_0deg,#fff,#00000000_calc(var(--spread)*2deg))]",
             )}
+            data-oid="3.s.esx"
           />
         </div>
       </>

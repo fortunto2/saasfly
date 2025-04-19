@@ -14,12 +14,16 @@ const DialogPortal = ({
   children,
   ...props
 }: DialogPrimitive.DialogPortalProps) => (
-  <DialogPrimitive.Portal {...props}>
-    <div className="fixed inset-0 z-50 flex items-start justify-center md:items-center">
+  <DialogPrimitive.Portal {...props} data-oid="6tr0:hc">
+    <div
+      className="fixed inset-0 z-50 flex items-start justify-center md:items-center"
+      data-oid="lko1gey"
+    >
       {children}
     </div>
   </DialogPrimitive.Portal>
 );
+
 DialogPortal.displayName = DialogPrimitive.Portal.displayName;
 
 const DialogOverlay = React.forwardRef<
@@ -33,6 +37,7 @@ const DialogOverlay = React.forwardRef<
       className,
     )}
     {...props}
+    data-oid="-2:_gro"
   />
 ));
 DialogOverlay.displayName = DialogPrimitive.Overlay.displayName;
@@ -41,8 +46,8 @@ const DialogContent = React.forwardRef<
   React.ElementRef<typeof DialogPrimitive.Content>,
   React.ComponentPropsWithoutRef<typeof DialogPrimitive.Content>
 >(({ className, children, ...props }, ref) => (
-  <DialogPortal>
-    <DialogOverlay />
+  <DialogPortal data-oid="h0fvcs3">
+    <DialogOverlay data-oid="kmbm2eu" />
     <DialogPrimitive.Content
       ref={ref}
       className={cn(
@@ -51,11 +56,17 @@ const DialogContent = React.forwardRef<
         className,
       )}
       {...props}
+      data-oid="f:6ab4p"
     >
       {children}
-      <DialogPrimitive.Close className="absolute right-4 top-4 rounded-sm opacity-70 ring-offset-background transition-opacity hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:pointer-events-none data-[state=open]:bg-accent data-[state=open]:text-muted-foreground">
-        <X className="h-4 w-4" />
-        <span className="sr-only">Close</span>
+      <DialogPrimitive.Close
+        className="absolute right-4 top-4 rounded-sm opacity-70 ring-offset-background transition-opacity hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:pointer-events-none data-[state=open]:bg-accent data-[state=open]:text-muted-foreground"
+        data-oid="o-o58n7"
+      >
+        <X className="h-4 w-4" data-oid="-ud40ws" />
+        <span className="sr-only" data-oid="5b5.sr3">
+          Close
+        </span>
       </DialogPrimitive.Close>
     </DialogPrimitive.Content>
   </DialogPortal>
@@ -66,8 +77,13 @@ const DialogHeader = ({
   className,
   ...props
 }: React.HTMLAttributes<HTMLDivElement>) => (
-  <div className={cn("flex flex-col space-y-1.5", className)} {...props} />
+  <div
+    className={cn("flex flex-col space-y-1.5", className)}
+    {...props}
+    data-oid="rmpv7j_"
+  />
 );
+
 DialogHeader.displayName = "DialogHeader";
 
 const DialogFooter = ({
@@ -80,8 +96,10 @@ const DialogFooter = ({
       className,
     )}
     {...props}
+    data-oid="vcyr31e"
   />
 );
+
 DialogFooter.displayName = "DialogFooter";
 
 const DialogTitle = React.forwardRef<
@@ -95,6 +113,7 @@ const DialogTitle = React.forwardRef<
       className,
     )}
     {...props}
+    data-oid="opgjqfn"
   />
 ));
 DialogTitle.displayName = DialogPrimitive.Title.displayName;
@@ -107,6 +126,7 @@ const DialogDescription = React.forwardRef<
     ref={ref}
     className={cn("text-sm text-muted-foreground", className)}
     {...props}
+    data-oid="__r.9nt"
   />
 ));
 DialogDescription.displayName = DialogPrimitive.Description.displayName;

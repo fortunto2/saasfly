@@ -48,11 +48,13 @@ export const metadata = {
     "Easy",
     "Cloud Native",
   ],
+
   authors: [
     {
       name: "saasfly",
     },
   ],
+
   creator: "Saasfly",
   openGraph: {
     type: "website",
@@ -77,8 +79,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <head />
+    <html lang="en" suppressHydrationWarning data-oid="7sd3njm">
+      <head data-oid="dj4xdzi" />
       {/*<Suspense>*/}
       {/*  <PostHogPageview />*/}
       {/*</Suspense>*/}
@@ -88,17 +90,21 @@ export default function RootLayout({
           fontSans.variable,
           fontHeading.variable,
         )}
+        data-oid="5q8r1fa"
       >
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
           enableSystem={false}
+          data-oid="j9mb-l5"
         >
-          <NextDevtoolsProvider>{children}</NextDevtoolsProvider>
-          <Analytics />
-          <SpeedInsights />
-          <Toaster />
-          <TailwindIndicator />
+          <NextDevtoolsProvider data-oid="2ike8oo">
+            {children}
+          </NextDevtoolsProvider>
+          <Analytics data-oid="n5zh2oa" />
+          <SpeedInsights data-oid="6ux_jbo" />
+          <Toaster data-oid="jty3:0f" />
+          <TailwindIndicator data-oid="bc5_.hy" />
         </ThemeProvider>
       </body>
     </html>

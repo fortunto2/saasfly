@@ -43,5 +43,9 @@ export function PostHogPageview() {
 }
 
 export function PHProvider({ children }: { children: React.ReactNode }) {
-  return <PostHogProvider client={posthog}>{children}</PostHogProvider>;
+  return (
+    <PostHogProvider client={posthog} data-oid="v9.aq0j">
+      {children}
+    </PostHogProvider>
+  );
 }

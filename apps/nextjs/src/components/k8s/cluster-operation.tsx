@@ -52,41 +52,52 @@ export function ClusterOperations({ cluster }: ClusterOperationsProps) {
 
   return (
     <>
-      <DropdownMenu>
-        <DropdownMenuTrigger className="flex h-8 w-8 items-center justify-center rounded-md border transition-colors hover:bg-muted">
-          <Icons.Ellipsis className="h-4 w-4" />
-          <span className="sr-only">Open</span>
+      <DropdownMenu data-oid="pzofy.5">
+        <DropdownMenuTrigger
+          className="flex h-8 w-8 items-center justify-center rounded-md border transition-colors hover:bg-muted"
+          data-oid="pwakh9-"
+        >
+          <Icons.Ellipsis className="h-4 w-4" data-oid="2h8n52a" />
+          <span className="sr-only" data-oid="w0w4hj9">
+            Open
+          </span>
         </DropdownMenuTrigger>
-        <DropdownMenuContent align="end">
-          <DropdownMenuItem>
+        <DropdownMenuContent align="end" data-oid="r0z7k-7">
+          <DropdownMenuItem data-oid=":j5lxdw">
             <Link
               href={`/en/editor/cluster/${cluster.id}`}
               className="flex w-full"
+              data-oid="yyz75gt"
             >
               Edit
             </Link>
           </DropdownMenuItem>
-          <DropdownMenuSeparator />
+          <DropdownMenuSeparator data-oid="j5wq:ni" />
           <DropdownMenuItem
             className="flex cursor-pointer items-center text-destructive focus:text-destructive"
             onSelect={() => setShowDeleteAlert(true)}
+            data-oid="29:ed5q"
           >
             Delete
           </DropdownMenuItem>
         </DropdownMenuContent>
       </DropdownMenu>
-      <AlertDialog open={showDeleteAlert} onOpenChange={setShowDeleteAlert}>
-        <AlertDialogContent>
-          <AlertDialogHeader>
-            <AlertDialogTitle>
+      <AlertDialog
+        open={showDeleteAlert}
+        onOpenChange={setShowDeleteAlert}
+        data-oid="ee3u.f."
+      >
+        <AlertDialogContent data-oid="u3yovyf">
+          <AlertDialogHeader data-oid="tc6cwos">
+            <AlertDialogTitle data-oid="t7a-95j">
               Are you sure you want to delete this cluster?
             </AlertDialogTitle>
-            <AlertDialogDescription>
+            <AlertDialogDescription data-oid="i5pkvk1">
               This action cannot be undone.
             </AlertDialogDescription>
           </AlertDialogHeader>
-          <AlertDialogFooter>
-            <AlertDialogCancel>Cancel</AlertDialogCancel>
+          <AlertDialogFooter data-oid="f:s.i5j">
+            <AlertDialogCancel data-oid="q:w07zw">Cancel</AlertDialogCancel>
             <AlertDialogAction
               onClick={async (event) => {
                 event.preventDefault();
@@ -101,13 +112,17 @@ export function ClusterOperations({ cluster }: ClusterOperationsProps) {
                 }
               }}
               className="bg-red-600 focus:ring-red-600"
+              data-oid="y9gpww3"
             >
               {isDeleteLoading ? (
-                <Icons.Spinner className="mr-2 h-4 w-4 animate-spin" />
+                <Icons.Spinner
+                  className="mr-2 h-4 w-4 animate-spin"
+                  data-oid="4rt2mu_"
+                />
               ) : (
-                <Icons.Trash className="mr-2 h-4 w-4" />
+                <Icons.Trash className="mr-2 h-4 w-4" data-oid="e1giuzo" />
               )}
-              <span>Delete</span>
+              <span data-oid="gve9j1j">Delete</span>
             </AlertDialogAction>
           </AlertDialogFooter>
         </AlertDialogContent>

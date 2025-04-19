@@ -41,10 +41,15 @@ export function BillingFormButton({
       className="w-full"
       disabled={isPending}
       onClick={stripeSessionAction}
+      data-oid="2oskavc"
     >
       {isPending ? (
         <>
-          <Icons.Spinner className="mr-2 h-4 w-4 animate-spin" /> Loading...
+          <Icons.Spinner
+            className="mr-2 h-4 w-4 animate-spin"
+            data-oid="l4l9pc0"
+          />{" "}
+          Loading...
         </>
       ) : (
         <>

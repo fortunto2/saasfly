@@ -42,6 +42,7 @@ export const WobbleCard = ({
         "relative mx-auto w-full  overflow-hidden rounded-2xl bg-indigo-800",
         containerClassName,
       )}
+      data-oid="ipnh3de"
     >
       <div
         className="relative  h-full overflow-hidden  [background-image:radial-gradient(88%_100%_at_top,rgba(255,255,255,0.5),rgba(255,255,255,0))] sm:mx-0 sm:rounded-2xl"
@@ -49,6 +50,7 @@ export const WobbleCard = ({
           boxShadow:
             "0 10px 32px rgba(34, 42, 53, 0.12), 0 1px 1px rgba(0, 0, 0, 0.05), 0 0 0 1px rgba(34, 42, 53, 0.05), 0 4px 6px rgba(34, 42, 53, 0.08), 0 24px 108px rgba(47, 48, 55, 0.10)",
         }}
+        data-oid="y1u48a6"
       >
         <motion.div
           style={{
@@ -58,8 +60,9 @@ export const WobbleCard = ({
             transition: "transform 0.1s ease-out",
           }}
           className={cn("h-full px-4 py-20 sm:px-10", className)}
+          data-oid="pa:btwy"
         >
-          <Noise />
+          <Noise data-oid="lb1lmi_" />
           {children}
         </motion.div>
       </div>
@@ -75,6 +78,7 @@ const Noise = () => {
         backgroundImage: "url(/images/noise.webp)",
         backgroundSize: "30%",
       }}
+      data-oid="7e3x4xd"
     ></div>
   );
 };

@@ -23,8 +23,8 @@ export default async function DocsLayout({
   const user = await getCurrentUser();
 
   return (
-    <div className="flex min-h-screen flex-col">
-      <Suspense fallback="...">
+    <div className="flex min-h-screen flex-col" data-oid="064lia8">
+      <Suspense fallback="..." data-oid="94.:5gs">
         <NavBar
           items={
             (await getMarketingConfig({ params: { lang: `${lang}` } })).mainNav
@@ -34,13 +34,17 @@ export default async function DocsLayout({
           user={user}
           marketing={dict.marketing}
           dropdown={dict.dropdown}
+          data-oid="2_4-.s9"
         />
       </Suspense>
-      <div className="container flex-1">{children}</div>
+      <div className="container flex-1" data-oid="zu0cj9g">
+        {children}
+      </div>
       <SiteFooter
         className="border-t"
         params={{ lang: `${lang}` }}
         dict={dict.common}
+        data-oid="h.z79ok"
       />
     </div>
   );

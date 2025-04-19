@@ -33,15 +33,23 @@ export default async function DashboardLayout({
   }
   const dashboardConfig = await getDashboardConfig({ params: { lang } });
   return (
-    <div className="flex min-h-screen flex-col space-y-6">
-      <header className="sticky top-0 z-40 border-b bg-background">
-        <div className="container flex h-16 items-center justify-between py-4">
+    <div className="flex min-h-screen flex-col space-y-6" data-oid="jdx642v">
+      <header
+        className="sticky top-0 z-40 border-b bg-background"
+        data-oid="sq75r7t"
+      >
+        <div
+          className="container flex h-16 items-center justify-between py-4"
+          data-oid="sq1._df"
+        >
           <MainNav
             items={dashboardConfig.mainNav}
             params={{ lang: `${lang}` }}
+            data-oid="trix6y9"
           />
-          <div className="flex items-center space-x-3">
-            <LocaleChange url={"/dashboard"} />
+
+          <div className="flex items-center space-x-3" data-oid="9evh3vv">
+            <LocaleChange url={"/dashboard"} data-oid="h26cewa" />
             <UserAccountNav
               user={{
                 name: user.name,
@@ -50,18 +58,26 @@ export default async function DashboardLayout({
               }}
               params={{ lang: `${lang}` }}
               dict={dict.dropdown}
+              data-oid="-:q-kmp"
             />
           </div>
         </div>
       </header>
-      <div className="container grid flex-1 gap-12 md:grid-cols-[200px_1fr]">
-        <aside className="hidden w-[200px] flex-col md:flex">
+      <div
+        className="container grid flex-1 gap-12 md:grid-cols-[200px_1fr]"
+        data-oid="shez2m5"
+      >
+        <aside className="hidden w-[200px] flex-col md:flex" data-oid="y1i8o8m">
           <DashboardNav
             items={dashboardConfig.sidebarNav}
             params={{ lang: `${lang}` }}
+            data-oid="-s3.j0n"
           />
         </aside>
-        <main className="flex w-full flex-1 flex-col overflow-hidden">
+        <main
+          className="flex w-full flex-1 flex-col overflow-hidden"
+          data-oid="4o.wh09"
+        >
           {children}
         </main>
       </div>
@@ -69,6 +85,7 @@ export default async function DashboardLayout({
         className="border-t border-border"
         params={{ lang: `${lang}` }}
         dict={dict.common}
+        data-oid="wc.90p3"
       />
     </div>
   );

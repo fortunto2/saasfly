@@ -57,23 +57,39 @@ const Notification = ({ name, description, icon, color, time }: Item) => {
         // dark styles
         "transform-gpu dark:bg-transparent dark:backdrop-blur-md dark:[border:1px_solid_rgba(255,255,255,.1)] dark:[box-shadow:0_-20px_80px_-20px_#ffffff1f_inset]",
       )}
+      data-oid="ag339m5"
     >
-      <div className="flex flex-row items-center gap-3">
+      <div className="flex flex-row items-center gap-3" data-oid="fu4vf6j">
         <div
           className="flex h-10 w-10 items-center justify-center rounded-2xl"
           style={{
             backgroundColor: color,
           }}
+          data-oid="3ieora4"
         >
-          <span className="text-lg">{icon}</span>
+          <span className="text-lg" data-oid="zya9:iy">
+            {icon}
+          </span>
         </div>
-        <div className="flex flex-col overflow-hidden">
-          <figcaption className="flex flex-row items-center whitespace-pre text-lg font-medium dark:text-white ">
-            <span className="text-sm sm:text-lg">{name}</span>
-            <span className="mx-1">·</span>
-            <span className="text-xs text-gray-500">{time}</span>
+        <div className="flex flex-col overflow-hidden" data-oid="-sz37.m">
+          <figcaption
+            className="flex flex-row items-center whitespace-pre text-lg font-medium dark:text-white "
+            data-oid="5hkh23b"
+          >
+            <span className="text-sm sm:text-lg" data-oid="-fr7dhf">
+              {name}
+            </span>
+            <span className="mx-1" data-oid=":h8--qp">
+              ·
+            </span>
+            <span className="text-xs text-gray-500" data-oid="_nx4ubz">
+              {time}
+            </span>
           </figcaption>
-          <p className="text-sm font-normal dark:text-white/60">
+          <p
+            className="text-sm font-normal dark:text-white/60"
+            data-oid="qqv0v2i"
+          >
             {description}
           </p>
         </div>
@@ -84,10 +100,13 @@ const Notification = ({ name, description, icon, color, time }: Item) => {
 
 export function FeaturesCard() {
   return (
-    <div className="relative flex max-h-[435px] min-h-[435px] flex-col overflow-hidden rounded-2xl border bg-background p-6 shadow-lg dark:border-[#443c3c]">
-      <AnimatedList>
+    <div
+      className="relative flex max-h-[435px] min-h-[435px] flex-col overflow-hidden rounded-2xl border bg-background p-6 shadow-lg dark:border-[#443c3c]"
+      data-oid=".n3q4t5"
+    >
+      <AnimatedList data-oid="09laizi">
         {notifications.map((item, idx) => (
-          <Notification {...item} key={idx} />
+          <Notification {...item} key={idx} data-oid="adprs6s" />
         ))}
       </AnimatedList>
     </div>

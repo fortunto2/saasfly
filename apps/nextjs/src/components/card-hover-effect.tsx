@@ -24,6 +24,7 @@ export const projects = [
     link: "/",
   },
 ];
+
 export function HoverEffects() {
-  return <HoverEffect items={projects} />;
+  return <HoverEffect items={projects} data-oid="-3gg6yv" />;
 }

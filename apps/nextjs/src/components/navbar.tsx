@@ -51,15 +51,24 @@ export function NavBar({
       className={`sticky top-0 z-40 flex w-full justify-center border-border bg-background/60 backdrop-blur-xl transition-all ${
         scroll ? (scrolled ? "border-b" : "bg-background/0") : "border-b"
       }`}
+      data-oid="ow0swbk"
     >
-      <div className="container flex h-16 items-center justify-between py-4">
-        <MainNav items={items} params={{ lang: `${lang}` }} marketing={marketing}>
+      <div
+        className="container flex h-16 items-center justify-between py-4"
+        data-oid="cptq.j8"
+      >
+        <MainNav
+          items={items}
+          params={{ lang: `${lang}` }}
+          marketing={marketing}
+          data-oid="s8m9kk3"
+        >
           {children}
         </MainNav>
 
-        <div className="flex items-center space-x-3">
+        <div className="flex items-center space-x-3" data-oid="9o.x3mj">
           {items?.length ? (
-            <nav className="hidden gap-6 md:flex">
+            <nav className="hidden gap-6 md:flex" data-oid="kl3uoti">
               {items?.map((item, index) => (
                 <Link
                   key={index}
@@ -71,6 +80,7 @@ export function NavBar({
                       : "",
                     item.disabled && "cursor-not-allowed opacity-80",
                   )}
+                  data-oid="igjt3xf"
                 >
                   {item.title}
                 </Link>
@@ -78,17 +88,17 @@ export function NavBar({
             </nav>
           ) : null}
 
-          <div className="w-[1px] h-8 bg-accent"></div>
+          <div className="w-[1px] h-8 bg-accent" data-oid="zg0kick"></div>
 
           {rightElements}
 
-          <div className="hidden md:flex lg:flex xl:flex">
-            <GitHubStar />
+          <div className="hidden md:flex lg:flex xl:flex" data-oid="9:6diwk">
+            <GitHubStar data-oid="x45qctt" />
           </div>
-          <LocaleChange url={"/"} />
+          <LocaleChange url={"/"} data-oid="cpv77xw" />
           {!user ? (
-            <Link href={`/${lang}/login`}>
-              <Button variant="outline" size="sm">
+            <Link href={`/${lang}/login`} data-oid="h1x4_9u">
+              <Button variant="outline" size="sm" data-oid="5md1miq">
                 {typeof marketing.login === "string"
                   ? marketing.login
                   : "Default Login Text"}
@@ -101,6 +111,7 @@ export function NavBar({
               user={user}
               params={{ lang: `${lang}` }}
               dict={dropdown}
+              data-oid="my-zn-t"
             />
           ) : (
             <Button
@@ -108,6 +119,7 @@ export function NavBar({
               variant="default"
               size="sm"
               onClick={signInModal.onOpen}
+              data-oid="wxs_4z2"
             >
               {typeof marketing.signup === "string"
                 ? marketing.signup

@@ -25,9 +25,7 @@ interface Subscription {
 export default async function BillingPage({
   params: { lang },
 }: {
-  params: {
-    lang: Locale;
-  };
+  params: { lang: Locale };
 }) {
   const dict = await getDictionary(lang);
   return (
@@ -35,10 +33,11 @@ export default async function BillingPage({
       title={dict.business.billing.billing}
       description={dict.business.billing.content}
       className="space-y-4"
+      data-oid="4jycli3"
     >
-      <SubscriptionCard dict={dict.business.billing} />
+      <SubscriptionCard dict={dict.business.billing} data-oid="try-syw" />
 
-      <UsageCard />
+      <UsageCard data-oid="eidr1la" />
     </DashboardShell>
   );
 }
@@ -60,19 +59,23 @@ async function SubscriptionCard({ dict }: { dict: Record<string, string> }) {
   const subscription = (await trpc.auth.mySubscription.query()) as Subscription;
   const content = generateSubscriptionMessage(dict, subscription);
   return (
-    <Card>
-      <CardHeader>
-        <CardTitle>Subscription</CardTitle>
+    <Card data-oid=".8:04l:">
+      <CardHeader data-oid="ffx8ybt">
+        <CardTitle data-oid="7s5cii3">Subscription</CardTitle>
       </CardHeader>
-      <CardContent>
+      <CardContent data-oid="6ri83_v">
         {subscription ? (
-          <p dangerouslySetInnerHTML={{ __html: content }} />
+          <p dangerouslySetInnerHTML={{ __html: content }} data-oid="-3i0dp2" />
         ) : (
-          <p>{dict.noSubscription}</p>
+          <p data-oid="eiyi5nl">{dict.noSubscription}</p>
         )}
       </CardContent>
-      <CardFooter>
-        <SubscriptionForm hasSubscription={!!subscription} dict={dict} />
+      <CardFooter data-oid="pzgkd7z">
+        <SubscriptionForm
+          hasSubscription={!!subscription}
+          dict={dict}
+          data-oid="qw7xjbo"
+        />
       </CardFooter>
     </Card>
   );
@@ -80,11 +83,11 @@ async function SubscriptionCard({ dict }: { dict: Record<string, string> }) {
 
 function UsageCard() {
   return (
-    <Card className="mt-4">
-      <CardHeader>
-        <CardTitle>Usage</CardTitle>
+    <Card className="mt-4" data-oid="79f.xbn">
+      <CardHeader data-oid="t8x_1h2">
+        <CardTitle data-oid="fm:8lm1">Usage</CardTitle>
       </CardHeader>
-      <CardContent>None</CardContent>
+      <CardContent data-oid="1hs7mz.">None</CardContent>
     </Card>
   );
 }

@@ -8,11 +8,7 @@ export const HoverEffect = ({
   items,
   className,
 }: {
-  items: {
-    title: string;
-    description: string;
-    link: string;
-  }[];
+  items: { title: string; description: string; link: string }[];
   className?: string;
 }) => {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
@@ -23,6 +19,7 @@ export const HoverEffect = ({
         "grid grid-cols-1 py-10  md:grid-cols-2  lg:grid-cols-3",
         className,
       )}
+      data-oid="3yeva3_"
     >
       {items.map((item, idx) => (
         <Link
@@ -31,8 +28,9 @@ export const HoverEffect = ({
           className="group relative  block h-full w-full p-2"
           onMouseEnter={() => setHoveredIndex(idx)}
           onMouseLeave={() => setHoveredIndex(null)}
+          data-oid="v:if013"
         >
-          <AnimatePresence>
+          <AnimatePresence data-oid=":ex0mt.">
             {hoveredIndex === idx && (
               <motion.span
                 className="absolute inset-0 block h-full w-full rounded-3xl bg-neutral-200  dark:bg-slate-800/[0.8]"
@@ -46,12 +44,15 @@ export const HoverEffect = ({
                   opacity: 0,
                   transition: { duration: 0.15, delay: 0.2 },
                 }}
+                data-oid="xhk-kql"
               />
             )}
           </AnimatePresence>
-          <Card>
-            <CardTitle>{item.title}</CardTitle>
-            <CardDescription>{item.description}</CardDescription>
+          <Card data-oid="x73-9lu">
+            <CardTitle data-oid="qmqflqv">{item.title}</CardTitle>
+            <CardDescription data-oid="x1d_ef_">
+              {item.description}
+            </CardDescription>
           </Card>
         </Link>
       ))}
@@ -72,9 +73,12 @@ export const Card = ({
         "relative z-20 h-full w-full overflow-hidden rounded-2xl border border-transparent bg-black p-4 group-hover:border-slate-700 dark:border-white/[0.2]",
         className,
       )}
+      data-oid="lnqdvkl"
     >
-      <div className="relative z-50">
-        <div className="p-4">{children}</div>
+      <div className="relative z-50" data-oid="8zd:_54">
+        <div className="p-4" data-oid="9s8hhqd">
+          {children}
+        </div>
       </div>
     </div>
   );
@@ -87,7 +91,10 @@ export const CardTitle = ({
   children: React.ReactNode;
 }) => {
   return (
-    <h4 className={cn("mt-4 font-bold tracking-wide text-zinc-100", className)}>
+    <h4
+      className={cn("mt-4 font-bold tracking-wide text-zinc-100", className)}
+      data-oid="mkc996l"
+    >
       {children}
     </h4>
   );
@@ -105,6 +112,7 @@ export const CardDescription = ({
         "mt-8 text-sm leading-relaxed tracking-wide text-zinc-400",
         className,
       )}
+      data-oid="av2ctuj"
     >
       {children}
     </p>

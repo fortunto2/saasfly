@@ -12,7 +12,7 @@ export const ModalProvider = ({ dict }: { dict: Record<string, string> }) => {
 
   return (
     <>
-      <SignInModal dict={dict} />
+      <SignInModal dict={dict} data-oid="q7o32:z" />
     </>
   );
 };

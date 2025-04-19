@@ -32,14 +32,14 @@ export function DataTable<TData, TValue>({
   });
 
   return (
-    <div className="rounded-md border">
-      <Table>
-        <TableHeader>
+    <div className="rounded-md border" data-oid="mlxhwod">
+      <Table data-oid="ky8g88r">
+        <TableHeader data-oid="7nud.0i">
           {table.getHeaderGroups().map((headerGroup) => (
-            <TableRow key={headerGroup.id}>
+            <TableRow key={headerGroup.id} data-oid="nqur2nf">
               {headerGroup.headers.map((header) => {
                 return (
-                  <TableHead key={header.id}>
+                  <TableHead key={header.id} data-oid="70cl.2l">
                     {header.isPlaceholder
                       ? null
                       : flexRender(
@@ -52,23 +52,28 @@ export function DataTable<TData, TValue>({
             </TableRow>
           ))}
         </TableHeader>
-        <TableBody>
+        <TableBody data-oid="yvp9581">
           {table.getRowModel().rows?.length ? (
             table.getRowModel().rows.map((row) => (
               <TableRow
                 key={row.id}
                 data-state={row.getIsSelected() && "selected"}
+                data-oid="r4ocek:"
               >
                 {row.getVisibleCells().map((cell) => (
-                  <TableCell key={cell.id}>
+                  <TableCell key={cell.id} data-oid="ttvusoh">
                     {flexRender(cell.column.columnDef.cell, cell.getContext())}
                   </TableCell>
                 ))}
               </TableRow>
             ))
           ) : (
-            <TableRow>
-              <TableCell colSpan={columns.length} className="h-24 text-center">
+            <TableRow data-oid="a7-xlt3">
+              <TableCell
+                colSpan={columns.length}
+                className="h-24 text-center"
+                data-oid="je8e2.f"
+              >
                 No results.
               </TableCell>
             </TableRow>

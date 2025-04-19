@@ -94,37 +94,46 @@ export default function PostPage({ params }: PostPageProps) {
   );
 
   return (
-    <article className="container relative max-w-3xl py-6 lg:py-10">
+    <article
+      className="container relative max-w-3xl py-6 lg:py-10"
+      data-oid="1_:578f"
+    >
       <Link
         href="/blog"
         className={cn(
           buttonVariants({ variant: "ghost" }),
           "absolute left-[-200px] top-14 hidden xl:inline-flex",
         )}
+        data-oid="zn7fs30"
       >
-        <Icons.ChevronLeft className="mr-2 h-4 w-4" />
+        <Icons.ChevronLeft className="mr-2 h-4 w-4" data-oid="t-u6d-t" />
         See all posts
       </Link>
-      <div>
+      <div data-oid="s8hxw5u">
         {post.date && (
           <time
             dateTime={post.date}
             className="block text-sm text-muted-foreground"
+            data-oid="2xq-960"
           >
             Published on {formatDate(post.date)}
           </time>
         )}
-        <h1 className="font-heading mt-2 inline-block text-4xl leading-tight lg:text-5xl">
-          <Balancer>{post.title}</Balancer>
+        <h1
+          className="font-heading mt-2 inline-block text-4xl leading-tight lg:text-5xl"
+          data-oid="xex0scv"
+        >
+          <Balancer data-oid="ccghzei">{post.title}</Balancer>
         </h1>
         {authors?.length ? (
-          <div className="mt-4 flex space-x-4">
+          <div className="mt-4 flex space-x-4" data-oid="-8icm23">
             {authors.map((author) =>
               author ? (
                 <Link
                   key={author._id}
                   href={`https://twitter.com/${author.twitter}`}
                   className="flex items-center space-x-2 text-sm"
+                  data-oid="rew6-do"
                 >
                   <Image
                     src={author.avatar}
@@ -132,10 +141,20 @@ export default function PostPage({ params }: PostPageProps) {
                     width={42}
                     height={42}
                     className="rounded-full bg-white"
+                    data-oid="12gjs5a"
                   />
-                  <div className="flex-1 text-left leading-tight">
-                    <p className="font-medium">{author.title}</p>
-                    <p className="text-[12px] text-muted-foreground">
+
+                  <div
+                    className="flex-1 text-left leading-tight"
+                    data-oid="b5.v.0_"
+                  >
+                    <p className="font-medium" data-oid="1kx.kjp">
+                      {author.title}
+                    </p>
+                    <p
+                      className="text-[12px] text-muted-foreground"
+                      data-oid="0i-_g.o"
+                    >
                       @{author.twitter}
                     </p>
                   </div>
@@ -153,13 +172,18 @@ export default function PostPage({ params }: PostPageProps) {
           height={405}
           className="my-8 rounded-md border bg-muted transition-colors"
           priority
+          data-oid="jxjn19o"
         />
       )}
-      <Mdx code={post.body.code} />
-      <hr className="mt-12" />
-      <div className="flex justify-center py-6 lg:py-10">
-        <Link href="/blog" className={cn(buttonVariants({ variant: "ghost" }))}>
-          <Icons.ChevronLeft className="mr-2 h-4 w-4" />
+      <Mdx code={post.body.code} data-oid="h6vauxn" />
+      <hr className="mt-12" data-oid="-o.l0rp" />
+      <div className="flex justify-center py-6 lg:py-10" data-oid="i.20lbk">
+        <Link
+          href="/blog"
+          className={cn(buttonVariants({ variant: "ghost" }))}
+          data-oid="68p8.d0"
+        >
+          <Icons.ChevronLeft className="mr-2 h-4 w-4" data-oid="b9jdaj5" />
           See all posts
         </Link>
       </div>

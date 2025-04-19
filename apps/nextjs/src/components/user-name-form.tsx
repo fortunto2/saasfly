@@ -74,18 +74,19 @@ export function UserNameForm({ user, className, ...props }: UserNameFormProps) {
       className={cn(className)}
       onSubmit={handleSubmit(onSubmit)}
       {...props}
+      data-oid="uowir.0"
     >
-      <Card>
-        <CardHeader>
-          <CardTitle>Your Name</CardTitle>
-          <CardDescription>
+      <Card data-oid="uz88zf5">
+        <CardHeader data-oid="o.h9z:w">
+          <CardTitle data-oid="s.g8o6-">Your Name</CardTitle>
+          <CardDescription data-oid="7lkn9it">
             Please enter your full name or a display name you are comfortable
             with.
           </CardDescription>
         </CardHeader>
-        <CardContent>
-          <div className="grid gap-1">
-            <Label className="sr-only" htmlFor="name">
+        <CardContent data-oid="--b16v5">
+          <div className="grid gap-1" data-oid="sgspybu">
+            <Label className="sr-only" htmlFor="name" data-oid="m2x:_a-">
               Name
             </Label>
             <Input
@@ -93,22 +94,30 @@ export function UserNameForm({ user, className, ...props }: UserNameFormProps) {
               className="w-[400px]"
               size={32}
               {...register("name")}
+              data-oid="gxncv70"
             />
+
             {errors?.name && (
-              <p className="px-1 text-xs text-red-600">{errors.name.message}</p>
+              <p className="px-1 text-xs text-red-600" data-oid="egq.3_t">
+                {errors.name.message}
+              </p>
             )}
           </div>
         </CardContent>
-        <CardFooter>
+        <CardFooter data-oid="zyab817">
           <button
             type="submit"
             className={cn(buttonVariants(), className)}
             disabled={isSaving}
+            data-oid="9ujq6jr"
           >
             {isSaving && (
-              <Icons.Spinner className="mr-2 h-4 w-4 animate-spin" />
+              <Icons.Spinner
+                className="mr-2 h-4 w-4 animate-spin"
+                data-oid="d4i39te"
+              />
             )}
-            <span>Save</span>
+            <span data-oid="43rrzpa">Save</span>
           </button>
         </CardFooter>
       </Card>

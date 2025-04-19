@@ -19,13 +19,17 @@ export function DocsPager({ doc }: DocsPagerProps) {
   }
 
   return (
-    <div className="flex flex-row items-center justify-between">
+    <div
+      className="flex flex-row items-center justify-between"
+      data-oid="fpt1655"
+    >
       {pager?.prev && (
         <Link
           href={pager.prev.href}
           className={cn(buttonVariants({ variant: "ghost" }))}
+          data-oid="l6yyn25"
         >
-          <Icons.ChevronLeft className="mr-2 h-4 w-4" />
+          <Icons.ChevronLeft className="mr-2 h-4 w-4" data-oid="990zep7" />
           {pager.prev.title}
         </Link>
       )}
@@ -33,9 +37,10 @@ export function DocsPager({ doc }: DocsPagerProps) {
         <Link
           href={pager.next.href}
           className={cn(buttonVariants({ variant: "ghost" }), "ml-auto")}
+          data-oid="xih7d9p"
         >
           {pager.next.title}
-          <Icons.ChevronRight className="ml-2 h-4 w-4" />
+          <Icons.ChevronRight className="ml-2 h-4 w-4" data-oid="t0482ce" />
         </Link>
       )}
     </div>
@@ -48,6 +53,7 @@ export function getPagerForDoc(doc: Doc) {
     ...flatten(getDocsConfig("en").sidebarNav),
     null,
   ];
+
   const activeIndex = flattenedLinks.findIndex(
     (link) => doc.slug === link?.href,
   );

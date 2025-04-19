@@ -10,7 +10,7 @@ export function SubscriptionForm(props: {
   dict: Record<string, string>;
 }) {
   return (
-    <Link href="/pricing" className={cn(buttonVariants())}>
+    <Link href="/pricing" className={cn(buttonVariants())} data-oid="g086m.u">
       {props.hasSubscription
         ? props.dict.manage_subscription
         : props.dict.upgrade}

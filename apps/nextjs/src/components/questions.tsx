@@ -7,10 +7,10 @@ import {
 
 export function Questions() {
   return (
-    <Accordion type="single" collapsible className="w-full">
-      <AccordionItem value="item-1">
-        <AccordionTrigger>About Saasfly</AccordionTrigger>
-        <AccordionContent>
+    <Accordion type="single" collapsible className="w-full" data-oid="egnu.l_">
+      <AccordionItem value="item-1" data-oid="wgdxq2w">
+        <AccordionTrigger data-oid="5v_c-2m">About Saasfly</AccordionTrigger>
+        <AccordionContent data-oid="ldgo:d1">
           Nextify Limited’s team of experienced developers has invested years
           into refining our software development methodologies. We’re proud to
           present our starter kit, a culmination of best practices and proven
@@ -24,18 +24,20 @@ export function Questions() {
           achieve your project goals.
         </AccordionContent>
       </AccordionItem>
-      <AccordionItem value="item-2">
-        <AccordionTrigger>Why Next.js?</AccordionTrigger>
-        <AccordionContent>
+      <AccordionItem value="item-2" data-oid="7125xw3">
+        <AccordionTrigger data-oid="uub08r5">Why Next.js?</AccordionTrigger>
+        <AccordionContent data-oid="efj8qub">
           Next.js is a powerful and versatile framework that offers a wide range
           of benefits for building web applications. It is known for its
           excellent performance, strong developer experience, and comprehensive
           feature set.
         </AccordionContent>
       </AccordionItem>
-      <AccordionItem value="item-3">
-        <AccordionTrigger>Is this starter for you?</AccordionTrigger>
-        <AccordionContent>
+      <AccordionItem value="item-3" data-oid="ezvrj5o">
+        <AccordionTrigger data-oid="tkzhbl-">
+          Is this starter for you?
+        </AccordionTrigger>
+        <AccordionContent data-oid="-mj64rb">
           If you’re embarking on the development of a SaaS service and are in
           search of a solid foundation, meticulously crafted architecture, and
           an enriching developer experience, then this starter kit stands as a

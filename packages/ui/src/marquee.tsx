@@ -30,6 +30,7 @@ export default function Marquee({
         },
         className,
       )}
+      data-oid="iki1f6r"
     >
       {Array(repeat)
         .fill(0)
@@ -42,6 +43,7 @@ export default function Marquee({
               "group-hover:[animation-play-state:paused]": pauseOnHover,
               "[animation-direction:reverse]": reverse,
             })}
+            data-oid="oihh49v"
           >
             {children}
           </div>

@@ -53,7 +53,11 @@ export const SparklesCore = (props: ParticlesProps) => {
   };
 
   return (
-    <motion.div animate={controls} className={cn("opacity-0", className)}>
+    <motion.div
+      animate={controls}
+      className={cn("opacity-0", className)}
+      data-oid="24k4ad1"
+    >
       {init && (
         <Particles
           id={id ?? "tsparticles"}
@@ -428,6 +432,7 @@ export const SparklesCore = (props: ParticlesProps) => {
             },
             detectRetina: true,
           }}
+          data-oid=":ofrmxh"
         />
       )}
     </motion.div>

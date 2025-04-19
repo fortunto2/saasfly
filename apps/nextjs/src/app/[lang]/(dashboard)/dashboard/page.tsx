@@ -28,9 +28,7 @@ export const metadata = {
 export default async function DashboardPage({
   params: { lang },
 }: {
-  params: {
-    lang: Locale;
-  };
+  params: { lang: Locale };
 }) {
   //don't need to check auth here, because we have a global auth check in _app.tsx
   const user = await getCurrentUser();
@@ -51,48 +49,64 @@ export default async function DashboardPage({
     const clusters = result;
     const dict = await getDictionary(lang);
     return (
-      <DashboardShell>
+      <DashboardShell data-oid="6xc2_go">
         <DashboardHeader
           heading="kubernetes"
           text={dict.common.dashboard.title_text}
+          data-oid="c4w6l95"
         >
-          <K8sCreateButton dict={dict.business} />
+          <K8sCreateButton dict={dict.business} data-oid="m5ojcik" />
         </DashboardHeader>
-        <div>
+        <div data-oid="2_bzo4b">
           {clusters.length ? (
-            <div className="divide-y divide-border rounded-md border">
-              <div className="flex items-center justify-between p-4">
-                <Table className="divide-y divide-gray-200">
-                  <TableCaption>A list of your k8s cluster .</TableCaption>
-                  <TableHeader>
-                    <TableRow className="hover:bg-gray-50">
-                      <TableHead className="w-[100px]">Name</TableHead>
-                      <TableHead>Location</TableHead>
-                      <TableHead>UpdatedAt</TableHead>
-                      <TableHead>Plan</TableHead>
-                      <TableHead>Status</TableHead>
-                      <TableHead>ACTION</TableHead>
+            <div
+              className="divide-y divide-border rounded-md border"
+              data-oid="3z6x6fo"
+            >
+              <div
+                className="flex items-center justify-between p-4"
+                data-oid="9z-yxfn"
+              >
+                <Table className="divide-y divide-gray-200" data-oid="9qym_i.">
+                  <TableCaption data-oid="v1ks:w2">
+                    A list of your k8s cluster .
+                  </TableCaption>
+                  <TableHeader data-oid="c:62.ws">
+                    <TableRow className="hover:bg-gray-50" data-oid="oc_:mwm">
+                      <TableHead className="w-[100px]" data-oid="eeavpjr">
+                        Name
+                      </TableHead>
+                      <TableHead data-oid="7b_ap.x">Location</TableHead>
+                      <TableHead data-oid="-o.rgak">UpdatedAt</TableHead>
+                      <TableHead data-oid="9t4k20_">Plan</TableHead>
+                      <TableHead data-oid=".oh_smo">Status</TableHead>
+                      <TableHead data-oid="zsee6.t">ACTION</TableHead>
                     </TableRow>
                   </TableHeader>
                   {clusters.map((cluster) => (
                     <ClusterItem
                       key={String(cluster.id)}
                       cluster={cluster}
+                      data-oid="d1f_f09"
                     ></ClusterItem>
                   ))}
                 </Table>
               </div>
             </div>
           ) : (
-            <EmptyPlaceholder>
+            <EmptyPlaceholder data-oid="g.aiqsk">
               {/*<EmptyPlaceholder.Icon />*/}
-              <EmptyPlaceholder.Title>
+              <EmptyPlaceholder.Title data-oid=":dnw27:">
                 {dict.business.k8s.no_cluster_title}
               </EmptyPlaceholder.Title>
-              <EmptyPlaceholder.Description>
+              <EmptyPlaceholder.Description data-oid="u.eglxr">
                 {dict.business.k8s.no_cluster_content}
               </EmptyPlaceholder.Description>
-              <K8sCreateButton variant="outline" dict={dict.business} />
+              <K8sCreateButton
+                variant="outline"
+                dict={dict.business}
+                data-oid="oxpnkq9"
+              />
             </EmptyPlaceholder>
           )}
         </div>

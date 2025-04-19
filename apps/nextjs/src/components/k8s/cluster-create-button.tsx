@@ -75,11 +75,15 @@ export function K8sCreateButton({
       )}
       disabled={isLoading}
       {...props}
+      data-oid="hfej2yx"
     >
       {isLoading ? (
-        <Icons.Spinner className="mr-2 h-4 w-4 animate-spin" />
+        <Icons.Spinner
+          className="mr-2 h-4 w-4 animate-spin"
+          data-oid="nyc0356"
+        />
       ) : (
-        <Icons.Add className="mr-2 h-4 w-4" />
+        <Icons.Add className="mr-2 h-4 w-4" data-oid="vj9:spk" />
       )}
       {dict.k8s?.new_cluster}
     </button>

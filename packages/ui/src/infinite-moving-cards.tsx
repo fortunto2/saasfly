@@ -12,11 +12,7 @@ export const InfiniteMovingCards = ({
   pauseOnHover = true,
   className,
 }: {
-  items: {
-    quote: string;
-    name: string;
-    title: string;
-  }[];
+  items: { quote: string; name: string; title: string }[];
   direction?: "left" | "right";
   speed?: "fast" | "normal" | "slow";
   pauseOnHover?: boolean;
@@ -78,6 +74,7 @@ export const InfiniteMovingCards = ({
         "scroller relative z-20  max-w-7xl overflow-hidden  [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]",
         className,
       )}
+      data-oid="pldikdt"
     >
       <ul
         ref={scrollerRef}
@@ -86,6 +83,7 @@ export const InfiniteMovingCards = ({
           start && "animate-scroll ",
           pauseOnHover && "hover:[animation-play-state:paused]",
         )}
+        data-oid="qnka3m5"
       >
         {items.map((item) => (
           <li
@@ -95,21 +93,35 @@ export const InfiniteMovingCards = ({
                 "linear-gradient(180deg, var(--slate-800), var(--slate-900)",
             }}
             key={item.name}
+            data-oid="igfq.4a"
           >
-            <blockquote>
+            <blockquote data-oid="b73bedm">
               <div
                 aria-hidden="true"
                 className="user-select-none -z-1 pointer-events-none absolute -left-0.5 -top-0.5 h-[calc(100%_+_4px)] w-[calc(100%_+_4px)]"
+                data-oid="giix:u7"
               ></div>
-              <span className=" relative z-20 text-sm font-normal leading-[1.6] text-gray-100">
+              <span
+                className=" relative z-20 text-sm font-normal leading-[1.6] text-gray-100"
+                data-oid="dzwpx02"
+              >
                 {item.quote}
               </span>
-              <div className="relative z-20 mt-6 flex flex-row items-center">
-                <span className="flex flex-col gap-1">
-                  <span className=" text-sm font-normal leading-[1.6] text-gray-400">
+              <div
+                className="relative z-20 mt-6 flex flex-row items-center"
+                data-oid="lereedc"
+              >
+                <span className="flex flex-col gap-1" data-oid="i5hm-81">
+                  <span
+                    className=" text-sm font-normal leading-[1.6] text-gray-400"
+                    data-oid="jkaf3nd"
+                  >
                     {item.name}
                   </span>
-                  <span className=" text-sm font-normal leading-[1.6] text-gray-400">
+                  <span
+                    className=" text-sm font-normal leading-[1.6] text-gray-400"
+                    data-oid="3xdm3__"
+                  >
                     {item.title}
                   </span>
                 </span>

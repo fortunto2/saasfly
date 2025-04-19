@@ -28,10 +28,13 @@ interface SheetPortalProps
     VariantProps<typeof portalVariants> {}
 
 const SheetPortal = ({ position, children, ...props }: SheetPortalProps) => (
-  <SheetPrimitive.Portal {...props}>
-    <div className={portalVariants({ position })}>{children}</div>
+  <SheetPrimitive.Portal {...props} data-oid="636id_p">
+    <div className={portalVariants({ position })} data-oid="2ry1bdy">
+      {children}
+    </div>
   </SheetPrimitive.Portal>
 );
+
 SheetPortal.displayName = SheetPrimitive.Portal.displayName;
 
 const SheetOverlay = React.forwardRef<
@@ -45,6 +48,7 @@ const SheetOverlay = React.forwardRef<
     )}
     {...props}
     ref={ref}
+    data-oid="-.k1ywa"
   />
 ));
 SheetOverlay.displayName = SheetPrimitive.Overlay.displayName;
@@ -130,6 +134,7 @@ const sheetVariants = cva(
         class: "w-screen",
       },
     ],
+
     defaultVariants: {
       position: "right",
       size: "default",
@@ -145,17 +150,23 @@ const SheetContent = React.forwardRef<
   React.ElementRef<typeof SheetPrimitive.Content>,
   DialogContentProps
 >(({ position, size, className, children, ...props }, ref) => (
-  <SheetPortal position={position}>
-    <SheetOverlay />
+  <SheetPortal position={position} data-oid="phfrxce">
+    <SheetOverlay data-oid="b.zrwfy" />
     <SheetPrimitive.Content
       ref={ref}
       className={cn(sheetVariants({ position, size }), className)}
       {...props}
+      data-oid="n6jx__c"
     >
       {children}
-      <SheetPrimitive.Close className="absolute right-4 top-4 rounded-sm opacity-70 ring-offset-background transition-opacity hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:pointer-events-none data-[state=open]:bg-secondary">
-        <X className="h-4 w-4" />
-        <span className="sr-only">Close</span>
+      <SheetPrimitive.Close
+        className="absolute right-4 top-4 rounded-sm opacity-70 ring-offset-background transition-opacity hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:pointer-events-none data-[state=open]:bg-secondary"
+        data-oid="zqlto85"
+      >
+        <X className="h-4 w-4" data-oid="7nal4ry" />
+        <span className="sr-only" data-oid="8w5k1sk">
+          Close
+        </span>
       </SheetPrimitive.Close>
     </SheetPrimitive.Content>
   </SheetPortal>
@@ -172,8 +183,10 @@ const SheetHeader = ({
       className,
     )}
     {...props}
+    data-oid="xnp17p:"
   />
 );
+
 SheetHeader.displayName = "SheetHeader";
 
 const SheetFooter = ({
@@ -186,8 +199,10 @@ const SheetFooter = ({
       className,
     )}
     {...props}
+    data-oid="ylloumv"
   />
 );
+
 SheetFooter.displayName = "SheetFooter";
 
 const SheetTitle = React.forwardRef<
@@ -198,6 +213,7 @@ const SheetTitle = React.forwardRef<
     ref={ref}
     className={cn("text-lg font-semibold text-foreground", className)}
     {...props}
+    data-oid="owgm6b-"
   />
 ));
 SheetTitle.displayName = SheetPrimitive.Title.displayName;
@@ -210,6 +226,7 @@ const SheetDescription = React.forwardRef<
     ref={ref}
     className={cn("text-sm text-muted-foreground", className)}
     {...props}
+    data-oid="4mj62j_"
   />
 ));
 SheetDescription.displayName = SheetPrimitive.Description.displayName;

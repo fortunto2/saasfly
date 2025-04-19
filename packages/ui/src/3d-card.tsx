@@ -46,7 +46,10 @@ export const CardContainer = ({
     containerRef.current.style.transform = `rotateY(0deg) rotateX(0deg)`;
   };
   return (
-    <MouseEnterContext.Provider value={[isMouseEntered, setIsMouseEntered]}>
+    <MouseEnterContext.Provider
+      value={[isMouseEntered, setIsMouseEntered]}
+      data-oid="tt3cffx"
+    >
       <div
         className={cn(
           "flex items-center justify-center py-20",
@@ -55,6 +58,7 @@ export const CardContainer = ({
         style={{
           perspective: "1000px",
         }}
+        data-oid="tyzlkgl"
       >
         <div
           ref={containerRef}
@@ -68,6 +72,7 @@ export const CardContainer = ({
           style={{
             transformStyle: "preserve-3d",
           }}
+          data-oid="q98or_5"
         >
           {children}
         </div>
@@ -89,6 +94,7 @@ export const CardBody = ({
         "h-96 w-96 [transform-style:preserve-3d]  [&>*]:[transform-style:preserve-3d]",
         className,
       )}
+      data-oid="v_ma0z8"
     >
       {children}
     </div>
@@ -138,6 +144,7 @@ export const CardItem = ({
       ref={ref}
       className={cn("w-fit transition duration-200 ease-linear", className)}
       {...rest}
+      data-oid="u-ao7er"
     >
       {children}
     </Tag>

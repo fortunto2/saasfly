@@ -17,8 +17,10 @@ const components = {
         className,
       )}
       {...props}
+      data-oid="fh2_vb8"
     />
   ),
+
   h2: ({ className, ...props }) => (
     <h2
       className={cn(
@@ -26,8 +28,10 @@ const components = {
         className,
       )}
       {...props}
+      data-oid="nnvnyuy"
     />
   ),
+
   h3: ({ className, ...props }) => (
     <h3
       className={cn(
@@ -35,8 +39,10 @@ const components = {
         className,
       )}
       {...props}
+      data-oid="w5jv396"
     />
   ),
+
   h4: ({ className, ...props }) => (
     <h4
       className={cn(
@@ -44,8 +50,10 @@ const components = {
         className,
       )}
       {...props}
+      data-oid="oq5tlpv"
     />
   ),
+
   h5: ({ className, ...props }) => (
     <h5
       className={cn(
@@ -53,8 +61,10 @@ const components = {
         className,
       )}
       {...props}
+      data-oid="k3sykyo"
     />
   ),
+
   h6: ({ className, ...props }) => (
     <h6
       className={cn(
@@ -62,29 +72,46 @@ const components = {
         className,
       )}
       {...props}
+      data-oid="qj8bmkh"
     />
   ),
+
   a: ({ className, ...props }) => (
     <a
       className={cn("font-medium underline underline-offset-4", className)}
       {...props}
+      data-oid="77gvbww"
     />
   ),
+
   p: ({ className, ...props }) => (
     <p
       className={cn("leading-7 [&:not(:first-child)]:mt-6", className)}
       {...props}
+      data-oid="ylyj9o."
     />
   ),
+
   ul: ({ className, ...props }) => (
-    <ul className={cn("my-6 ml-6 list-disc", className)} {...props} />
+    <ul
+      className={cn("my-6 ml-6 list-disc", className)}
+      {...props}
+      data-oid="vavp.7q"
+    />
   ),
+
   ol: ({ className, ...props }) => (
-    <ol className={cn("my-6 ml-6 list-decimal", className)} {...props} />
+    <ol
+      className={cn("my-6 ml-6 list-decimal", className)}
+      {...props}
+      data-oid="sgx29lu"
+    />
   ),
+
   li: ({ className, ...props }) => (
-    <li className={cn("mt-2", className)} {...props} />
+    <li className={cn("mt-2", className)} {...props} data-oid="0e31crt" />
   ),
+
   blockquote: ({ className, ...props }) => (
     <blockquote
       className={cn(
@@ -92,28 +119,46 @@ const components = {
         className,
       )}
       {...props}
+      data-oid="cc_8xop"
     />
   ),
+
   img: ({
     className,
     alt,
     ...props
   }: React.ImgHTMLAttributes<HTMLImageElement>) => (
     // eslint-disable-next-line @next/next/no-img-element
-    <img className={cn("rounded-md border", className)} alt={alt} {...props} />
+    <img
+      className={cn("rounded-md border", className)}
+      alt={alt}
+      {...props}
+      data-oid="j7is-6-"
+    />
   ),
-  hr: ({ ...props }) => <hr className="my-4 md:my-8" {...props} />,
+
+  hr: ({ ...props }) => (
+    <hr className="my-4 md:my-8" {...props} data-oid="_.jeva3" />
+  ),
+
   table: ({ className, ...props }: React.HTMLAttributes<HTMLTableElement>) => (
-    <div className="my-6 w-full overflow-y-auto">
-      <table className={cn("w-full", className)} {...props} />
+    <div className="my-6 w-full overflow-y-auto" data-oid="1cr7ps9">
+      <table
+        className={cn("w-full", className)}
+        {...props}
+        data-oid="rlgfhxi"
+      />
     </div>
   ),
+
   tr: ({ className, ...props }: React.HTMLAttributes<HTMLTableRowElement>) => (
     <tr
       className={cn("m-0 border-t p-0 even:bg-muted", className)}
       {...props}
+      data-oid="1m5xz6v"
     />
   ),
+
   th: ({ className, ...props }) => (
     <th
       className={cn(
@@ -121,8 +166,10 @@ const components = {
         className,
       )}
       {...props}
+      data-oid="m-s499n"
     />
   ),
+
   td: ({ className, ...props }) => (
     <td
       className={cn(
@@ -130,8 +177,10 @@ const components = {
         className,
       )}
       {...props}
+      data-oid="8wbgfwy"
     />
   ),
+
   pre: ({ className, ...props }) => (
     <pre
       className={cn(
@@ -139,8 +188,10 @@ const components = {
         className,
       )}
       {...props}
+      data-oid="1916-7."
     />
   ),
+
   code: ({ className, ...props }) => (
     <code
       className={cn(
@@ -148,9 +199,11 @@ const components = {
         className,
       )}
       {...props}
+      data-oid="chcd_2s"
     />
   ),
-  Image: (props: ImageProps) => <NextImage {...props} />,
+
+  Image: (props: ImageProps) => <NextImage {...props} data-oid="3awo6a." />,
   Callout,
   Card: MdxCard,
 };
@@ -163,8 +216,8 @@ export function Mdx({ code }: MdxProps) {
   const Component = useMDXComponent(code);
 
   return (
-    <div className="mdx">
-      <Component components={components} />
+    <div className="mdx" data-oid="kdf9naj">
+      <Component components={components} data-oid="77ytxah" />
     </div>
   );
 }

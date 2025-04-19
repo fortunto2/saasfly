@@ -13,8 +13,14 @@ export function Sparkless() {
   //   color = "#000000";
   // }
   return (
-    <div className="flex flex-col items-center justify-center overflow-hidden rounded-md">
-      <h1 className="relative z-20 text-center font-bold text-black dark:text-white">
+    <div
+      className="flex flex-col items-center justify-center overflow-hidden rounded-md"
+      data-oid="ywuws4b"
+    >
+      <h1
+        className="relative z-20 text-center font-bold text-black dark:text-white"
+        data-oid="e-evili"
+      >
         Saasfly: A new SaaS player?
       </h1>
       {/*<div className="relative h-40 w-[40rem]">*/}

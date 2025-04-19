@@ -56,31 +56,45 @@ export function BillingForm({
   }
 
   return (
-    <form className={cn(className)} onSubmit={onSubmit} {...props}>
-      <Card>
-        <CardHeader>
-          <CardTitle>Subscription Plan</CardTitle>
-          <CardDescription>
-            You are currently on the <strong>{subscriptionPlan?.title}</strong>{" "}
-            plan.
+    <form
+      className={cn(className)}
+      onSubmit={onSubmit}
+      {...props}
+      data-oid="tc7g_eq"
+    >
+      <Card data-oid=":w82s6x">
+        <CardHeader data-oid="6w9wz_4">
+          <CardTitle data-oid=":bz94_z">Subscription Plan</CardTitle>
+          <CardDescription data-oid="k7zmcie">
+            You are currently on the{" "}
+            <strong data-oid="swg9_tb">{subscriptionPlan?.title}</strong> plan.
           </CardDescription>
         </CardHeader>
-        <CardContent>{subscriptionPlan?.description}</CardContent>
-        <CardFooter className="flex flex-col items-start space-y-2 md:flex-row md:justify-between md:space-x-0">
+        <CardContent data-oid="uuyf05_">
+          {subscriptionPlan?.description}
+        </CardContent>
+        <CardFooter
+          className="flex flex-col items-start space-y-2 md:flex-row md:justify-between md:space-x-0"
+          data-oid="uqyc_tw"
+        >
           <button
             type="submit"
             className={cn(buttonVariants())}
             disabled={isLoading}
+            data-oid="u_be72l"
           >
             {isLoading && (
-              <Icons.Spinner className="mr-2 h-4 w-4 animate-spin" />
+              <Icons.Spinner
+                className="mr-2 h-4 w-4 animate-spin"
+                data-oid="50wy-ml"
+              />
             )}
             {subscriptionPlan?.isPaid
               ? "Manage Subscription"
               : "Upgrade to PRO"}
           </button>
           {subscriptionPlan?.isPaid ? (
-            <p className="rounded-full text-xs font-medium">
+            <p className="rounded-full text-xs font-medium" data-oid="hnteq2y">
               {subscriptionPlan?.isCanceled
                 ? "Your plan will be canceled on "
                 : "Your plan renews on "}

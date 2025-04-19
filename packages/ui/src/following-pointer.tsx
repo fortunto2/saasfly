@@ -52,9 +52,12 @@ export const FollowerPointerCard = ({
       }}
       ref={ref}
       className={cn("relative", className)}
+      data-oid=":9wiwzy"
     >
-      <AnimatePresence>
-        {isInside && <FollowPointer x={x} y={y} title={title} />}
+      <AnimatePresence data-oid=".44ag1p">
+        {isInside && (
+          <FollowPointer x={x} y={y} title={title} data-oid="i7iaw50" />
+        )}
       </AnimatePresence>
       {children}
     </div>
@@ -79,6 +82,7 @@ export const FollowPointer = ({
     "var(--red-500)",
     "var(--yellow-500)",
   ];
+
   return (
     <motion.div
       className="absolute z-50 h-4 w-4 rounded-full"
@@ -99,6 +103,7 @@ export const FollowPointer = ({
         scale: 0,
         opacity: 0,
       }}
+      data-oid="pr0o7tr"
     >
       <svg
         stroke="currentColor"
@@ -109,8 +114,12 @@ export const FollowPointer = ({
         height="1em"
         width="1em"
         xmlns="http://www.w3.org/2000/svg"
+        data-oid="ye-455a"
       >
-        <path d="M14.082 2.182a.5.5 0 0 1 .103.557L8.528 15.467a.5.5 0 0 1-.917-.007L5.57 10.694.803 8.652a.5.5 0 0 1-.006-.916l12.728-5.657a.5.5 0 0 1 .556.103z"></path>
+        <path
+          d="M14.082 2.182a.5.5 0 0 1 .103.557L8.528 15.467a.5.5 0 0 1-.917-.007L5.57 10.694.803 8.652a.5.5 0 0 1-.006-.916l12.728-5.657a.5.5 0 0 1 .556.103z"
+          data-oid="azf44yl"
+        ></path>
       </svg>
       <motion.div
         style={{
@@ -131,6 +140,7 @@ export const FollowPointer = ({
         className={
           "min-w-max whitespace-nowrap rounded-full bg-neutral-200 px-2 py-2 text-xs text-white"
         }
+        data-oid="t71v4:q"
       >
         {title || `William Shakespeare`}
       </motion.div>

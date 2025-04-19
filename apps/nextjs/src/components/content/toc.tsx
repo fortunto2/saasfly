@@ -31,9 +31,11 @@ export function DashboardTableOfContents({ toc }: TocProps) {
   }
 
   return mounted ? (
-    <div className="space-y-2">
-      <p className="font-medium">On This Page</p>
-      <Tree tree={toc} activeItem={activeHeading} />
+    <div className="space-y-2" data-oid="jx.uyt:">
+      <p className="font-medium" data-oid="ro-bjju">
+        On This Page
+      </p>
+      <Tree tree={toc} activeItem={activeHeading} data-oid="o8zs_1u" />
     </div>
   ) : null;
 }
@@ -89,10 +91,13 @@ interface TreeProps {
 
 function Tree({ tree, level = 1, activeItem }: TreeProps) {
   return tree?.items?.length && level < 3 ? (
-    <ul className={cn("m-0 list-none", { "pl-4": level !== 1 })}>
+    <ul
+      className={cn("m-0 list-none", { "pl-4": level !== 1 })}
+      data-oid="xf-s237"
+    >
       {tree.items.map((item, index) => {
         return (
-          <li key={index} className={cn("mt-0 pt-2")}>
+          <li key={index} className={cn("mt-0 pt-2")} data-oid="bmah54a">
             <a
               href={item.url}
               className={cn(
@@ -101,11 +106,17 @@ function Tree({ tree, level = 1, activeItem }: TreeProps) {
                   ? "font-medium text-primary"
                   : "text-sm text-muted-foreground",
               )}
+              data-oid="j-elsfb"
             >
               {item.title}
             </a>
             {item.items?.length ? (
-              <Tree tree={item} level={level + 1} activeItem={activeItem} />
+              <Tree
+                tree={item}
+                level={level + 1}
+                activeItem={activeItem}
+                data-oid="ssavoyd"
+              />
             ) : null}
           </li>
         );

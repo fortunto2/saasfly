@@ -1,4 +1,3 @@
-import { redirect } from "next/navigation";
 import { NextRequest, NextResponse } from "next/server";
 import { match as matchLocale } from "@formatjs/intl-localematcher";
 import Negotiator from "negotiator";
@@ -6,6 +5,9 @@ import { getToken } from "next-auth/jwt";
 import { withAuth } from "next-auth/middleware";
 
 import { i18n } from "~/config/i18n-config";
+
+// Проверка режима разработки
+const isDevelopment = process.env.NODE_ENV === "development";
 
 const noNeedProcessRoute = [".*\\.png", ".*\\.jpg", ".*\\.opengraph-image.png"];
 
@@ -20,6 +22,11 @@ const publicRoute = [
   "/(\\w{2}/)?pricing(.*)",
   "^/\\w{2}$", // root with locale
 ];
+
+// В режиме разработки, добавляем admin путь в публичные маршруты
+if (isDevelopment) {
+  publicRoute.push("/admin(.*)");
+}
 
 function getLocale(request: NextRequest): string | undefined {
   // Negotiator expects plain object so we need to transform headers
@@ -59,7 +66,7 @@ export default async function middleware(request: NextRequest) {
   if (isNoNeedProcess(request)) {
     return null;
   }
-  const isWebhooksRoute = /^\/api\/webhooks\//.test(request.nextUrl.pathname);
+  const isWebhooksRoute = request.nextUrl.pathname.startsWith('/api/webhooks/');
   if (isWebhooksRoute) {
     return NextResponse.next();
   }
@@ -83,7 +90,8 @@ export default async function middleware(request: NextRequest) {
   if (isPublicPage(request)) {
     return null;
   }
-  // @ts-ignore
+  
+  // @ts-expect-error: withAuth has compatibility issues with the latest types
   return authMiddleware(request, null);
 }
 
@@ -95,17 +103,23 @@ const authMiddleware = withAuth(
     const isAuthPage = /^\/[a-zA-Z]{2,}\/(login|register)/.test(
       req.nextUrl.pathname,
     );
-    const isAuthRoute = /^\/api\/trpc\//.test(req.nextUrl.pathname);
+    const isAuthRoute = req.nextUrl.pathname.startsWith('/api/trpc/');
     const locale = getLocale(req);
 
     if (isAuthRoute && isAuth) {
       return NextResponse.next();
     }
+    
+    // Пропускаем проверку для admin в режиме разработки
     if (req.nextUrl.pathname.startsWith("/admin/dashboard")) {
+      if (isDevelopment) {
+        return NextResponse.next();
+      }
       if (!isAuth || !isAdmin)
         return NextResponse.redirect(new URL(`/admin/login`, req.url));
       return NextResponse.next();
     }
+    
     if (isAuthPage) {
       if (isAuth) {
         return NextResponse.redirect(new URL(`/${locale}/dashboard`, req.url));

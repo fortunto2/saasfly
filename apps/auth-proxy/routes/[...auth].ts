@@ -1,5 +1,5 @@
 import { Auth } from "@auth/core";
-import GitHub from "@auth/core/providers/github";
+import Auth0 from "@auth/core/providers/auth0";
 import { eventHandler, toWebRequest } from "h3";
 
 export default eventHandler(async (event) =>
@@ -8,9 +8,10 @@ export default eventHandler(async (event) =>
     trustHost: !!process.env.VERCEL,
     redirectProxyUrl: process.env.AUTH_REDIRECT_PROXY_URL,
     providers: [
-      GitHub({
-        clientId: process.env.GITHUB_CLIENT_ID,
-        clientSecret: process.env.GITHUB_CLIENT_SECRET,
+      Auth0({
+        clientId: process.env.AUTH0_CLIENT_ID,
+        clientSecret: process.env.AUTH0_CLIENT_SECRET,
+        issuer: process.env.AUTH0_ISSUER,
       }),
     ],
   }),

@@ -15,14 +15,25 @@ export function DocsSidebarNav({ items }: DocsSidebarNavProps) {
   const pathname = usePathname();
 
   return items.length ? (
-    <div className="w-full">
+    <div className="w-full" data-oid="ygcze40">
       {items.map((item) => (
-        <div key={item.href + item.title} className={cn("pb-8")}>
-          <h4 className="mb-1 rounded-md px-2 py-1 text-sm font-medium">
+        <div
+          key={item.href + item.title}
+          className={cn("pb-8")}
+          data-oid="8u2e0vi"
+        >
+          <h4
+            className="mb-1 rounded-md px-2 py-1 text-sm font-medium"
+            data-oid="ja:cbma"
+          >
             {item.title}
           </h4>
           {item.items ? (
-            <DocsSidebarNavItems items={item.items} pathname={pathname} />
+            <DocsSidebarNavItems
+              items={item.items}
+              pathname={pathname}
+              data-oid="kklfbld"
+            />
           ) : null}
         </div>
       ))}
@@ -40,7 +51,10 @@ export function DocsSidebarNavItems({
   pathname,
 }: DocsSidebarNavItemsProps) {
   return items?.length ? (
-    <div className="grid grid-flow-row auto-rows-max text-sm">
+    <div
+      className="grid grid-flow-row auto-rows-max text-sm"
+      data-oid="w6wzkqh"
+    >
       {items.map((item) =>
         !item.disabled && item.href ? (
           <Link
@@ -54,6 +68,7 @@ export function DocsSidebarNavItems({
             )}
             target={item.external ? "_blank" : ""}
             rel={item.external ? "noreferrer" : ""}
+            data-oid="51hfc:u"
           >
             {item.title}
           </Link>
@@ -61,6 +76,7 @@ export function DocsSidebarNavItems({
           <span
             key={item.title + item.href}
             className="flex w-full cursor-not-allowed items-center rounded-md p-2 opacity-60"
+            data-oid="y5bw6q-"
           >
             {item.title}
           </span>

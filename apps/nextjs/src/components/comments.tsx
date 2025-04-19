@@ -63,36 +63,69 @@ const ReviewCard = ({
         // dark styles
         "dark:border-gray-50/[.1] dark:bg-gray-50/[.10] dark:hover:bg-gray-50/[.15]",
       )}
+      data-oid="hqt7s-k"
     >
-      <div className="flex flex-row items-center gap-2">
-        <img className="rounded-full" width="32" height="32" alt="" src={img} />
-        <div className="flex flex-col">
-          <figcaption className="text-sm font-medium dark:text-white">
+      <div className="flex flex-row items-center gap-2" data-oid="rbcbn-:">
+        <img
+          className="rounded-full"
+          width="32"
+          height="32"
+          alt=""
+          src={img}
+          data-oid="-ejsvyg"
+        />
+
+        <div className="flex flex-col" data-oid="prk5wq7">
+          <figcaption
+            className="text-sm font-medium dark:text-white"
+            data-oid="inn4pzj"
+          >
             {name}
           </figcaption>
-          <p className="text-xs font-medium dark:text-white/40">{username}</p>
+          <p
+            className="text-xs font-medium dark:text-white/40"
+            data-oid="51c_4pu"
+          >
+            {username}
+          </p>
         </div>
       </div>
-      <blockquote className="mt-2 text-sm">{body}</blockquote>
+      <blockquote className="mt-2 text-sm" data-oid="ii:igql">
+        {body}
+      </blockquote>
     </figure>
   );
 };
 
 const Comments = () => {
   return (
-    <div className="relative flex h-full w-full flex-col items-center justify-center overflow-hidden rounded-lg bg-background py-4 sm:py-20 md:py-20 xl:py-20">
-      <Marquee pauseOnHover className="[--duration:20s]">
+    <div
+      className="relative flex h-full w-full flex-col items-center justify-center overflow-hidden rounded-lg bg-background py-4 sm:py-20 md:py-20 xl:py-20"
+      data-oid="6slqw34"
+    >
+      <Marquee pauseOnHover className="[--duration:20s]" data-oid="_qprel8">
         {firstRow.map((review) => (
-          <ReviewCard key={review.username} {...review} />
+          <ReviewCard key={review.username} {...review} data-oid="kq73t-g" />
         ))}
       </Marquee>
-      <Marquee reverse pauseOnHover className="[--duration:20s]">
+      <Marquee
+        reverse
+        pauseOnHover
+        className="[--duration:20s]"
+        data-oid=".baeryp"
+      >
         {secondRow.map((review) => (
-          <ReviewCard key={review.username} {...review} />
+          <ReviewCard key={review.username} {...review} data-oid="i1q.l.x" />
         ))}
       </Marquee>
-      <div className="pointer-events-none absolute inset-y-0 left-0 w-1/3 bg-gradient-to-r from-white dark:from-background"></div>
-      <div className="pointer-events-none absolute inset-y-0 right-0 w-1/3 bg-gradient-to-l from-white dark:from-background"></div>
+      <div
+        className="pointer-events-none absolute inset-y-0 left-0 w-1/3 bg-gradient-to-r from-white dark:from-background"
+        data-oid="-eul--p"
+      ></div>
+      <div
+        className="pointer-events-none absolute inset-y-0 right-0 w-1/3 bg-gradient-to-l from-white dark:from-background"
+        data-oid="s8_w.3w"
+      ></div>
     </div>
   );
 };

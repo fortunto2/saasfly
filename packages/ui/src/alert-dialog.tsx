@@ -14,12 +14,16 @@ const AlertDialogPortal = ({
   children,
   ...props
 }: AlertDialogPrimitive.AlertDialogPortalProps) => (
-  <AlertDialogPrimitive.Portal {...props}>
-    <div className="fixed inset-0 z-50 flex items-end justify-center sm:items-center">
+  <AlertDialogPrimitive.Portal {...props} data-oid="079htcp">
+    <div
+      className="fixed inset-0 z-50 flex items-end justify-center sm:items-center"
+      data-oid="2_notaj"
+    >
       {children}
     </div>
   </AlertDialogPrimitive.Portal>
 );
+
 AlertDialogPortal.displayName = AlertDialogPrimitive.Portal.displayName;
 
 const AlertDialogOverlay = React.forwardRef<
@@ -33,6 +37,7 @@ const AlertDialogOverlay = React.forwardRef<
     )}
     {...props}
     ref={ref}
+    data-oid="5d2bbde"
   />
 ));
 AlertDialogOverlay.displayName = AlertDialogPrimitive.Overlay.displayName;
@@ -41,8 +46,8 @@ const AlertDialogContent = React.forwardRef<
   React.ElementRef<typeof AlertDialogPrimitive.Content>,
   React.ComponentPropsWithoutRef<typeof AlertDialogPrimitive.Content>
 >(({ className, ...props }, ref) => (
-  <AlertDialogPortal>
-    <AlertDialogOverlay />
+  <AlertDialogPortal data-oid=":3q6uly">
+    <AlertDialogOverlay data-oid="xu5mf3-" />
     <AlertDialogPrimitive.Content
       ref={ref}
       className={cn(
@@ -50,6 +55,7 @@ const AlertDialogContent = React.forwardRef<
         className,
       )}
       {...props}
+      data-oid="4s10dq3"
     />
   </AlertDialogPortal>
 ));
@@ -65,8 +71,10 @@ const AlertDialogHeader = ({
       className,
     )}
     {...props}
+    data-oid="0183tn7"
   />
 );
+
 AlertDialogHeader.displayName = "AlertDialogHeader";
 
 const AlertDialogFooter = ({
@@ -79,8 +87,10 @@ const AlertDialogFooter = ({
       className,
     )}
     {...props}
+    data-oid="thfubsk"
   />
 );
+
 AlertDialogFooter.displayName = "AlertDialogFooter";
 
 const AlertDialogTitle = React.forwardRef<
@@ -91,6 +101,7 @@ const AlertDialogTitle = React.forwardRef<
     ref={ref}
     className={cn("text-lg font-semibold", className)}
     {...props}
+    data-oid="72467j0"
   />
 ));
 AlertDialogTitle.displayName = AlertDialogPrimitive.Title.displayName;
@@ -103,6 +114,7 @@ const AlertDialogDescription = React.forwardRef<
     ref={ref}
     className={cn("text-sm text-muted-foreground", className)}
     {...props}
+    data-oid="nudkf6o"
   />
 ));
 AlertDialogDescription.displayName =
@@ -116,6 +128,7 @@ const AlertDialogAction = React.forwardRef<
     ref={ref}
     className={cn(buttonVariants(), className)}
     {...props}
+    data-oid="4ftdlrh"
   />
 ));
 AlertDialogAction.displayName = AlertDialogPrimitive.Action.displayName;
@@ -132,6 +145,7 @@ const AlertDialogCancel = React.forwardRef<
       className,
     )}
     {...props}
+    data-oid="ov_9ub7"
   />
 ));
 AlertDialogCancel.displayName = AlertDialogPrimitive.Cancel.displayName;
