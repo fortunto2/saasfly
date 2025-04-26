@@ -15,16 +15,16 @@ export function DocsSidebarNav({ items }: DocsSidebarNavProps) {
   const pathname = usePathname();
 
   return items.length ? (
-    <div className="w-full" data-oid="ygcze40">
+    <div className="w-full" data-oid="io-4mv0">
       {items.map((item) => (
         <div
           key={item.href + item.title}
           className={cn("pb-8")}
-          data-oid="8u2e0vi"
+          data-oid="kjmpaa."
         >
           <h4
             className="mb-1 rounded-md px-2 py-1 text-sm font-medium"
-            data-oid="ja:cbma"
+            data-oid="11.xitj"
           >
             {item.title}
           </h4>
@@ -32,7 +32,7 @@ export function DocsSidebarNav({ items }: DocsSidebarNavProps) {
             <DocsSidebarNavItems
               items={item.items}
               pathname={pathname}
-              data-oid="kklfbld"
+              data-oid="9u5xk2c"
             />
           ) : null}
         </div>
@@ -53,7 +53,7 @@ export function DocsSidebarNavItems({
   return items?.length ? (
     <div
       className="grid grid-flow-row auto-rows-max text-sm"
-      data-oid="w6wzkqh"
+      data-oid="oxcae93"
     >
       {items.map((item) =>
         !item.disabled && item.href ? (
@@ -68,7 +68,7 @@ export function DocsSidebarNavItems({
             )}
             target={item.external ? "_blank" : ""}
             rel={item.external ? "noreferrer" : ""}
-            data-oid="51hfc:u"
+            data-oid="d293jft"
           >
             {item.title}
           </Link>
@@ -76,7 +76,7 @@ export function DocsSidebarNavItems({
           <span
             key={item.title + item.href}
             className="flex w-full cursor-not-allowed items-center rounded-md p-2 opacity-60"
-            data-oid="y5bw6q-"
+            data-oid="5ovj-ku"
           >
             {item.title}
           </span>

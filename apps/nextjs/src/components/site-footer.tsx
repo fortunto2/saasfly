@@ -22,31 +22,31 @@ export function SiteFooter({
   dict: Record<string, string | Record<string, string>>;
 }) {
   return (
-    <footer className={cn(className)} data-oid="smyftc:">
+    <footer className={cn(className)} data-oid="auknbrj">
       <div
         className="container flex flex-col items-center justify-between gap-4 py-10 md:h-24 md:flex-row md:py-0"
-        data-oid="oriceug"
+        data-oid="x3vrmx5"
       >
         <div
           className="flex flex-col items-center gap-4 px-8 md:flex-row md:gap-2 md:px-0"
-          data-oid="7:0wtrr"
+          data-oid="hrzaw4a"
         >
           <Image
             src="/images/avatars/saasfly-logo.svg"
             width="36"
             height="36"
             alt=""
-            data-oid="dtb_wgp"
+            data-oid="3.-1v.u"
           />
 
           <p
             className="text-center text-sm leading-loose md:text-left"
-            data-oid=".qv7qow"
+            data-oid="v7kmp8a"
           >
             {getCopyrightText(dict)}
           </p>
         </div>
-        <ModeToggle data-oid="qt2rxsu" />
+        <ModeToggle data-oid="ul2-5c7" />
       </div>
     </footer>
   );

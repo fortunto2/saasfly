@@ -6,7 +6,7 @@ const words = `Your complete All-in-One solution for building SaaS services. Fro
             everything you need covered!`;
 
 const TextGenerateEffects = () => {
-  return <TextGenerateEffect words={words} data-oid="ggpv63p" />;
+  return <TextGenerateEffect words={words} data-oid=".u_nbzu" />;
 };
 
 export default TextGenerateEffects;

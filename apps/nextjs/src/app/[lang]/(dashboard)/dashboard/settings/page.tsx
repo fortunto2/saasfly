@@ -17,17 +17,17 @@ export default async function SettingsPage() {
     redirect(authOptions?.pages?.signIn ?? "/login");
   }
   return (
-    <DashboardShell data-oid="19b40jo">
+    <DashboardShell data-oid="u_hhjmx">
       <DashboardHeader
         heading="Settings"
         text="Manage account and website settings."
-        data-oid="sgncfzb"
+        data-oid="z7eqbgo"
       />
 
-      <div className="grid gap-10" data-oid="mebehaw">
+      <div className="grid gap-10" data-oid="_cx8ayw">
         <UserNameForm
           user={{ id: user.id, name: user.name ?? "" }}
-          data-oid="dcelda9"
+          data-oid="vk-b.1e"
         />
       </div>
     </DashboardShell>

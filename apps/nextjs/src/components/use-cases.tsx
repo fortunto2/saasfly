@@ -7,61 +7,61 @@ export function UseCases({
   dict: Record<string, string> | undefined;
 }) {
   return (
-    <div className="flex flex-col items-center w-full py-12" data-oid="zwt3r2p">
-      <h2 className="text-3xl font-bold mb-12" data-oid="lyz634o">
+    <div className="flex flex-col items-center w-full py-12" data-oid="_d8440a">
+      <h2 className="text-3xl font-bold mb-12" data-oid=".0va434">
         {dict?.title}
       </h2>
 
       <div
         className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 w-full"
-        data-oid="wa46dio"
+        data-oid="6bpg9:a"
       >
         <UseCase
           icon={
             <Icons.User
               className="h-6 w-6 text-purple-500"
-              data-oid="cjpo8dw"
+              data-oid="zdjt1z."
             />
           }
           title={dict?.creators_title ?? ""}
           description={dict?.creators_desc ?? ""}
-          data-oid=":yqr6_f"
+          data-oid="ktbqj84"
         />
 
         <UseCase
           icon={
             <Icons.Billing
               className="h-6 w-6 text-purple-500"
-              data-oid="qie19-i"
+              data-oid="-x5w:bu"
             />
           }
           title={dict?.business_title ?? ""}
           description={dict?.business_desc ?? ""}
-          data-oid="p.1ar8v"
+          data-oid="6ydq9ru"
         />
 
         <UseCase
           icon={
             <Icons.Heart
               className="h-6 w-6 text-purple-500"
-              data-oid="yx34zk_"
+              data-oid="fyuu73x"
             />
           }
           title={dict?.musicians_title ?? ""}
           description={dict?.musicians_desc ?? ""}
-          data-oid="5fwzswh"
+          data-oid="-gt55cu"
         />
 
         <UseCase
           icon={
             <Icons.Organization
               className="h-6 w-6 text-purple-500"
-              data-oid="n.buerm"
+              data-oid="2u-dz7k"
             />
           }
           title={dict?.agencies_title ?? ""}
           description={dict?.agencies_desc ?? ""}
-          data-oid="2fsipt3"
+          data-oid="d:zn4s7"
         />
       </div>
     </div>
@@ -78,19 +78,19 @@ function UseCase({ icon, title, description }: UseCaseProps) {
   return (
     <Card
       className="p-6 rounded-3xl border dark:border-neutral-800 dark:bg-neutral-900/40 transition-all hover:shadow-lg hover:transform hover:scale-105 flex flex-col items-center text-center"
-      data-oid="c1:pe1j"
+      data-oid="i-6w9h-"
     >
       <div
         className="mb-4 w-12 h-12 rounded-full bg-purple-100 flex items-center justify-center"
-        data-oid="jdq8fki"
+        data-oid="9g.u2.:"
       >
         {icon}
       </div>
 
-      <h3 className="text-xl font-semibold mb-3" data-oid="k:v-10m">
+      <h3 className="text-xl font-semibold mb-3" data-oid="four0..">
         {title}
       </h3>
-      <p className="text-neutral-500 dark:text-neutral-400" data-oid="ezzpc_d">
+      <p className="text-neutral-500 dark:text-neutral-400" data-oid="sal8_e9">
         {description}
       </p>
     </Card>

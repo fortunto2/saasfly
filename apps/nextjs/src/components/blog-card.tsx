@@ -2,55 +2,55 @@ import { FollowerPointerCard } from "@saasfly/ui/following-pointer";
 
 export function XBlogArticle() {
   return (
-    <div className="w-80" data-oid="uvgpm7x">
+    <div className="w-80" data-oid="hlj.pru">
       <FollowerPointerCard
         title={
           <TitleComponent
             title={blogContent.author}
             avatar={blogContent.authorAvatar}
-            data-oid="kbzi6:z"
+            data-oid="dd2x.5z"
           />
         }
-        data-oid="3a25gyz"
+        data-oid="63y0emx"
       >
         <div
           className="group relative h-full overflow-hidden rounded-2xl border border-zinc-100 bg-white transition duration-200 hover:shadow-xl"
-          data-oid="z23gir2"
+          data-oid=".de4yuz"
         >
           <div
             className="aspect-w-16 aspect-h-10 xl:aspect-w-16 xl:aspect-h-10 relative w-full overflow-hidden rounded-tl-lg rounded-tr-lg bg-gray-100"
-            data-oid="1xm29rr"
+            data-oid="1w:ty8s"
           >
             <img
               src={blogContent.image}
               alt="thumbnail"
               className={`transform object-cover transition duration-200 group-hover:scale-95 group-hover:rounded-2xl `}
-              data-oid=".s0-e_i"
+              data-oid="90fynac"
             />
           </div>
-          <div className=" p-4" data-oid="80gr7ev">
+          <div className=" p-4" data-oid="271tti8">
             <h2
               className="my-4 text-lg font-bold text-zinc-700"
-              data-oid="qgnvofl"
+              data-oid="pk7omh7"
             >
               {blogContent.title}
             </h2>
             <h2
               className="my-4 text-sm font-normal text-zinc-500"
-              data-oid=":91-000"
+              data-oid="a7pwjpr"
             >
               {blogContent.description}
             </h2>
             <div
               className="mt-10 flex flex-row items-center justify-between"
-              data-oid="9669peh"
+              data-oid="nh_zwny"
             >
-              <span className="text-sm text-gray-500" data-oid="klunn_9">
+              <span className="text-sm text-gray-500" data-oid="z08vq6j">
                 {blogContent.date}
               </span>
               <div
                 className="relative z-10 block rounded-xl bg-black px-6 py-2 text-xs font-bold text-white"
-                data-oid="4r2-fne"
+                data-oid="7j.2r16"
               >
                 Read More
               </div>
@@ -82,16 +82,16 @@ const TitleComponent = ({
   title: string;
   avatar: string;
 }) => (
-  <div className="flex items-center space-x-2" data-oid="88d71-u">
+  <div className="flex items-center space-x-2" data-oid="f3zv.2b">
     <img
       src={avatar}
       height="20"
       width="20"
       alt="thumbnail"
       className="rounded-full border-2 border-white"
-      data-oid="02gx6f3"
+      data-oid="rlm-chk"
     />
 
-    <p data-oid="-qarogk">{title}</p>
+    <p data-oid="5.uy.ma">{title}</p>
   </div>
 );

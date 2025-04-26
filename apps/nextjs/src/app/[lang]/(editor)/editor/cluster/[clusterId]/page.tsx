@@ -45,7 +45,7 @@ export default async function EditorClusterPage({
         location: cluster.location,
       }}
       params={{ lang: params.lang }}
-      data-oid="ow7z-:7"
+      data-oid="lld48en"
     />
   );
 }

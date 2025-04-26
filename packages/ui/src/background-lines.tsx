@@ -17,9 +17,9 @@ export const BackgroundLines = ({
   return (
     <div
       className={cn("h-[20rem] w-full bg-background md:h-screen", className)}
-      data-oid="iuc2ac7"
+      data-oid=":zu_1.:"
     >
-      <SVG svgOptions={svgOptions} data-oid="u73y90o" />
+      <SVG svgOptions={svgOptions} data-oid="dx1kk_-" />
       {children}
     </div>
   );
@@ -92,7 +92,7 @@ const SVG = ({ svgOptions }: { svgOptions?: { duration?: number } }) => {
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
       className="absolute inset-0 h-full w-full"
-      data-oid="cd6l40g"
+      data-oid="6_74h4h"
     >
       {paths.map((path, idx) => (
         <motion.path
@@ -112,7 +112,7 @@ const SVG = ({ svgOptions }: { svgOptions?: { duration?: number } }) => {
             repeatDelay: Math.floor(Math.random() * 10 + 2),
           }}
           key={`path-first-${idx}`}
-          data-oid="wxkl:-q"
+          data-oid="klc3oi."
         />
       ))}
 
@@ -135,7 +135,7 @@ const SVG = ({ svgOptions }: { svgOptions?: { duration?: number } }) => {
             repeatDelay: Math.floor(Math.random() * 10 + 2),
           }}
           key={`path-second-${idx}`}
-          data-oid="7486tuo"
+          data-oid="_.0c95p"
         />
       ))}
     </motion.svg>

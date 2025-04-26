@@ -15,11 +15,11 @@ export function Sparkless() {
   return (
     <div
       className="flex flex-col items-center justify-center overflow-hidden rounded-md"
-      data-oid="ywuws4b"
+      data-oid="c2xkkpv"
     >
       <h1
         className="relative z-20 text-center font-bold text-black dark:text-white"
-        data-oid="e-evili"
+        data-oid="cpti41j"
       >
         Saasfly: A new SaaS player?
       </h1>

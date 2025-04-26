@@ -10,13 +10,13 @@ export function DashboardHeader({
   children,
 }: DashboardHeaderProps) {
   return (
-    <div className="flex items-center justify-between px-2" data-oid="8qidvs3">
-      <div className="grid gap-1" data-oid="gj42l43">
-        <h1 className="font-heading text-3xl md:text-4xl" data-oid="rk069hx">
+    <div className="flex items-center justify-between px-2" data-oid="cmv4len">
+      <div className="grid gap-1" data-oid="l5_nb:9">
+        <h1 className="font-heading text-3xl md:text-4xl" data-oid="lpcrz28">
           {heading}
         </h1>
         {text && (
-          <p className="text-lg text-muted-foreground" data-oid="jzygja5">
+          <p className="text-lg text-muted-foreground" data-oid="ogxiiou">
             {text}
           </p>
         )}

@@ -19,8 +19,8 @@ export default async function MarketingLayout({
   const dict = await getDictionary(lang);
   const user = await getCurrentUser();
   return (
-    <div className="flex min-h-screen flex-col" data-oid="ml8jtwk">
-      <Suspense fallback="..." data-oid="ljb4el6">
+    <div className="flex min-h-screen flex-col" data-oid=":eq7d5f">
+      <Suspense fallback="..." data-oid="9mk6kbk">
         <NavBar
           items={
             (await getMarketingConfig({ params: { lang: `${lang}` } })).mainNav
@@ -30,18 +30,18 @@ export default async function MarketingLayout({
           user={user}
           marketing={dict.marketing}
           dropdown={dict.dropdown}
-          data-oid="tr0p2w:"
+          data-oid="vaux7_e"
         />
       </Suspense>
-      <ModalProvider dict={dict.login} data-oid="r8q2hva" />
-      <main className="flex-1" data-oid="5vvzwtx">
+      <ModalProvider dict={dict.login} data-oid=":3vmzxr" />
+      <main className="flex-1" data-oid="pi:2amk">
         {children}
       </main>
       <SiteFooter
         className="border-t border-border"
         params={{ lang: `${lang}` }}
         dict={dict.common}
-        data-oid="pv8jc69"
+        data-oid="aeqwdso"
       />
     </div>
   );

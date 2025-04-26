@@ -70,31 +70,31 @@ export default async function IndexPage({
 
   return (
     <>
-      <section className="container" data-oid="gh9zr-1">
+      <section className="container" data-oid="fngxo8a">
         <div
           className="grid grid-cols-1 gap-10 xl:grid-cols-2"
-          data-oid="anj_v7."
+          data-oid="x2fshm6"
         >
-          <div className="flex flex-col items-start h-full" data-oid="rbw2xue">
-            <BackgroundLines className="h-full" data-oid="u95:bnw">
+          <div className="flex flex-col items-start h-full" data-oid="meve4lx">
+            <BackgroundLines className="h-full" data-oid="d3dnxmr">
               <div
                 className="flex flex-col pt-4 md:pt-36 lg:pt-36 xl:pt-36"
-                data-oid="qv:m0iz"
+                data-oid="en198ho"
               >
-                <div className="mt-20" data-oid="5vrj9cl">
+                <div className="mt-20" data-oid="hp9sofl">
                   <div
                     className="mb-6 max-w-4xl text-left text-4xl font-semibold dark:text-zinc-100 md:text-5xl xl:text-5xl md:leading-[4rem] xl:leading-[4rem]"
-                    data-oid="i5itsxf"
+                    data-oid="zv__9.u"
                   >
                     {marketing.title || "Turn Vibes into Videos – Instantly."}
-                    <ColourfulText text="SuperDuperAI" data-oid="c0d-yod" />
+                    <ColourfulText text="SuperDuperAI" data-oid="v:f8csa" />
                   </div>
                 </div>
 
-                <div className="mt-4" data-oid="beq24.c">
+                <div className="mt-4" data-oid=".3n_abu">
                   <span
                     className="text-neutral-500 dark:text-neutral-400 sm:text-lg"
-                    data-oid="pxyny_t"
+                    data-oid="fi958qi"
                   >
                     {marketing.sub_title ||
                       "AI filmmaking for creators, businesses, musicians, and teams."}
@@ -103,31 +103,31 @@ export default async function IndexPage({
 
                 <div
                   className="mb-4 mt-6 flex w-full flex-col justify-center space-y-4 sm:flex-row sm:justify-start sm:space-x-8 sm:space-y-0 z-10"
-                  data-oid="zraf3rx"
+                  data-oid="hg8_eeh"
                 >
-                  <Link href="/signup" data-oid="_p27x.9">
+                  <Link href="/signup" data-oid="6p_yqm7">
                     <Button
                       className="bg-blue-600 hover:bg-blue-500 text-white rounded-full text-lg px-6 h-12 font-medium"
-                      data-oid="dgqxlqj"
+                      data-oid="m6n_fif"
                     >
                       {marketing.get_started}
                       <Icons.ArrowRight
                         className="h-5 w-5"
-                        data-oid="5c_oxch"
+                        data-oid=":nq-3ew"
                       />
                     </Button>
                   </Link>
 
-                  <Link href="#demo" data-oid="ric0y..">
+                  <Link href="#demo" data-oid="g7armqe">
                     <Button
                       variant="outline"
                       className="rounded-full text-lg px-6 h-12 font-medium"
-                      data-oid="4vd2t.f"
+                      data-oid="d3-e.7t"
                     >
                       {marketing.explore_product}
                       <Icons.ArrowRight
                         className="h-5 w-5"
-                        data-oid="9vx2689"
+                        data-oid="4.5880q"
                       />
                     </Button>
                   </Link>
@@ -135,37 +135,37 @@ export default async function IndexPage({
 
                 <div
                   className="flex xl:flex-row flex-col items-center justify-start mt-4 w-full"
-                  data-oid="isl3:4r"
+                  data-oid="i:4zsqt"
                 >
-                  <div className="flex" data-oid="zqznmw5">
-                    <AnimatedTooltip items={people} data-oid="ijlpljh" />
+                  <div className="flex" data-oid="7rkwth7">
+                    <AnimatedTooltip items={people} data-oid="inhga4a" />
                   </div>
                   <div
                     className="flex flex-col items-center justify-start ml-8"
-                    data-oid="sy6_tte"
+                    data-oid="3x7az_p"
                   >
-                    <div className="w-[340px]" data-oid="uxu8rng">
-                      <text className="font-semibold" data-oid="l.d:4jz">
+                    <div className="w-[340px]" data-oid="9gmeon-">
+                      <text className="font-semibold" data-oid="0lvj3ua">
                         9{" "}
                       </text>
                       <text
                         className="text-neutral-500 dark:text-neutral-400"
-                        data-oid="vn585gb"
+                        data-oid="es8a:0e"
                       >
                         {marketing.contributors.contributors_desc}
                       </text>
                     </div>
-                    <div className="w-[340px]" data-oid="pq1:ly-">
+                    <div className="w-[340px]" data-oid="vygm0tb">
                       <text
                         className="text-neutral-500 dark:text-neutral-400"
-                        data-oid="1knvkgm"
+                        data-oid="h.5vqcb"
                       >
                         {marketing.contributors.developers_first}
                       </text>
-                      <ColourfulText text="2000" data-oid="cpajilp" />
+                      <ColourfulText text="2000" data-oid="2vi_y49" />
                       <text
                         className="text-neutral-500 dark:text-neutral-400"
-                        data-oid="zdxzw--"
+                        data-oid="o5:3pqz"
                       >
                         {marketing.contributors.developers_second}
                       </text>
@@ -178,113 +178,113 @@ export default async function IndexPage({
 
           <div
             className="hidden h-full w-full xl:block bg-background"
-            data-oid="3dk..9x"
+            data-oid="dx_w79u"
           >
-            <div className="flex flex-col pt-44" data-oid="4mx6eut">
+            <div className="flex flex-col pt-44" data-oid="1.vcnsf">
               <RightsideMarketing
                 dict={marketing.right_side}
-                data-oid="uaw7han"
+                data-oid="jw..4l8"
               />
             </div>
           </div>
         </div>
       </section>
 
-      <section id="how-it-works" className="container pt-24" data-oid="4qbd5t2">
-        <HowItWorks dict={marketing.how_it_works} data-oid="ln7_5jn" />
+      <section id="how-it-works" className="container pt-24" data-oid="mcjgb1k">
+        <HowItWorks dict={marketing.how_it_works} data-oid="buziddc" />
       </section>
 
-      <section id="demo" className="container pt-16" data-oid="wcs8_co">
-        <VideoScroll dict={marketing.video} data-oid="l.klky4" />
+      <section id="demo" className="container pt-16" data-oid="myxqfs-">
+        <VideoScroll dict={marketing.video} data-oid="dn_ymfi" />
       </section>
 
-      <section id="features" className="container mt-24" data-oid="q-g-_.1">
-        <FeatureHighlights data-oid="5cfswn2" />
+      <section id="features" className="container mt-24" data-oid="a_62rtv">
+        <FeatureHighlights data-oid="5ic2tsm" />
       </section>
 
-      <section id="use-cases" className="container pt-24" data-oid="c-oqgxp">
-        <UseCases dict={marketing.use_cases} data-oid="kp.e22g" />
+      <section id="use-cases" className="container pt-24" data-oid="975tnr6">
+        <UseCases dict={marketing.use_cases} data-oid="xol0pbw" />
       </section>
 
-      <section id="testimonials" className="container pt-24" data-oid="3mn2psp">
+      <section id="testimonials" className="container pt-24" data-oid="-w7_1jo">
         <div
           className="flex h-full w-full flex-col items-center"
-          data-oid="2rtipk5"
+          data-oid="7aym3pf"
         >
-          <div data-oid="__55e-2">
+          <div data-oid="6qlj02d">
             <h1
               className="mb-6 text-center text-3xl font-bold dark:text-zinc-100 md:text-5xl"
-              data-oid="9qe0vc."
+              data-oid="_hqquyp"
             >
               {marketing.people_comment.title}
             </h1>
           </div>
           <div
             className="mb-6 text-lg text-neutral-500 dark:text-neutral-400 text-center max-w-3xl"
-            data-oid="fywoa23"
+            data-oid="tmy6.se"
           >
             {marketing.people_comment.desc}
           </div>
 
-          <Testimonials dict={marketing.testimonials} data-oid="fzgvsoj" />
+          <Testimonials dict={marketing.testimonials} data-oid="4ojr_.c" />
         </div>
       </section>
 
-      <section id="sponsors" className="container pt-16" data-oid="gio9dxk">
+      <section id="sponsors" className="container pt-16" data-oid="d.dn2kg">
         <div
           className="flex flex-col justify-center items-center pt-10"
-          data-oid="2v3:un7"
+          data-oid="58n.pqq"
         >
           <div
             className="text-lg text-neutral-500 dark:text-neutral-400"
-            data-oid="tdie.h-"
+            data-oid="nrokzi3"
           >
             {marketing.sponsor.title}
           </div>
-          <div className="mt-4 flex items-center gap-4" data-oid="5o6b7xx">
+          <div className="mt-4 flex items-center gap-4" data-oid="bymxr.4">
             <Link
               href="https://www.twillot.com/"
               target="_blank"
-              data-oid="r5nmmgp"
+              data-oid="itdn0-c"
             >
               <Image
                 src="https://www.twillot.com/logo-128.png"
                 width="48"
                 height="48"
                 alt="twillot"
-                data-oid="cy304sg"
+                data-oid="hkmek9x"
               />
             </Link>
             <Link
               href="https://www.setupyourpay.com/"
               target="_blank"
-              data-oid="jsrqas6"
+              data-oid="lbnmo9o"
             >
               <Image
                 src="https://www.setupyourpay.com/logo.png"
                 width="48"
                 height="48"
                 alt="setupyourpay"
-                data-oid="tnkkoyg"
+                data-oid="pvg0klk"
               />
             </Link>
             <Link
               href="https://opencollective.com/superduperai"
               target="_blank"
-              data-oid="n5lwpdh"
+              data-oid="jz-vim9"
             >
               <div
                 className="flex items-center gap-2 px-4 py-2 rounded-xl border-2 border-dashed border-neutral-300 dark:border-neutral-700 hover:bg-accent dark:hover:bg-neutral-800/30"
-                data-oid="2yv10wj"
+                data-oid="zd26zms"
               >
                 <Icons.Heart
                   className="w-5 h-5 fill-pink-600 text-pink-600 dark:fill-pink-700 dark:text-pink-700"
-                  data-oid="pa_hvlx"
+                  data-oid="e4h1je0"
                 />
 
                 <span
                   className="text-sm font-medium text-neutral-500 dark:text-neutral-200"
-                  data-oid="sj74nir"
+                  data-oid="geawr7y"
                 >
                   {marketing.sponsor.donate || ""}
                 </span>
@@ -294,8 +294,8 @@ export default async function IndexPage({
         </div>
       </section>
 
-      <section id="cta" className="container py-24" data-oid="06gt8ar">
-        <FinalCta dict={marketing} data-oid=".va.pfz" />
+      <section id="cta" className="container py-24" data-oid="e7eqa:d">
+        <FinalCta dict={marketing} data-oid="j7kfwpz" />
       </section>
     </>
   );

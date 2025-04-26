@@ -22,29 +22,29 @@ export function LocaleChange({ url }: { url: string }) {
   }
 
   return (
-    <DropdownMenu data-oid="nzgjgdr">
-      <DropdownMenuTrigger asChild data-oid="h6o208v">
+    <DropdownMenu data-oid="7idh_vi">
+      <DropdownMenuTrigger asChild data-oid="nb975.s">
         <Button
           variant="ghost"
           size="sm"
           className="h-8 w-8 px-0"
-          data-oid="suniflu"
+          data-oid="xb172qp"
         >
-          <Icons.Languages data-oid="6nzk.a4" />
-          <span className="sr-only" data-oid="6w2u:x9"></span>
+          <Icons.Languages data-oid="8s2836r" />
+          <span className="sr-only" data-oid="dabtyo1"></span>
         </Button>
       </DropdownMenuTrigger>
-      <DropdownMenuContent align="end" data-oid="fy90e6m">
-        <div data-oid="b75wq:a">
+      <DropdownMenuContent align="end" data-oid="6hu0k8q">
+        <div data-oid="alk4uj_">
           {i18n.locales.map((locale) => {
             return (
               // <Link href={redirectedPathName(locale)}>{locale}</Link>
               <DropdownMenuItem
                 key={locale}
                 onClick={() => onClick(locale)}
-                data-oid="78_1spe"
+                data-oid="tz6lwbr"
               >
-                <span data-oid="7r62t2.">{localeMap[locale]}</span>
+                <span data-oid="rhvw7_7">{localeMap[locale]}</span>
               </DropdownMenuItem>
             );
           })}

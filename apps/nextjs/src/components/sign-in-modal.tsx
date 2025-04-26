@@ -19,34 +19,34 @@ export const SignInModal = ({ dict }: { dict: Record<string, string> }) => {
     <Modal
       showModal={signInModal.isOpen}
       setShowModal={signInModal.onClose}
-      data-oid="_y1_emh"
+      data-oid="2jf0qsi"
     >
-      <div className="w-full" data-oid="gxd25g_">
+      <div className="w-full" data-oid="hvfh.sv">
         <div
           className="flex flex-col items-center justify-center space-y-3 border-b bg-background px-4 py-6 pt-8 text-center md:px-16"
-          data-oid="jpa66x4"
+          data-oid="j.vmt.n"
         >
-          <a href={siteConfig.url} data-oid="1443-wp">
+          <a href={siteConfig.url} data-oid=":s1ec4d">
             <Image
               src="/images/avatars/saasfly-logo.svg"
               className="mx-auto"
               width="64"
               height="64"
               alt=""
-              data-oid="pg3hdpi"
+              data-oid="hilmmf."
             />
           </a>
-          <h3 className="font-urban text-2xl font-bold" data-oid="ovtgp9k">
+          <h3 className="font-urban text-2xl font-bold" data-oid="8ung-bg">
             {dict.signup}
           </h3>
-          <p className="text-sm text-gray-500" data-oid="4imldor">
+          <p className="text-sm text-gray-500" data-oid="bai13.0">
             {dict.privacy}
           </p>
         </div>
 
         <div
           className="flex flex-col space-y-4 bg-secondary/50 px-4 py-8 md:px-16"
-          data-oid="9n8_0z_"
+          data-oid="d--w77n"
         >
           <Button
             variant="default"
@@ -63,15 +63,15 @@ export const SignInModal = ({ dict }: { dict: Record<string, string> }) => {
                   console.error("signUp failed:", error);
                 });
             }}
-            data-oid="0s.a78-"
+            data-oid="uiz07xl"
           >
             {signInClicked ? (
               <Icons.Spinner
                 className="mr-2 h-4 w-4 animate-spin"
-                data-oid="u2syzsq"
+                data-oid=":yx4d-4"
               />
             ) : (
-              <Icons.GitHub className="mr-2 h-4 w-4" data-oid="23rek6z" />
+              <Icons.GitHub className="mr-2 h-4 w-4" data-oid="h0ccj36" />
             )}{" "}
             {dict.signup_github}
           </Button>

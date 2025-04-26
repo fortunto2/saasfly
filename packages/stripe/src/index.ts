@@ -1,5 +1,4 @@
-// @ts-ignore
-// @ts-nocheck
+// @ts-expect-error Stripe types are not fully compatible with our usage, suppressing errors
 import { Stripe } from "stripe";
 
 import { env } from "./env.mjs";

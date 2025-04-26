@@ -65,7 +65,7 @@ SuperDuperAI вводит новую парадигму — **agent-director**. 
 - **Multi-Agent AI Workflow** – Модель, где каждый агент делает своё.
 - **Fast & Efficient** – Идея → видео за минуты.
 - **Cost Saving** – Кинематограф за копейки.
-- **Easy Editing & Integration** – Сториборд, drag-drop, экспорт в TikTok / YouTube.
+- **Easy Editing & Integration** – Сториборд, drag-drop, экспорт в TikTok / социальные сети.
 
 ---
 
@@ -77,8 +77,8 @@ SuperDuperAI вводит новую парадигму — **agent-director**. 
 > “My music video, no budget, huge vibe.”  
 > — **Jasmine K., Indie Musician**
 
-> “Twice the content. More subs.”  
-> — **Marco P., YouTuber**
+> "Twice the content. More subs."  
+> — **Marco P., Content Creator**
 
 Оформить в карточки с фото и скроллом.
 
@@ -87,20 +87,3 @@ SuperDuperAI вводит новую парадигму — **agent-director**. 
 ### 🎯 Final CTA
 - `Ready to create your next video sensation? Join SuperDuperAI.`
 - **Кнопка:** `Start Creating for Free`
-- Маленький текст: `No credit card required`
-- Футер: About | Pricing | FAQ | Discord | Socials
-
----
-
-### 📱 Responsive Design
-- Мобильная адаптация: стек элементов, читаемые кнопки.
-- Анимации при скролле, hover-эффекты.
-- Мини-камерное видео в Hero-блоке (опционально).
-
----
-
-**🎬 Любой может стать режиссёром с SuperDuperAI.**
-```
-
-Хочешь, превращу в полноценную страницу или фреймворк для Tilda / Framer / React.
-

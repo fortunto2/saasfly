@@ -25,20 +25,20 @@ export function DocsSearch({ className, ...props }: DocsSearchProps) {
       onSubmit={onSubmit}
       className={cn("relative w-full", className)}
       {...props}
-      data-oid="e5fvg-f"
+      data-oid="k_m..du"
     >
       <Input
         type="search"
         placeholder="Search documentation..."
         className="h-8 w-full sm:w-64 sm:pr-12"
-        data-oid="yotwh:w"
+        data-oid="dhng3:6"
       />
 
       <kbd
         className="pointer-events-none absolute right-1.5 top-1.5 hidden h-5 select-none items-center gap-1 rounded border bg-background px-1.5 font-mono text-[10px] font-medium text-muted-foreground opacity-100 sm:flex"
-        data-oid="c0geucf"
+        data-oid="7v:ty:m"
       >
-        <span className="text-xs" data-oid="td6-xqb">
+        <span className="text-xs" data-oid="lh0ae:4">
           ⌘
         </span>
         K

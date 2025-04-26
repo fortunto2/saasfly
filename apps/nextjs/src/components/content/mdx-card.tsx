@@ -22,15 +22,15 @@ export function MdxCard({
         className,
       )}
       {...props}
-      data-oid="4y8jqlc"
+      data-oid="o9tu1ql"
     >
       <div
         className="flex flex-col justify-between space-y-4"
-        data-oid="ew6gnd2"
+        data-oid="ona82y2"
       >
         <div
           className="space-y-2 [&>h3]:!mt-0 [&>h4]:!mt-0 [&>p]:text-muted-foreground"
-          data-oid="ws7xnbq"
+          data-oid="2mw9v:b"
         >
           {children}
         </div>
@@ -39,9 +39,9 @@ export function MdxCard({
         <Link
           href={disabled ? "#" : href}
           className="absolute inset-0"
-          data-oid="s9kuf:2"
+          data-oid="5841lqt"
         >
-          <span className="sr-only" data-oid="2f-36z.">
+          <span className="sr-only" data-oid="bhnf254">
             View
           </span>
         </Link>

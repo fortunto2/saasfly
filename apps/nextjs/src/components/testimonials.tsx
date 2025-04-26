@@ -30,45 +30,45 @@ export function Testimonials({
   ];
 
   return (
-    <div className="bg-gray-50 py-20" data-oid="re6_y9d">
+    <div className="bg-gray-50 py-20" data-oid="vp-_ejf">
       <div
         className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8"
-        data-oid="nj76eaz"
+        data-oid="jho3rix"
       >
-        <div className="text-center" data-oid="bb.ola3">
+        <div className="text-center" data-oid="f8ka4yn">
           <h2
             className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"
-            data-oid="3317p0q"
+            data-oid="uqlxqx0"
           >
             What Our Users Say
           </h2>
         </div>
         <div
           className="mt-16 grid gap-8 md:grid-cols-2 lg:grid-cols-3"
-          data-oid="wf79u56"
+          data-oid="b08c14w"
         >
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
               className="rounded-2xl bg-white p-6 shadow-lg"
-              data-oid="rg9l0yn"
+              data-oid="2r5zo8a"
             >
-              <div className="flex items-center space-x-3" data-oid="q_q4mao">
+              <div className="flex items-center space-x-3" data-oid="4tvtv_w">
                 <div
                   className="h-10 w-10 rounded-full bg-gradient-to-r from-pink-500 to-purple-500"
-                  data-oid="ve_io5h"
+                  data-oid="_ks3brx"
                 />
 
-                <div data-oid=":xo18ls">
-                  <p className="font-medium text-gray-900" data-oid="ia:h6zz">
+                <div data-oid="5oj_4_4">
+                  <p className="font-medium text-gray-900" data-oid="6g4j1k9">
                     {testimonial.author}
                   </p>
-                  <p className="text-sm text-gray-500" data-oid="tlzluw:">
+                  <p className="text-sm text-gray-500" data-oid="w8mw-l.">
                     {testimonial.role}
                   </p>
                 </div>
               </div>
-              <p className="mt-4 text-gray-600" data-oid="vci7afo">
+              <p className="mt-4 text-gray-600" data-oid="01v_mip">
                 {testimonial.quote}
               </p>
             </div>

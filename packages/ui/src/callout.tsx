@@ -24,14 +24,14 @@ export function Callout({
           type === "warning",
       })}
       {...props}
-      data-oid="c-psdp5"
+      data-oid="ld2pn_b"
     >
       {icon && (
-        <span className="mr-3 text-xl" data-oid="k7fyk86">
+        <span className="mr-3 text-xl" data-oid="mr2fq8p">
           {icon}
         </span>
       )}
-      <div data-oid="ksfs-c4">{children}</div>
+      <div data-oid="h4c_ws6">{children}</div>
     </div>
   );
 }

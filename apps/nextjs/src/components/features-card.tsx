@@ -57,38 +57,38 @@ const Notification = ({ name, description, icon, color, time }: Item) => {
         // dark styles
         "transform-gpu dark:bg-transparent dark:backdrop-blur-md dark:[border:1px_solid_rgba(255,255,255,.1)] dark:[box-shadow:0_-20px_80px_-20px_#ffffff1f_inset]",
       )}
-      data-oid="ag339m5"
+      data-oid="h606e8."
     >
-      <div className="flex flex-row items-center gap-3" data-oid="fu4vf6j">
+      <div className="flex flex-row items-center gap-3" data-oid="d7imt7h">
         <div
           className="flex h-10 w-10 items-center justify-center rounded-2xl"
           style={{
             backgroundColor: color,
           }}
-          data-oid="3ieora4"
+          data-oid="kw-0867"
         >
-          <span className="text-lg" data-oid="zya9:iy">
+          <span className="text-lg" data-oid="fn0v6mw">
             {icon}
           </span>
         </div>
-        <div className="flex flex-col overflow-hidden" data-oid="-sz37.m">
+        <div className="flex flex-col overflow-hidden" data-oid="168zir4">
           <figcaption
             className="flex flex-row items-center whitespace-pre text-lg font-medium dark:text-white "
-            data-oid="5hkh23b"
+            data-oid="vob2nsi"
           >
-            <span className="text-sm sm:text-lg" data-oid="-fr7dhf">
+            <span className="text-sm sm:text-lg" data-oid="lon8e75">
               {name}
             </span>
-            <span className="mx-1" data-oid=":h8--qp">
+            <span className="mx-1" data-oid="iv3-04f">
               ·
             </span>
-            <span className="text-xs text-gray-500" data-oid="_nx4ubz">
+            <span className="text-xs text-gray-500" data-oid="ov404n_">
               {time}
             </span>
           </figcaption>
           <p
             className="text-sm font-normal dark:text-white/60"
-            data-oid="qqv0v2i"
+            data-oid="2t9_-1k"
           >
             {description}
           </p>
@@ -102,11 +102,11 @@ export function FeaturesCard() {
   return (
     <div
       className="relative flex max-h-[435px] min-h-[435px] flex-col overflow-hidden rounded-2xl border bg-background p-6 shadow-lg dark:border-[#443c3c]"
-      data-oid=".n3q4t5"
+      data-oid="2z4.lx."
     >
-      <AnimatedList data-oid="09laizi">
+      <AnimatedList data-oid="ced5nel">
         {notifications.map((item, idx) => (
-          <Notification {...item} key={idx} data-oid="adprs6s" />
+          <Notification {...item} key={idx} data-oid="1cs3wr:" />
         ))}
       </AnimatedList>
     </div>

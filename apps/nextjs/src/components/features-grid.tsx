@@ -9,30 +9,30 @@ export function FeaturesGrid({
   return (
     <div
       className="flex gap-4 flex-col sm:flex-row md:flex-row xl:flex-row"
-      data-oid="3dq17cr"
+      data-oid="cnp78ih"
     >
       <Card
         className="p-3 w-full rounded-3xl dark:border-neutral-800 dark:bg-neutral-900/40"
-        data-oid="615tczw"
+        data-oid="2rofvcq"
       >
-        <div className="flex flex-col gap-2" data-oid="-exsh30">
-          <div className="flex items-center gap-2" data-oid="oopj09h">
+        <div className="flex flex-col gap-2" data-oid="bra1lzy">
+          <div className="flex items-center gap-2" data-oid="h332d3y">
             <div
               className="w-12 h-12 rounded-full bg-purple-100 flex items-center justify-center"
-              data-oid="n12n1jp"
+              data-oid="e2.y:-0"
             >
               <Icons.Blocks
                 className="w-6 h-6 text-purple-500"
-                data-oid="qsqa60p"
+                data-oid="knilqlw"
               />
             </div>
-            <h2 className="text-lg font-semibold" data-oid="v.tjg9e">
+            <h2 className="text-lg font-semibold" data-oid="52c0cal">
               {dict?.monorepo_title}
             </h2>
           </div>
           <p
             className="leading-relaxed text-neutral-500 dark:text-neutral-400 font-medium"
-            data-oid="5vasv_n"
+            data-oid=":xcmp:h"
           >
             {dict?.monorepo_desc}
           </p>
@@ -41,26 +41,26 @@ export function FeaturesGrid({
 
       <Card
         className="p-3 w-full rounded-3xl dark:border-neutral-800 dark:bg-neutral-900/40"
-        data-oid="xvstfoh"
+        data-oid="3om:tky"
       >
-        <div className="flex flex-col gap-2" data-oid="m6e.kvf">
-          <div className="flex items-center gap-2" data-oid="t5g4ksi">
+        <div className="flex flex-col gap-2" data-oid="rugcjpk">
+          <div className="flex items-center gap-2" data-oid=".s3drjz">
             <div
               className="w-12 h-12 rounded-full bg-purple-100 flex items-center justify-center"
-              data-oid="54dbq:t"
+              data-oid="q5ih7cv"
             >
               <Icons.Languages
                 className="w-6 h-6 text-purple-500"
-                data-oid="32j6sk7"
+                data-oid="zmicw2_"
               />
             </div>
-            <h2 className="text-lg font-semibold" data-oid="cdzwus7">
+            <h2 className="text-lg font-semibold" data-oid="45iku1z">
               {dict?.i18n_title}
             </h2>
           </div>
           <p
             className="leading-relaxed text-neutral-500 dark:text-neutral-400 font-medium"
-            data-oid="oodh7vh"
+            data-oid="m2xk.6g"
           >
             {dict?.i18n_desc}
           </p>
@@ -69,26 +69,26 @@ export function FeaturesGrid({
 
       <Card
         className="p-3 w-full rounded-3xl dark:border-neutral-800 dark:bg-neutral-900/40"
-        data-oid="s1l6d6t"
+        data-oid="fhp67:p"
       >
-        <div className="flex flex-col gap-2" data-oid="zmd43rb">
-          <div className="flex items-center gap-2" data-oid="tb0uqi:">
+        <div className="flex flex-col gap-2" data-oid="pyx4xat">
+          <div className="flex items-center gap-2" data-oid="kz0zzkm">
             <div
               className="w-12 h-12 rounded-full bg-purple-100 flex items-center justify-center"
-              data-oid="22uieby"
+              data-oid="a.:rsw7"
             >
               <Icons.Billing
                 className="w-6 h-6 text-purple-500"
-                data-oid="iq8mh2d"
+                data-oid="ox05sq8"
               />
             </div>
-            <h2 className="text-lg font-semibold" data-oid="4ihfs9s">
+            <h2 className="text-lg font-semibold" data-oid="::1jtqp">
               {dict?.payments_title}
             </h2>
           </div>
           <p
             className="leading-relaxed text-neutral-500 dark:text-neutral-400 font-medium"
-            data-oid="45smd-t"
+            data-oid="1xdu_cx"
           >
             {dict?.payments_desc}
           </p>
@@ -97,26 +97,26 @@ export function FeaturesGrid({
 
       <Card
         className="p-3 w-full rounded-3xl dark:border-neutral-800 dark:bg-neutral-900/40"
-        data-oid="txvvujd"
+        data-oid="5:5egww"
       >
-        <div className="flex flex-col gap-2" data-oid="fl5:ozd">
-          <div className="flex items-center gap-2" data-oid="da2x7n5">
+        <div className="flex flex-col gap-2" data-oid=":d1sj9.">
+          <div className="flex items-center gap-2" data-oid="4tbekzw">
             <div
               className="w-12 h-12 rounded-full bg-purple-100 flex items-center justify-center"
-              data-oid="w6m5l-4"
+              data-oid=".49f_q3"
             >
               <Icons.ShieldCheck
                 className="w-6 h-6 text-purple-500"
-                data-oid="fp04fga"
+                data-oid="mxnog08"
               />
             </div>
-            <h2 className="text-lg font-semibold" data-oid="..53di-">
+            <h2 className="text-lg font-semibold" data-oid="7homdci">
               {dict?.nextauth_title}
             </h2>
           </div>
           <p
             className="leading-relaxed text-neutral-500 dark:text-neutral-400 font-medium"
-            data-oid="ijp:syl"
+            data-oid="3966wj."
           >
             {dict?.nextauth_desc}
           </p>

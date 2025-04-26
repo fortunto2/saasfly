@@ -6,12 +6,11 @@ const Table = React.forwardRef<
   HTMLTableElement,
   React.HTMLAttributes<HTMLTableElement>
 >(({ className, ...props }, ref) => (
-  <div className="w-full overflow-auto" data-oid="eire2a1">
+  <div className="w-full overflow-auto">
     <table
       ref={ref}
       className={cn("w-full caption-bottom text-sm", className)}
       {...props}
-      data-oid="v79.g7n"
     />
   </div>
 ));
@@ -21,12 +20,7 @@ const TableHeader = React.forwardRef<
   HTMLTableSectionElement,
   React.HTMLAttributes<HTMLTableSectionElement>
 >(({ className, ...props }, ref) => (
-  <thead
-    ref={ref}
-    className={cn("[&_tr]:border-b", className)}
-    {...props}
-    data-oid="_jbwgd2"
-  />
+  <thead ref={ref} className={cn("[&_tr]:border-b", className)} {...props} />
 ));
 TableHeader.displayName = "TableHeader";
 
@@ -38,7 +32,6 @@ const TableBody = React.forwardRef<
     ref={ref}
     className={cn("[&_tr:last-child]:border-0", className)}
     {...props}
-    data-oid="p8mnf3c"
   />
 ));
 TableBody.displayName = "TableBody";
@@ -51,7 +44,6 @@ const TableFooter = React.forwardRef<
     ref={ref}
     className={cn("bg-primary font-medium text-primary-foreground", className)}
     {...props}
-    data-oid="ddpo9yi"
   />
 ));
 TableFooter.displayName = "TableFooter";
@@ -68,7 +60,6 @@ const TableRow = React.forwardRef<
       className,
     )}
     {...props}
-    data-oid="z24nm:d"
   />
 ));
 TableRow.displayName = "TableRow";
@@ -84,7 +75,6 @@ const TableHead = React.forwardRef<
       className,
     )}
     {...props}
-    data-oid="pj8pce1"
   />
 ));
 TableHead.displayName = "TableHead";
@@ -97,7 +87,6 @@ const TableCell = React.forwardRef<
     ref={ref}
     className={cn("p-4 align-middle [&:has([role=checkbox])]:pr-0", className)}
     {...props}
-    data-oid="d3i_9kl"
   />
 ));
 TableCell.displayName = "TableCell";
@@ -110,7 +99,6 @@ const TableCaption = React.forwardRef<
     ref={ref}
     className={cn("mt-4 text-sm text-muted-foreground", className)}
     {...props}
-    data-oid="81:h:9n"
   />
 ));
 TableCaption.displayName = "TableCaption";

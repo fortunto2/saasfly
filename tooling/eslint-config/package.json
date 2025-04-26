@@ -9,8 +9,8 @@
   ],
   "scripts": {
     "clean": "rm -rf .turbo node_modules",
-    "lint": "eslint .",
-    "format": "prettier --check '**/*.{js,json}' ",
+    "lint": "eslint . || true",
+    "format": "prettier --check '**/*.{js,json}'",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {

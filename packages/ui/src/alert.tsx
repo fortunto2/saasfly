@@ -28,7 +28,7 @@ const Alert = React.forwardRef<
     role="alert"
     className={cn(alertVariants({ variant }), className)}
     {...props}
-    data-oid="5wm399c"
+    data-oid="a2r-ugp"
   />
 ));
 Alert.displayName = "Alert";
@@ -41,7 +41,7 @@ const AlertTitle = React.forwardRef<
     ref={ref}
     className={cn("mb-1 font-medium leading-none tracking-tight", className)}
     {...props}
-    data-oid="zjch_m7"
+    data-oid="ijvm_n_"
   >
     {props.children}
   </h5>
@@ -56,7 +56,7 @@ const AlertDescription = React.forwardRef<
     ref={ref}
     className={cn("text-sm [&_p]:leading-relaxed", className)}
     {...props}
-    data-oid=":s.vxpq"
+    data-oid="77:.ro5"
   />
 ));
 AlertDescription.displayName = "AlertDescription";

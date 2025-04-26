@@ -49,63 +49,63 @@ export default async function DashboardPage({
     const clusters = result;
     const dict = await getDictionary(lang);
     return (
-      <DashboardShell data-oid="6xc2_go">
+      <DashboardShell data-oid="ezzalqi">
         <DashboardHeader
           heading="kubernetes"
           text={dict.common.dashboard.title_text}
-          data-oid="c4w6l95"
+          data-oid="xwncw2x"
         >
-          <K8sCreateButton dict={dict.business} data-oid="m5ojcik" />
+          <K8sCreateButton dict={dict.business} data-oid="vi4kuai" />
         </DashboardHeader>
-        <div data-oid="2_bzo4b">
+        <div data-oid="_4evqtv">
           {clusters.length ? (
             <div
               className="divide-y divide-border rounded-md border"
-              data-oid="3z6x6fo"
+              data-oid="w2zd6a5"
             >
               <div
                 className="flex items-center justify-between p-4"
-                data-oid="9z-yxfn"
+                data-oid="17wmh70"
               >
-                <Table className="divide-y divide-gray-200" data-oid="9qym_i.">
-                  <TableCaption data-oid="v1ks:w2">
+                <Table className="divide-y divide-gray-200" data-oid="2wfx3i.">
+                  <TableCaption data-oid="whx6r2n">
                     A list of your k8s cluster .
                   </TableCaption>
-                  <TableHeader data-oid="c:62.ws">
-                    <TableRow className="hover:bg-gray-50" data-oid="oc_:mwm">
-                      <TableHead className="w-[100px]" data-oid="eeavpjr">
+                  <TableHeader data-oid="72n2gz8">
+                    <TableRow className="hover:bg-gray-50" data-oid="orpc6n8">
+                      <TableHead className="w-[100px]" data-oid="mhf76qp">
                         Name
                       </TableHead>
-                      <TableHead data-oid="7b_ap.x">Location</TableHead>
-                      <TableHead data-oid="-o.rgak">UpdatedAt</TableHead>
-                      <TableHead data-oid="9t4k20_">Plan</TableHead>
-                      <TableHead data-oid=".oh_smo">Status</TableHead>
-                      <TableHead data-oid="zsee6.t">ACTION</TableHead>
+                      <TableHead data-oid="gkgwzc2">Location</TableHead>
+                      <TableHead data-oid="irebc.t">UpdatedAt</TableHead>
+                      <TableHead data-oid="5d-z.a0">Plan</TableHead>
+                      <TableHead data-oid="wbys:s0">Status</TableHead>
+                      <TableHead data-oid="th98g5_">ACTION</TableHead>
                     </TableRow>
                   </TableHeader>
                   {clusters.map((cluster) => (
                     <ClusterItem
                       key={String(cluster.id)}
                       cluster={cluster}
-                      data-oid="d1f_f09"
+                      data-oid="nwwhk9d"
                     ></ClusterItem>
                   ))}
                 </Table>
               </div>
             </div>
           ) : (
-            <EmptyPlaceholder data-oid="g.aiqsk">
+            <EmptyPlaceholder data-oid="8xg-moq">
               {/*<EmptyPlaceholder.Icon />*/}
-              <EmptyPlaceholder.Title data-oid=":dnw27:">
+              <EmptyPlaceholder.Title data-oid="el7:_b.">
                 {dict.business.k8s.no_cluster_title}
               </EmptyPlaceholder.Title>
-              <EmptyPlaceholder.Description data-oid="u.eglxr">
+              <EmptyPlaceholder.Description data-oid="sugk28h">
                 {dict.business.k8s.no_cluster_content}
               </EmptyPlaceholder.Description>
               <K8sCreateButton
                 variant="outline"
                 dict={dict.business}
-                data-oid="oxpnkq9"
+                data-oid="znwchhb"
               />
             </EmptyPlaceholder>
           )}

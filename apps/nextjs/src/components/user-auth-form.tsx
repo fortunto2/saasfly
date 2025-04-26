@@ -74,11 +74,11 @@ export function UserAuthForm({
   }
 
   return (
-    <div className={cn("grid gap-6", className)} {...props} data-oid="6p_mr2o">
-      <form onSubmit={handleSubmit(onSubmit)} data-oid="65jd8im">
-        <div className="grid gap-2" data-oid="3xx23w4">
-          <div className="grid gap-1" data-oid="dcp-im-">
-            <Label className="sr-only" htmlFor="email" data-oid="ii_qun9">
+    <div className={cn("grid gap-6", className)} {...props} data-oid="i228wqg">
+      <form onSubmit={handleSubmit(onSubmit)} data-oid="j-t0lv1">
+        <div className="grid gap-2" data-oid="696:ly7">
+          <div className="grid gap-1" data-oid="_ji3w6o">
+            <Label className="sr-only" htmlFor="email" data-oid="5s9d:bd">
               Email
             </Label>
             <Input
@@ -90,11 +90,11 @@ export function UserAuthForm({
               autoCorrect="off"
               disabled={isLoading || isAuth0Loading || disabled}
               {...register("email")}
-              data-oid="jsmng97"
+              data-oid="4hicnvc"
             />
 
             {errors?.email && (
-              <p className="px-1 text-xs text-red-600" data-oid="oz5pawo">
+              <p className="px-1 text-xs text-red-600" data-oid="uhn6030">
                 {errors.email.message}
               </p>
             )}
@@ -102,12 +102,12 @@ export function UserAuthForm({
           <button
             className={cn(buttonVariants())}
             disabled={isLoading}
-            data-oid="29gfj6n"
+            data-oid="ivw0up5"
           >
             {isLoading && (
               <Icons.Spinner
                 className="mr-2 h-4 w-4 animate-spin"
-                data-oid="i_6ylvc"
+                data-oid="cnnobl."
               />
             )}
             {dict.signin_email}
@@ -115,17 +115,17 @@ export function UserAuthForm({
           </button>
         </div>
       </form>
-      <div className="relative" data-oid="dzx_9on">
-        <div className="absolute inset-0 flex items-center" data-oid="owq5_k7">
-          <span className="w-full border-t" data-oid="8o1nc6." />
+      <div className="relative" data-oid="5vizq59">
+        <div className="absolute inset-0 flex items-center" data-oid="o5:ueqc">
+          <span className="w-full border-t" data-oid="myz8h96" />
         </div>
         <div
           className="relative flex justify-center text-xs uppercase"
-          data-oid="uwu2mcm"
+          data-oid="fqqtgbl"
         >
           <span
             className="bg-background px-2 text-muted-foreground"
-            data-oid="bu2.sui"
+            data-oid="2mr7451"
           >
             {dict.signin_others}
             {/* Or continue with */}
@@ -144,15 +144,15 @@ export function UserAuthForm({
           });
         }}
         disabled={isLoading || isAuth0Loading}
-        data-oid="v1rj08k"
+        data-oid="51mfvjl"
       >
         {isAuth0Loading ? (
           <Icons.Spinner
             className="mr-2 h-4 w-4 animate-spin"
-            data-oid="gjlejk_"
+            data-oid="bi8wgnf"
           />
         ) : (
-          <Icons.Key className="mr-2 h-4 w-4" data-oid="-uxpf3g" />
+          <Icons.Key className="mr-2 h-4 w-4" data-oid="4g41656" />
         )}{" "}
         Auth0
       </button>

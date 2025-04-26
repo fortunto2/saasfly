@@ -4,7 +4,7 @@ interface AuthLayoutProps {
 
 export default function AuthLayout({ children }: AuthLayoutProps) {
   return (
-    <div className="min-h-screen" data-oid="1299vt7">
+    <div className="min-h-screen" data-oid="lgz8mzn">
       {children}
     </div>
   );

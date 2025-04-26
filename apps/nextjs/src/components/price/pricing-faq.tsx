@@ -19,30 +19,30 @@ export function PricingFaq({
 }) {
   const pricingFaqData = priceFaqDataMap[lang];
   return (
-    <section className="container max-w-3xl py-2" data-oid="11x_ch_">
-      <div className="mb-14 space-y-6 text-center" data-oid="m_7i5wc">
+    <section className="container max-w-3xl py-2" data-oid="577ie_u">
+      <div className="mb-14 space-y-6 text-center" data-oid="y3a:32q">
         <h1
           className="font-heading text-center text-3xl md:text-5xl"
-          data-oid="eqpib5c"
+          data-oid="lzu0-6x"
         >
-          <Balancer data-oid="hwwhhux">{dict.faq}</Balancer>
+          <Balancer data-oid="rzer2j8">{dict.faq}</Balancer>
         </h1>
-        <p className="text-md text-muted-foreground" data-oid=".:u-28c">
-          <Balancer data-oid="o2zbqex">{dict.faq_detail}</Balancer>
+        <p className="text-md text-muted-foreground" data-oid="o1hoomg">
+          <Balancer data-oid="ks-696t">{dict.faq_detail}</Balancer>
         </p>
       </div>
       <Accordion
         type="single"
         collapsible
         className="w-full"
-        data-oid="-hep-8d"
+        data-oid="oi.tg0s"
       >
         {pricingFaqData?.map((faqItem) => (
-          <AccordionItem key={faqItem.id} value={faqItem.id} data-oid="ha-f8b9">
-            <AccordionTrigger data-oid="c.v39_c">
+          <AccordionItem key={faqItem.id} value={faqItem.id} data-oid="..lafis">
+            <AccordionTrigger data-oid="dpaax_c">
               {faqItem.question}
             </AccordionTrigger>
-            <AccordionContent data-oid="ajnrfuh">
+            <AccordionContent data-oid="336ohke">
               {faqItem.answer}
             </AccordionContent>
           </AccordionItem>

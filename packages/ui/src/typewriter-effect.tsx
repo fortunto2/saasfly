@@ -45,7 +45,7 @@ export const TypewriterEffectImpl = ({
 
   const renderWords = () => {
     return (
-      <motion.span ref={scope} className="inline" data-oid="52p9:b6">
+      <motion.span ref={scope} className="inline">
         {wordsArray.map((word, idx) => (
           <React.Fragment key={`word-${idx}`}>
             {word.text.map((char, index) => (
@@ -56,7 +56,6 @@ export const TypewriterEffectImpl = ({
                   `hidden text-neutral-500 opacity-0`,
                   word.className,
                 )}
-                data-oid=".as4vq9"
               >
                 {char}
               </motion.span>
@@ -69,7 +68,7 @@ export const TypewriterEffectImpl = ({
   };
 
   return (
-    <p className={cn("", className)} data-oid="750vnbk">
+    <p className={cn("", className)}>
       {renderWords()}
       <motion.span
         initial={{
@@ -87,7 +86,6 @@ export const TypewriterEffectImpl = ({
           "inline-block h-4 w-[4px] rounded-sm bg-blue-500",
           cursorClassName,
         )}
-        data-oid="153l6.o"
       ></motion.span>
     </p>
   );

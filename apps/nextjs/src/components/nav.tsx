@@ -29,7 +29,7 @@ export function DashboardNav({ items, params: { lang } }: DashboardNavProps) {
   }
 
   return (
-    <nav className="grid items-start gap-2" data-oid="wxobffn">
+    <nav className="grid items-start gap-2" data-oid=":e6uxop">
       {items.map((item, index) => {
         // const Icon = item.icon;
         const Icon = iconMapObj.get(item.id) ?? Icons.ArrowRight;
@@ -38,7 +38,7 @@ export function DashboardNav({ items, params: { lang } }: DashboardNavProps) {
             <Link
               key={index}
               href={item.disabled ? "/" : `/${lang}` + item.href}
-              data-oid="jtkc_9t"
+              data-oid="c8hgf86"
             >
               <span
                 className={cn(
@@ -46,10 +46,10 @@ export function DashboardNav({ items, params: { lang } }: DashboardNavProps) {
                   path === item.href ? "bg-accent" : "transparent",
                   item.disabled && "cursor-not-allowed opacity-80",
                 )}
-                data-oid="xv4au9c"
+                data-oid=":szfy_l"
               >
-                <Icon className="mr-2 h-4 w-4" data-oid=":qi2q_2" />
-                <span data-oid="9326ojd">{item.title}</span>
+                <Icon className="mr-2 h-4 w-4" data-oid="3zp0ex_" />
+                <span data-oid="o0x.4cd">{item.title}</span>
               </span>
             </Link>
           )

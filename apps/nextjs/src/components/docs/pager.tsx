@@ -21,15 +21,15 @@ export function DocsPager({ doc }: DocsPagerProps) {
   return (
     <div
       className="flex flex-row items-center justify-between"
-      data-oid="fpt1655"
+      data-oid="liff1o5"
     >
       {pager?.prev && (
         <Link
           href={pager.prev.href}
           className={cn(buttonVariants({ variant: "ghost" }))}
-          data-oid="l6yyn25"
+          data-oid=":6v19il"
         >
-          <Icons.ChevronLeft className="mr-2 h-4 w-4" data-oid="990zep7" />
+          <Icons.ChevronLeft className="mr-2 h-4 w-4" data-oid="wlg3l9e" />
           {pager.prev.title}
         </Link>
       )}
@@ -37,10 +37,10 @@ export function DocsPager({ doc }: DocsPagerProps) {
         <Link
           href={pager.next.href}
           className={cn(buttonVariants({ variant: "ghost" }), "ml-auto")}
-          data-oid="xih7d9p"
+          data-oid="u8mc1vm"
         >
           {pager.next.title}
-          <Icons.ChevronRight className="ml-2 h-4 w-4" data-oid="t0482ce" />
+          <Icons.ChevronRight className="ml-2 h-4 w-4" data-oid="3a.cz6m" />
         </Link>
       )}
     </div>

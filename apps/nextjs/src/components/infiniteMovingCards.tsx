@@ -8,13 +8,13 @@ export function InfiniteMovingCardss() {
   return (
     <div
       className=" relative flex flex-col items-center justify-center overflow-hidden rounded-md antialiased"
-      data-oid="39sr:zb"
+      data-oid="7:6-90k"
     >
       <InfiniteMovingCards
         items={reviews}
         direction="right"
         speed="slow"
-        data-oid="3pen1i5"
+        data-oid="pt:0sxv"
       />
     </div>
   );

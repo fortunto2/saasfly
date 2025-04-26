@@ -22,7 +22,7 @@ export default async function RegisterPage({
   return (
     <div
       className="container grid h-screen w-screen flex-col items-center justify-center lg:max-w-none lg:grid-cols-2 lg:px-0"
-      data-oid="kau253e"
+      data-oid="qq4v7k0"
     >
       <Link
         href={`/${lang}/login`}
@@ -30,28 +30,28 @@ export default async function RegisterPage({
           buttonVariants({ variant: "ghost" }),
           "absolute right-4 top-4 md:right-8 md:top-8",
         )}
-        data-oid="g2v04a:"
+        data-oid="kia9m_7"
       >
         {dict.marketing.login}
       </Link>
-      <div className="hidden h-full bg-muted lg:block" data-oid="pgc7dix" />
-      <div className="lg:p-8" data-oid="j5pkxpe">
+      <div className="hidden h-full bg-muted lg:block" data-oid="gbuse:f" />
+      <div className="lg:p-8" data-oid="vrbr-ty">
         <div
           className="mx-auto flex w-full flex-col justify-center space-y-6 sm:w-[350px]"
-          data-oid="m1cg5h9"
+          data-oid="0q4cm01"
         >
           <div
             className="flex flex-col space-y-2 text-center"
-            data-oid="ndiix81"
+            data-oid="qp1-cq:"
           >
             {/*<Icons.Logo className="mx-auto h-6 w-6" />*/}
             <h1
               className="text-2xl font-semibold tracking-tight"
-              data-oid="2:oqfox"
+              data-oid="z66c0.n"
             >
               Create an account
             </h1>
-            <p className="text-sm text-muted-foreground" data-oid="jopunr:">
+            <p className="text-sm text-muted-foreground" data-oid="mrau_ar">
               Enter your email below to create your account
             </p>
           </div>
@@ -59,18 +59,18 @@ export default async function RegisterPage({
             lang={lang}
             dict={dict.login}
             disabled={true}
-            data-oid="vh_es.a"
+            data-oid="_rsuept"
           />
 
           <p
             className="px-8 text-center text-sm text-muted-foreground"
-            data-oid="fp6ll-l"
+            data-oid="n3.7.ti"
           >
             By clicking continue, you agree to our{" "}
             <Link
               href={`/${lang}/terms`}
               className="hover:text-brand underline underline-offset-4"
-              data-oid="q8mj3rs"
+              data-oid="6nzol--"
             >
               Terms of Service
             </Link>{" "}
@@ -78,7 +78,7 @@ export default async function RegisterPage({
             <Link
               href={`/${lang}/privacy`}
               className="hover:text-brand underline underline-offset-4"
-              data-oid="wvfig3z"
+              data-oid="505gx9q"
             >
               Privacy Policy
             </Link>

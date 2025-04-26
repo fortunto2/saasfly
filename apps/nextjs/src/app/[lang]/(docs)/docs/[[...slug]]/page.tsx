@@ -92,25 +92,25 @@ export default async function DocPage({ params }: DocPageProps) {
   return (
     <main
       className="relative py-6 lg:gap-10 lg:py-10 xl:grid xl:grid-cols-[1fr_300px]"
-      data-oid="rt_c-_5"
+      data-oid="-qcc7q."
     >
-      <div className="mx-auto w-full min-w-0" data-oid="i8.zwjs">
+      <div className="mx-auto w-full min-w-0" data-oid="i9-4w9y">
         <DocsPageHeader
           heading={doc.title}
           text={doc.description}
-          data-oid="e:qmzyk"
+          data-oid="pq2z-_u"
         />
 
-        <Mdx code={doc.body.code} data-oid="4cpy02d" />
-        <hr className="my-4 md:my-6" data-oid="lgzd9we" />
-        <DocsPager doc={doc} data-oid="k1q3-1c" />
+        <Mdx code={doc.body.code} data-oid="einpsm7" />
+        <hr className="my-4 md:my-6" data-oid="74wsz3c" />
+        <DocsPager doc={doc} data-oid="gjitud." />
       </div>
-      <div className="hidden text-sm xl:block" data-oid="ifrz8_i">
+      <div className="hidden text-sm xl:block" data-oid="38.xksm">
         <div
           className="sticky top-16 -mt-10 max-h-[calc(var(--vh)-4rem)] overflow-y-auto pt-10"
-          data-oid="7e1ba-b"
+          data-oid="w991qro"
         >
-          <DashboardTableOfContents toc={toc} data-oid="nwcb6dd" />
+          <DashboardTableOfContents toc={toc} data-oid="-h51dyu" />
         </div>
       </div>
     </main>

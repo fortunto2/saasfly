@@ -4,19 +4,19 @@ import { DashboardShell } from "~/components/shell";
 
 export default function DashboardLoading() {
   return (
-    <DashboardShell data-oid=":sc17ft">
+    <DashboardShell data-oid="cf4r1a-">
       <DashboardHeader
         heading="kubernetes"
         text="Create and manage clusters."
-        data-oid="wl2blv_"
+        data-oid="zq.x549"
       ></DashboardHeader>
       <div
         className="divide-border-200 divide-y rounded-md border"
-        data-oid="030tbhx"
+        data-oid="pd:w9ns"
       >
-        <BasicItemSkeleton data-oid="3vf16a4" />
-        <BasicItemSkeleton data-oid="6hlq1y6" />
-        <BasicItemSkeleton data-oid="69:90tv" />
+        <BasicItemSkeleton data-oid="_bxy8xg" />
+        <BasicItemSkeleton data-oid="4dpyms3" />
+        <BasicItemSkeleton data-oid="wr77pje" />
       </div>
     </DashboardShell>
   );

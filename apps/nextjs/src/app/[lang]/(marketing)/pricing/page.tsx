@@ -25,18 +25,18 @@ export default async function PricingPage({
   return (
     <div
       className="flex w-full flex-col gap-16 py-8 md:py-8"
-      data-oid="tzqw.5-"
+      data-oid="oso3rap"
     >
       <PricingCards
         userId={user?.id}
         subscriptionPlan={subscriptionPlan}
         dict={dict.price}
         params={{ lang }}
-        data-oid="7gzfiv4"
+        data-oid="j0szps8"
       />
 
-      <hr className="container" data-oid="kktxanv" />
-      <PricingFaq params={{ lang }} dict={dict.price} data-oid=":5xmkl7" />
+      <hr className="container" data-oid="1:nqroh" />
+      <PricingFaq params={{ lang }} dict={dict.price} data-oid="h9k1rzz" />
     </div>
   );
 }

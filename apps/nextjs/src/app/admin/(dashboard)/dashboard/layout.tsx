@@ -32,10 +32,10 @@ export default async function DashboardLayout({
 
   // const dashboardConfig = await getDashboardConfig({ params: { lang } });
   return (
-    <div className="flex min-h-screen flex-col space-y-6" data-oid="6vir:5j">
+    <div className="flex min-h-screen flex-col space-y-6" data-oid="whr47-_">
       <header
         className="sticky top-0 z-40 border-b bg-background"
-        data-oid="zuck7.m"
+        data-oid="xbj1ujm"
       >
         {/*<div className="container flex h-16 items-center justify-between py-4">*/}
         {/*    <MainNav*/}
@@ -67,10 +67,10 @@ export default async function DashboardLayout({
       {/*        {children}*/}
       {/*    </main>*/}
       {/*</div>*/}
-      <div className="container grid flex-1 gap-12 " data-oid="_b-83i:">
+      <div className="container grid flex-1 gap-12 " data-oid="xwn:yru">
         <main
           className="flex w-full flex-1 flex-col overflow-hidden"
-          data-oid="80y8u3:"
+          data-oid="2pyudqt"
         >
           {children}
         </main>
@@ -79,7 +79,7 @@ export default async function DashboardLayout({
         className="border-t"
         params={{ lang: `${lang}` }}
         dict={dict.common}
-        data-oid="b9yg2v5"
+        data-oid="y33kszn"
       />
     </div>
   );

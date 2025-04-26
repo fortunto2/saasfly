@@ -30,19 +30,19 @@ export default async function DashboardLayout({
   }
 
   return (
-    <div className="flex min-h-screen flex-col space-y-6" data-oid=":rcjdsi">
+    <div className="flex min-h-screen flex-col space-y-6" data-oid="x9e554p">
       <header
         className="sticky top-0 z-40 border-b bg-background"
-        data-oid="axp-avx"
+        data-oid="xtd3cnz"
       >
         <div
           className="container flex h-16 items-center justify-between py-4"
-          data-oid="_4x1js5"
+          data-oid="3-7ukgi"
         >
           <MainNav
             items={dashboardConfig.mainNav}
             params={{ lang: `${lang}` }}
-            data-oid="h9407ud"
+            data-oid="87ibjhr"
           />
 
           <UserAccountNav
@@ -53,24 +53,24 @@ export default async function DashboardLayout({
             }}
             params={{ lang: `${lang}` }}
             dict={dict.dropdown}
-            data-oid="o8uk.31"
+            data-oid="z5b0_lm"
           />
         </div>
       </header>
       <div
         className="container grid flex-1 gap-12 md:grid-cols-[200px_1fr]"
-        data-oid="0j0gby5"
+        data-oid="x7b00lj"
       >
-        <aside className="hidden w-[200px] flex-col md:flex" data-oid="s2pyugr">
+        <aside className="hidden w-[200px] flex-col md:flex" data-oid="fp8_szk">
           <DashboardNav
             items={dashboardConfig.sidebarNav}
             params={{ lang: `${lang}` }}
-            data-oid="rdj9dtx"
+            data-oid="3pu8u7h"
           />
         </aside>
         <main
           className="flex w-full flex-1 flex-col overflow-hidden"
-          data-oid="dft2e00"
+          data-oid="1co-vco"
         >
           {children}
         </main>
@@ -79,7 +79,7 @@ export default async function DashboardLayout({
         className="border-t"
         params={{ lang: `${lang}` }}
         dict={dict.common}
-        data-oid="8t7y7r3"
+        data-oid=".kl8:92"
       />
     </div>
   );

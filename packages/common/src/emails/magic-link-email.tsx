@@ -26,43 +26,43 @@ export const MagicLinkEmail = ({
   mailType,
   siteName,
 }: MagicLinkEmailProps) => (
-  <Html data-oid="9z6qjq9">
-    <Head data-oid=".j9vst9" />
-    <Preview data-oid="gb.m807">
+  <Html data-oid="ocyw29t">
+    <Head data-oid="gfo07wm" />
+    <Preview data-oid="to8me.3">
       Click to {mailType === "login" ? "sign in" : "activate"} your {siteName}{" "}
       account.
     </Preview>
-    <Tailwind data-oid="b0-.iun">
-      <Body className="bg-white font-sans" data-oid="ndu4oih">
-        <Container className="mx-auto py-5 pb-12" data-oid=".8oqwas">
-          <Icons.Logo className="m-auto block h-10 w-10" data-oid="dfyxd15" />
-          <Text className="text-base" data-oid="9-w7jx9">
+    <Tailwind data-oid="l7zp_ds">
+      <Body className="bg-white font-sans" data-oid="pfg5ecb">
+        <Container className="mx-auto py-5 pb-12" data-oid="44vpu0e">
+          <Icons.Logo className="m-auto block h-10 w-10" data-oid="78tp.fg" />
+          <Text className="text-base" data-oid="9vbzs-2">
             Hi {firstName},
           </Text>
-          <Text className="text-base" data-oid="7rtyyw8">
+          <Text className="text-base" data-oid="tb6l2v0">
             Welcome to {siteName} ! Click the link below to{" "}
             {mailType === "login" ? "sign in to" : "activate"} your account.
           </Text>
-          <Section className="my-5 text-center" data-oid="l-g7ibg">
+          <Section className="my-5 text-center" data-oid="c-40bza">
             <Button
               className="inline-block rounded-md bg-zinc-900 px-4 py-2 text-base text-white no-underline"
               href={actionUrl}
-              data-oid="y_-ak0d"
+              data-oid="l_1nsha"
             >
               {mailType === "login" ? "Sign in" : "Activate Account"}
             </Button>
           </Section>
-          <Text className="text-base" data-oid="trya4fn">
+          <Text className="text-base" data-oid="8dltxdb">
             This link expires in 24 hours and can only be used once.
           </Text>
           {mailType === "login" ? (
-            <Text className="text-base" data-oid="jr.6kli">
+            <Text className="text-base" data-oid="637q:4z">
               If you did not try to log into your account, you can safely ignore
               it.
             </Text>
           ) : null}
-          <Hr className="my-4 border-t-2 border-gray-300" data-oid="aid4ih0" />
-          <Text className="text-sm text-gray-600" data-oid="19rgebb">
+          <Hr className="my-4 border-t-2 border-gray-300" data-oid="cy2ff73" />
+          <Text className="text-sm text-gray-600" data-oid="5wdho5j">
             saasfly.io
           </Text>
         </Container>

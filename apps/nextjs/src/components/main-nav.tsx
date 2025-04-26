@@ -32,14 +32,14 @@ export function MainNav({
     toggleMenu();
   };
   return (
-    <div className="flex gap-6 md:gap-10" data-oid="y2_cjj4">
-      <div className="flex items-center" data-oid="4fs2s_m">
+    <div className="flex gap-6 md:gap-10" data-oid="q8k3k5x">
+      <div className="flex items-center" data-oid="00ucz.p">
         <Link
           href={`/${lang}`}
           className="hidden items-center space-x-2 md:flex"
-          data-oid="_dp7rf-"
+          data-oid="pk3pdd3"
         >
-          <div className="text-3xl" data-oid="nig:xz:">
+          <div className="text-3xl" data-oid="ow5inmn">
             Saasfly
           </div>
         </Link>
@@ -48,9 +48,9 @@ export function MainNav({
           href="https://docs.saasfly.io"
           target="_blank"
           className="ml-4 hidden md:flex lg:flex xl:flex"
-          data-oid=":aw6v.s"
+          data-oid="8uxlpbf"
         >
-          <DocumentGuide data-oid="yh9naou">
+          <DocumentGuide data-oid="1j0ytm7">
             {marketing?.introducing ?? "Introducing Saasfly"}
           </DocumentGuide>
         </Link>
@@ -59,14 +59,14 @@ export function MainNav({
       <button
         className="flex items-center space-x-2 md:hidden"
         onClick={() => setShowMobileMenu(!showMobileMenu)}
-        data-oid="bvjkd6u"
+        data-oid="3_lp6mw"
       >
         {showMobileMenu ? (
-          <Icons.Close data-oid=".wpkya4" />
+          <Icons.Close data-oid=":9f26c7" />
         ) : (
-          <Icons.Logo data-oid="m0go7y1" />
+          <Icons.Logo data-oid="aayzt:5" />
         )}
-        <span className="font-bold" data-oid="k._:hvv">
+        <span className="font-bold" data-oid="7jy7qd-">
           Menu
         </span>
       </button>
@@ -74,7 +74,7 @@ export function MainNav({
         <MobileNav
           items={items}
           menuItemClick={handleMenuItemClick}
-          data-oid="0fkik3r"
+          data-oid="re8t93w"
         >
           {children}
         </MobileNav>

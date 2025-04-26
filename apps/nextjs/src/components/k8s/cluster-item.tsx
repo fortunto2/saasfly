@@ -15,34 +15,34 @@ interface ClusterItemProps {
 
 export function ClusterItem({ cluster }: ClusterItemProps) {
   return (
-    <TableBody className="divide-y divide-gray-100" data-oid="0y9fm:7">
-      <TableRow key={String(cluster.id)} data-oid="2tfdjzz">
-        <TableCell className="font-medium" data-oid="rfw3s55">
+    <TableBody className="divide-y divide-gray-100" data-oid="kms8.ks">
+      <TableRow key={String(cluster.id)} data-oid="ysbvy_-">
+        <TableCell className="font-medium" data-oid="sip5ilv">
           <Link
             href={`/editor/cluster/${String(cluster.id)}`}
             className="font-semibold hover:underline"
-            data-oid="ac0ng2m"
+            data-oid="rubem:p"
           >
             {cluster.name}
           </Link>
         </TableCell>
-        <TableCell className="text-left" data-oid="cuizwju">
+        <TableCell className="text-left" data-oid="8vgi8td">
           {cluster.location}
         </TableCell>
-        <TableCell className="text-left" data-oid="8ic.9i5">
+        <TableCell className="text-left" data-oid="c20ksfm">
           {formatDate(cluster.updatedAt?.toDateString())}
         </TableCell>
-        <TableCell className="text-left" data-oid="3g9a1s_">
+        <TableCell className="text-left" data-oid="xmx0092">
           {cluster.plan}
         </TableCell>
-        <TableCell className="text-left" data-oid="dnuq1yv">
+        <TableCell className="text-left" data-oid="-r3xyww">
           RUNNING
         </TableCell>
-        <TableCell className="text-right" data-oid="tqrabvi">
+        <TableCell className="text-right" data-oid="jbu63bm">
           {/*<k post={{ id: cluster.id, name: cluster.name }} />*/}
           <ClusterOperations
             cluster={{ id: cluster.id, name: cluster.name }}
-            data-oid="m7_i2b2"
+            data-oid="_t50o.f"
           />
         </TableCell>
       </TableRow>

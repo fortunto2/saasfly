@@ -17,11 +17,11 @@ export function EmptyPlaceholder({
         className,
       )}
       {...props}
-      data-oid="3-e5srd"
+      data-oid="3f.jz7w"
     >
       <div
         className="mx-auto flex max-w-[420px] flex-col items-center justify-center text-center"
-        data-oid="5by98-e"
+        data-oid="2k85mp9"
       >
         {children}
       </div>
@@ -47,9 +47,9 @@ EmptyPlaceholder.Icon = function EmptyPlaceHolderIcon({
   return (
     <div
       className="flex h-20 w-20 items-center justify-center rounded-full bg-muted"
-      data-oid="d07x6al"
+      data-oid="md4f051"
     >
-      <Icon className={cn("h-10 w-10", className)} data-oid="l4ix-3f" />
+      <Icon className={cn("h-10 w-10", className)} data-oid="ixhojpn" />
     </div>
   );
 };
@@ -65,7 +65,7 @@ EmptyPlaceholder.Title = function EmptyPlaceholderTitle({
     <h2
       className={cn("mt-6 text-xl font-semibold", className)}
       {...props}
-      data-oid="6uueil7"
+      data-oid="r:hwcuc"
     />
   );
 };
@@ -84,7 +84,7 @@ EmptyPlaceholder.Description = function EmptyPlaceholderDescription({
         className,
       )}
       {...props}
-      data-oid="yu7h3.h"
+      data-oid="2rwszzt"
     />
   );
 };

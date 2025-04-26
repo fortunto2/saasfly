@@ -12,24 +12,24 @@ export function VideoScroll({
   dict: Record<string, string> | undefined;
 }) {
   return (
-    <div className="flex flex-col overflow-hidden" data-oid="3a5im.x">
+    <div className="flex flex-col overflow-hidden" data-oid="iap713c">
       <ContainerScroll
         titleComponent={
           <>
             <h1
               className="text-4xl font-semibold text-black dark:text-white"
-              data-oid="osvo0:i"
+              data-oid="p911-:."
             >
               {dict?.first_text}
-              <br data-oid="z8-kjt3" />
+              <br data-oid=":l8x4xt" />
               <span
                 className="text-4xl md:text-6xl font-bold mt-1 leading-none"
-                data-oid="7ies_4n"
+                data-oid=":rzpl77"
               >
                 {dict?.second_text1}
                 <ColourfulText
                   text={dict?.time_text ?? ""}
-                  data-oid="e8:5a3l"
+                  data-oid="bxm3y5n"
                 />
 
                 {dict?.second_text2}
@@ -37,12 +37,12 @@ export function VideoScroll({
             </h1>
           </>
         }
-        data-oid="o0647ef"
+        data-oid="blqengo"
       >
         <Link
           href="https://x.com/i/broadcasts/1eaKbaYVAXkxX"
           target="_blank"
-          data-oid="0c-t.4m"
+          data-oid=":ysttil"
         >
           <Image
             src={`https://cdnv2.ruguoapp.com/FoAVSRtT2zVc96oDjAWrd5TvXXQ4v3.png`}
@@ -51,7 +51,7 @@ export function VideoScroll({
             width={1400}
             className="mx-auto rounded-2xl object-cover h-full object-left-top"
             draggable={false}
-            data-oid="tey0w0x"
+            data-oid="mxa-hp7"
           />
         </Link>
       </ContainerScroll>

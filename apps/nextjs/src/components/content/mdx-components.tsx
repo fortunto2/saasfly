@@ -17,7 +17,7 @@ const components = {
         className,
       )}
       {...props}
-      data-oid="fh2_vb8"
+      data-oid="ij77-je"
     />
   ),
 
@@ -28,7 +28,7 @@ const components = {
         className,
       )}
       {...props}
-      data-oid="nnvnyuy"
+      data-oid="hg:2ngj"
     />
   ),
 
@@ -39,7 +39,7 @@ const components = {
         className,
       )}
       {...props}
-      data-oid="w5jv396"
+      data-oid="b4im:nz"
     />
   ),
 
@@ -50,7 +50,7 @@ const components = {
         className,
       )}
       {...props}
-      data-oid="oq5tlpv"
+      data-oid="oc8if:8"
     />
   ),
 
@@ -61,7 +61,7 @@ const components = {
         className,
       )}
       {...props}
-      data-oid="k3sykyo"
+      data-oid="xi.z_bz"
     />
   ),
 
@@ -72,7 +72,7 @@ const components = {
         className,
       )}
       {...props}
-      data-oid="qj8bmkh"
+      data-oid="fookd.:"
     />
   ),
 
@@ -80,7 +80,7 @@ const components = {
     <a
       className={cn("font-medium underline underline-offset-4", className)}
       {...props}
-      data-oid="77gvbww"
+      data-oid="d89:690"
     />
   ),
 
@@ -88,7 +88,7 @@ const components = {
     <p
       className={cn("leading-7 [&:not(:first-child)]:mt-6", className)}
       {...props}
-      data-oid="ylyj9o."
+      data-oid="2k2b8mc"
     />
   ),
 
@@ -96,7 +96,7 @@ const components = {
     <ul
       className={cn("my-6 ml-6 list-disc", className)}
       {...props}
-      data-oid="vavp.7q"
+      data-oid="w4--:vd"
     />
   ),
 
@@ -104,12 +104,12 @@ const components = {
     <ol
       className={cn("my-6 ml-6 list-decimal", className)}
       {...props}
-      data-oid="sgx29lu"
+      data-oid="c9_dqnd"
     />
   ),
 
   li: ({ className, ...props }) => (
-    <li className={cn("mt-2", className)} {...props} data-oid="0e31crt" />
+    <li className={cn("mt-2", className)} {...props} data-oid="ymmxon_" />
   ),
 
   blockquote: ({ className, ...props }) => (
@@ -119,7 +119,7 @@ const components = {
         className,
       )}
       {...props}
-      data-oid="cc_8xop"
+      data-oid="5r_t39y"
     />
   ),
 
@@ -133,20 +133,20 @@ const components = {
       className={cn("rounded-md border", className)}
       alt={alt}
       {...props}
-      data-oid="j7is-6-"
+      data-oid="l6r.y3z"
     />
   ),
 
   hr: ({ ...props }) => (
-    <hr className="my-4 md:my-8" {...props} data-oid="_.jeva3" />
+    <hr className="my-4 md:my-8" {...props} data-oid="y.m.dds" />
   ),
 
   table: ({ className, ...props }: React.HTMLAttributes<HTMLTableElement>) => (
-    <div className="my-6 w-full overflow-y-auto" data-oid="1cr7ps9">
+    <div className="my-6 w-full overflow-y-auto" data-oid="xao3_1y">
       <table
         className={cn("w-full", className)}
         {...props}
-        data-oid="rlgfhxi"
+        data-oid="x_oq-dc"
       />
     </div>
   ),
@@ -155,7 +155,7 @@ const components = {
     <tr
       className={cn("m-0 border-t p-0 even:bg-muted", className)}
       {...props}
-      data-oid="1m5xz6v"
+      data-oid=".drkz:y"
     />
   ),
 
@@ -166,7 +166,7 @@ const components = {
         className,
       )}
       {...props}
-      data-oid="m-s499n"
+      data-oid="i_0_xzp"
     />
   ),
 
@@ -177,7 +177,7 @@ const components = {
         className,
       )}
       {...props}
-      data-oid="8wbgfwy"
+      data-oid="_jz7ask"
     />
   ),
 
@@ -188,7 +188,7 @@ const components = {
         className,
       )}
       {...props}
-      data-oid="1916-7."
+      data-oid="r_sj145"
     />
   ),
 
@@ -199,11 +199,11 @@ const components = {
         className,
       )}
       {...props}
-      data-oid="chcd_2s"
+      data-oid="opm4vmw"
     />
   ),
 
-  Image: (props: ImageProps) => <NextImage {...props} data-oid="3awo6a." />,
+  Image: (props: ImageProps) => <NextImage {...props} data-oid="9r8_8n1" />,
   Callout,
   Card: MdxCard,
 };
@@ -216,8 +216,8 @@ export function Mdx({ code }: MdxProps) {
   const Component = useMDXComponent(code);
 
   return (
-    <div className="mdx" data-oid="kdf9naj">
-      <Component components={components} data-oid="77ytxah" />
+    <div className="mdx" data-oid="vbuir-i">
+      <Component components={components} data-oid="iccpvby" />
     </div>
   );
 }

@@ -79,8 +79,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" suppressHydrationWarning data-oid="7sd3njm">
-      <head data-oid="dj4xdzi" />
+    <html lang="en" suppressHydrationWarning data-oid="n-hpq2c">
+      <head data-oid="-::5cxg" />
       {/*<Suspense>*/}
       {/*  <PostHogPageview />*/}
       {/*</Suspense>*/}
@@ -90,21 +90,21 @@ export default function RootLayout({
           fontSans.variable,
           fontHeading.variable,
         )}
-        data-oid="5q8r1fa"
+        data-oid=".d_xapz"
       >
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
           enableSystem={false}
-          data-oid="j9mb-l5"
+          data-oid="h26k6m8"
         >
-          <NextDevtoolsProvider data-oid="2ike8oo">
+          <NextDevtoolsProvider data-oid="6a-fzi9">
             {children}
           </NextDevtoolsProvider>
-          <Analytics data-oid="n5zh2oa" />
-          <SpeedInsights data-oid="6ux_jbo" />
-          <Toaster data-oid="jty3:0f" />
-          <TailwindIndicator data-oid="bc5_.hy" />
+          <Analytics data-oid="n_zu0-j" />
+          <SpeedInsights data-oid="0wwcs3v" />
+          <Toaster data-oid="-abtzej" />
+          <TailwindIndicator data-oid="rj35s53" />
         </ThemeProvider>
       </body>
     </html>

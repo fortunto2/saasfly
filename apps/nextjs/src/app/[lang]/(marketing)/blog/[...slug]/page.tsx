@@ -96,7 +96,7 @@ export default function PostPage({ params }: PostPageProps) {
   return (
     <article
       className="container relative max-w-3xl py-6 lg:py-10"
-      data-oid="1_:578f"
+      data-oid="k3pkn36"
     >
       <Link
         href="/blog"
@@ -104,36 +104,36 @@ export default function PostPage({ params }: PostPageProps) {
           buttonVariants({ variant: "ghost" }),
           "absolute left-[-200px] top-14 hidden xl:inline-flex",
         )}
-        data-oid="zn7fs30"
+        data-oid="9ii1bgx"
       >
-        <Icons.ChevronLeft className="mr-2 h-4 w-4" data-oid="t-u6d-t" />
+        <Icons.ChevronLeft className="mr-2 h-4 w-4" data-oid="1p70eq1" />
         See all posts
       </Link>
-      <div data-oid="s8hxw5u">
+      <div data-oid="50:3.20">
         {post.date && (
           <time
             dateTime={post.date}
             className="block text-sm text-muted-foreground"
-            data-oid="2xq-960"
+            data-oid="2fq_ukn"
           >
             Published on {formatDate(post.date)}
           </time>
         )}
         <h1
           className="font-heading mt-2 inline-block text-4xl leading-tight lg:text-5xl"
-          data-oid="xex0scv"
+          data-oid="d3ls1xz"
         >
-          <Balancer data-oid="ccghzei">{post.title}</Balancer>
+          <Balancer data-oid="s:_-2cd">{post.title}</Balancer>
         </h1>
         {authors?.length ? (
-          <div className="mt-4 flex space-x-4" data-oid="-8icm23">
+          <div className="mt-4 flex space-x-4" data-oid="nz5e:ld">
             {authors.map((author) =>
               author ? (
                 <Link
                   key={author._id}
                   href={`https://twitter.com/${author.twitter}`}
                   className="flex items-center space-x-2 text-sm"
-                  data-oid="rew6-do"
+                  data-oid="8g.-kc9"
                 >
                   <Image
                     src={author.avatar}
@@ -141,19 +141,19 @@ export default function PostPage({ params }: PostPageProps) {
                     width={42}
                     height={42}
                     className="rounded-full bg-white"
-                    data-oid="12gjs5a"
+                    data-oid="rwf3i9v"
                   />
 
                   <div
                     className="flex-1 text-left leading-tight"
-                    data-oid="b5.v.0_"
+                    data-oid="lx_l1ee"
                   >
-                    <p className="font-medium" data-oid="1kx.kjp">
+                    <p className="font-medium" data-oid="otrfhjn">
                       {author.title}
                     </p>
                     <p
                       className="text-[12px] text-muted-foreground"
-                      data-oid="0i-_g.o"
+                      data-oid="eutxi32"
                     >
                       @{author.twitter}
                     </p>
@@ -172,18 +172,18 @@ export default function PostPage({ params }: PostPageProps) {
           height={405}
           className="my-8 rounded-md border bg-muted transition-colors"
           priority
-          data-oid="jxjn19o"
+          data-oid="eo8rz27"
         />
       )}
-      <Mdx code={post.body.code} data-oid="h6vauxn" />
-      <hr className="mt-12" data-oid="-o.l0rp" />
-      <div className="flex justify-center py-6 lg:py-10" data-oid="i.20lbk">
+      <Mdx code={post.body.code} data-oid="bxk4fah" />
+      <hr className="mt-12" data-oid="h409k4d" />
+      <div className="flex justify-center py-6 lg:py-10" data-oid="qluc2gz">
         <Link
           href="/blog"
           className={cn(buttonVariants({ variant: "ghost" }))}
-          data-oid="68p8.d0"
+          data-oid="pycm8u1"
         >
-          <Icons.ChevronLeft className="mr-2 h-4 w-4" data-oid="b9jdaj5" />
+          <Icons.ChevronLeft className="mr-2 h-4 w-4" data-oid="2l8yejd" />
           See all posts
         </Link>
       </div>

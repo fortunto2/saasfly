@@ -6,13 +6,13 @@ export const PLANS: Record<
   string,
   (typeof SubscriptionPlan)[keyof typeof SubscriptionPlan]
 > = {
-  // @ts-ignore
+  // @ts-expect-error Process env variables may be undefined during build time
   [env.NEXT_PUBLIC_STRIPE_PRO_MONTHLY_PRICE_ID]: SubscriptionPlan.PRO,
-  // @ts-ignore
+  // @ts-expect-error Process env variables may be undefined during build time
   [env.NEXT_PUBLIC_STRIPE_PRO_YEARLY_PRICE_ID]: SubscriptionPlan.PRO,
-  // @ts-ignore
+  // @ts-expect-error Process env variables may be undefined during build time
   [env.NEXT_PUBLIC_STRIPE_BUSINESS_MONTHLY_PRICE_ID]: SubscriptionPlan.BUSINESS,
-  // @ts-ignore
+  // @ts-expect-error Process env variables may be undefined during build time
   [env.NEXT_PUBLIC_STRIPE_BUSINESS_YEARLY_PRICE_ID]: SubscriptionPlan.BUSINESS,
 };
 

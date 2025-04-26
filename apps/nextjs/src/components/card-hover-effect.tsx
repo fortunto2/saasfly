@@ -26,5 +26,5 @@ export const projects = [
 ];
 
 export function HoverEffects() {
-  return <HoverEffect items={projects} data-oid="-3gg6yv" />;
+  return <HoverEffect items={projects} data-oid="-8jzhb8" />;
 }

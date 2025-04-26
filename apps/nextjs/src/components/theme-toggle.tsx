@@ -19,25 +19,25 @@ export default function ThemeToggle(props: {
   const { setTheme, theme } = useTheme();
 
   const triggerIcon = {
-    light: <Icons.Sun className="h-6 w-6" data-oid="m.4.ejm" />,
-    dark: <Icons.Moon className="h-6 w-6" data-oid="4kk2es3" />,
-    system: <Icons.System className="h-6 w-6" data-oid="ru1rla5" />,
+    light: <Icons.Sun className="h-6 w-6" data-oid="uffg7a-" />,
+    dark: <Icons.Moon className="h-6 w-6" data-oid="dtlttnl" />,
+    system: <Icons.System className="h-6 w-6" data-oid="bqbamps" />,
   }[theme as "light" | "dark" | "system"];
 
   return (
-    <DropdownMenu data-oid="x_.4w3.">
-      <DropdownMenuTrigger asChild data-oid="7:xd997">
+    <DropdownMenu data-oid="m.s8pci">
+      <DropdownMenuTrigger asChild data-oid="g274gt_">
         <Button
           variant="ghost"
           size="sm"
           className="gap-1 px-2 text-lg font-semibold md:text-base"
-          data-oid="o7e8cwe"
+          data-oid="b4mvx03"
         >
           {triggerIcon}
-          <span className="capitalize" data-oid="-99y-yq">
+          <span className="capitalize" data-oid="mh2k5at">
             {theme}
           </span>
-          <span className="sr-only" data-oid="13ra:ax">
+          <span className="sr-only" data-oid="5agslht">
             Toggle theme
           </span>
         </Button>
@@ -45,19 +45,19 @@ export default function ThemeToggle(props: {
       <DropdownMenuContent
         align={props.align}
         side={props.side}
-        data-oid="pxzjz-4"
+        data-oid="xuzjdwn"
       >
-        <DropdownMenuItem onClick={() => setTheme("light")} data-oid="3uu9djc">
-          <Icons.Sun className="mr-2 h-4 w-4" data-oid="usn239y" />
-          <span data-oid="cyy1sw_">Light</span>
+        <DropdownMenuItem onClick={() => setTheme("light")} data-oid="l:5kmh.">
+          <Icons.Sun className="mr-2 h-4 w-4" data-oid="xp-p74_" />
+          <span data-oid="w-0eirg">Light</span>
         </DropdownMenuItem>
-        <DropdownMenuItem onClick={() => setTheme("dark")} data-oid="c-1v.y-">
-          <Icons.Moon className="mr-2 h-4 w-4" data-oid="tvpjt80" />
-          <span data-oid="0_r.cfz">Dark</span>
+        <DropdownMenuItem onClick={() => setTheme("dark")} data-oid="g1i-8ew">
+          <Icons.Moon className="mr-2 h-4 w-4" data-oid="-y_iezf" />
+          <span data-oid="tqisfaf">Dark</span>
         </DropdownMenuItem>
-        <DropdownMenuItem onClick={() => setTheme("system")} data-oid="054klmm">
-          <Icons.System className="mr-2 h-4 w-4" data-oid="y.qia6w" />
-          <span data-oid="1gwc.ue">System</span>
+        <DropdownMenuItem onClick={() => setTheme("system")} data-oid="caaqluv">
+          <Icons.System className="mr-2 h-4 w-4" data-oid="hiy-0it" />
+          <span data-oid="17kwafq">System</span>
         </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>

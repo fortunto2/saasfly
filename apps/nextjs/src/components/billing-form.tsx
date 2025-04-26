@@ -60,33 +60,33 @@ export function BillingForm({
       className={cn(className)}
       onSubmit={onSubmit}
       {...props}
-      data-oid="tc7g_eq"
+      data-oid="5:-xkmx"
     >
-      <Card data-oid=":w82s6x">
-        <CardHeader data-oid="6w9wz_4">
-          <CardTitle data-oid=":bz94_z">Subscription Plan</CardTitle>
-          <CardDescription data-oid="k7zmcie">
+      <Card data-oid="gmfrn20">
+        <CardHeader data-oid="irlzrfe">
+          <CardTitle data-oid="_v81._f">Subscription Plan</CardTitle>
+          <CardDescription data-oid="t5zrdh8">
             You are currently on the{" "}
-            <strong data-oid="swg9_tb">{subscriptionPlan?.title}</strong> plan.
+            <strong data-oid="9wzqy:q">{subscriptionPlan?.title}</strong> plan.
           </CardDescription>
         </CardHeader>
-        <CardContent data-oid="uuyf05_">
+        <CardContent data-oid="_b70:2e">
           {subscriptionPlan?.description}
         </CardContent>
         <CardFooter
           className="flex flex-col items-start space-y-2 md:flex-row md:justify-between md:space-x-0"
-          data-oid="uqyc_tw"
+          data-oid="ueo6q-q"
         >
           <button
             type="submit"
             className={cn(buttonVariants())}
             disabled={isLoading}
-            data-oid="u_be72l"
+            data-oid="7gb1i9-"
           >
             {isLoading && (
               <Icons.Spinner
                 className="mr-2 h-4 w-4 animate-spin"
-                data-oid="50wy-ml"
+                data-oid="5p6nycg"
               />
             )}
             {subscriptionPlan?.isPaid
@@ -94,7 +94,7 @@ export function BillingForm({
               : "Upgrade to PRO"}
           </button>
           {subscriptionPlan?.isPaid ? (
-            <p className="rounded-full text-xs font-medium" data-oid="hnteq2y">
+            <p className="rounded-full text-xs font-medium" data-oid="5u9xm_p">
               {subscriptionPlan?.isCanceled
                 ? "Your plan will be canceled on "
                 : "Your plan renews on "}

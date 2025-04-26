@@ -15,8 +15,8 @@ export default function BlogPage() {
     });
 
   return (
-    <main data-oid="mwo2p1c">
-      <BlogPosts posts={posts} data-oid="c3vb2-_" />
+    <main data-oid="dan_o94">
+      <BlogPosts posts={posts} data-oid="66apewz" />
     </main>
   );
 }

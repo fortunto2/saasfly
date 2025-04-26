@@ -24,42 +24,42 @@ export function Modal({
 
   if (isMobile) {
     return (
-      <Drawer.Root open={showModal} onClose={setShowModal} data-oid="9iyietd">
+      <Drawer.Root open={showModal} onClose={setShowModal} data-oid="eykhdvv">
         <Drawer.Overlay
           className="fixed inset-0 z-40 bg-background/80 backdrop-blur-sm"
-          data-oid="cmz2pb0"
+          data-oid="loue.je"
         />
 
-        <Drawer.Portal data-oid="o9mglty">
+        <Drawer.Portal data-oid="u-13ytl">
           <Drawer.Content
             className={cn(
               "fixed inset-x-0 bottom-0 z-50 mt-24 overflow-hidden rounded-t-2xl border bg-background",
               className,
             )}
-            data-oid="ns33a_s"
+            data-oid="vfk-p7f"
           >
             <div
               className="sticky top-0 z-20 flex w-full items-center justify-center bg-inherit"
-              data-oid="h17ez81"
+              data-oid="jekk7kg"
             >
               <div
                 className="my-3 h-1.5 w-16 rounded-full bg-muted-foreground/20"
-                data-oid="rzwob9z"
+                data-oid="c73ukly"
               />
             </div>
             {children}
           </Drawer.Content>
-          <Drawer.Overlay data-oid="1veel3c" />
+          <Drawer.Overlay data-oid="2su.h-4" />
         </Drawer.Portal>
       </Drawer.Root>
     );
   }
   return (
-    <Dialog open={showModal} onOpenChange={setShowModal} data-oid="vhbtwes">
-      <DialogTitle data-oid="1pwli5z"></DialogTitle>
+    <Dialog open={showModal} onOpenChange={setShowModal} data-oid="zyalu1w">
+      <DialogTitle data-oid="6fch_vm"></DialogTitle>
       <DialogContent
         className="overflow-hidden p-0 md:max-w-md md:rounded-2xl md:border"
-        data-oid="6uygs2."
+        data-oid=".d1ixw5"
       >
         {children}
       </DialogContent>
