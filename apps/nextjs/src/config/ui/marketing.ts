@@ -28,6 +28,10 @@ export const getMarketingConfig = async ({
         title: dict.marketing.main_nav_documentation,
         href: `/docs`,
       },
+      {
+        title: dict.marketing.main_nav_chat || 'Chat',
+        href: `/chat`,
+      },
     ],
   };
 };
