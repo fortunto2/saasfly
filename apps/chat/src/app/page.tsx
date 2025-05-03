@@ -1,17 +1,22 @@
 "use client";
 
-import { Chat } from "@/components/ui/chat";
-import { NavBar } from "@/components/NavBar";
+import { AssistantRuntimeProvider } from "@assistant-ui/react";
+import { useChatRuntime } from "@assistant-ui/react-ai-sdk";
+import { ThreadList } from "@/components/assistant-ui/thread-list";
+import { Thread } from "@/components/assistant-ui/thread";
 
-export default function Home() {
+export default function ChatPage() {
+  // Вызываем хук напрямую, а не внутри useMemo
+  const runtime = useChatRuntime({
+    api: "/api/chat",
+  });
+ 
   return (
-    <main className="flex min-h-screen flex-col">
-      <NavBar />
-      <div className="w-full max-w-5xl mx-auto h-[calc(100vh-64px)] p-4">
-        <div className="border rounded-md h-full overflow-hidden shadow-sm">
-          <Chat />
-        </div>
+    <AssistantRuntimeProvider runtime={runtime}>
+      <div className="grid h-dvh grid-cols-[250px_1fr] gap-x-4 px-4 py-4">
+        <ThreadList />
+        <Thread />
       </div>
-    </main>
+    </AssistantRuntimeProvider>
   );
 } 

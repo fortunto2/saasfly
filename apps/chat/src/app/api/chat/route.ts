@@ -1,6 +1,8 @@
 import { openai } from '@ai-sdk/openai';
 import { streamText } from 'ai';
 
+export const runtime = "edge";
+
 // Максимальное время выполнения запроса - 30 секунд
 export const maxDuration = 30;
 
@@ -8,7 +10,7 @@ export async function POST(req: Request) {
   try {
     // Извлекаем сообщения из тела запроса
     const { messages } = await req.json();
-    
+
     // Проверка наличия API ключа
     if (!process.env.OPENAI_API_KEY || process.env.OPENAI_API_KEY === 'sk-dummy-key-for-development') {
       console.warn("OpenAI API key is not set or is using the dummy key");
@@ -25,7 +27,7 @@ export async function POST(req: Request) {
       model: openai('gpt-3.5-turbo'),
       messages,
     });
-    
+
     // Возвращаем поток как ответ
     return result.toDataStreamResponse();
   } catch (error) {

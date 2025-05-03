@@ -1,21 +1,23 @@
 "use client";
 
 import { useThreadList, useAssistantRuntime } from "@assistant-ui/react";
+import { useMemo } from "react";
 
 export function ThreadList() {
   const threadListState = useThreadList();
   const runtime = useAssistantRuntime();
   
-  const handleCreateNewThread = () => {
-    runtime.switchToNewThread?.();
-  };
+  // Мемоизируем список потоков для предотвращения ререндеров
+  const threads = useMemo(() => threadListState?.threads || [], [threadListState?.threads]);
   
   return (
     <div className="flex flex-col h-full">
       <div className="flex justify-between items-center mb-4 p-2 border-b">
         <h2 className="font-semibold">Чаты</h2>
         <button 
-          onClick={handleCreateNewThread}
+          onClick={() => {
+            if (runtime.switchToNewThread) runtime.switchToNewThread();
+          }}
           className="p-1 px-2 text-sm bg-blue-600 text-white rounded"
         >
           Новый
@@ -23,12 +25,14 @@ export function ThreadList() {
       </div>
       
       <div className="space-y-2 overflow-y-auto flex-1">
-        {threadListState?.threads?.length ? (
-          threadListState.threads.map((threadId, index) => (
+        {threads.length ? (
+          threads.map((threadId: string, index: number) => (
             <button 
               key={threadId || index} 
               className="w-full text-left p-3 border rounded cursor-pointer hover:bg-gray-50"
-              onClick={() => runtime.switchToThread?.(threadId)}
+              onClick={() => {
+                if (runtime.switchToThread) runtime.switchToThread(threadId);
+              }}
             >
               Чат {index + 1}
             </button>
