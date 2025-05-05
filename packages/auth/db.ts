@@ -1,4 +1,5 @@
 import { createKysely } from "@vercel/postgres-kysely";
+import { sql } from "@vercel/postgres";
 import type { GeneratedAlways } from "kysely";
 
 interface Database {
@@ -36,4 +37,8 @@ interface Database {
   };
 }
 
-export const db = createKysely<Database>();
+// Использовать createClient для соединения с Vercel Postgres
+const client = sql.createClient();
+
+// Создаем Kysely с использованием пула соединений
+export const db = createKysely<Database>({ connectionPool: client });
